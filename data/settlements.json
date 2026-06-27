@@ -1,0 +1,2568 @@
+[
+  {
+    "matchId": "760415",
+    "homeTeam": "Mexico",
+    "awayTeam": "South Africa",
+    "homeShort": "墨西哥",
+    "awayShort": "南非",
+    "homeScore": 2,
+    "awayScore": 0,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 65,
+        "draw_pct": 20,
+        "away_win_pct": 15
+      },
+      "score": {
+        "predicted": "2-1",
+        "confidence": 12,
+        "top_scores": [
+          [
+            "2-1",
+            12
+          ],
+          [
+            "2-0",
+            11
+          ],
+          [
+            "1-0",
+            10
+          ],
+          [
+            "1-1",
+            9
+          ],
+          [
+            "3-1",
+            6
+          ]
+        ]
+      },
+      "confidence_pct": 65,
+      "upset_analysis": {
+        "upset_prob": 35,
+        "score_upset_prob": 55,
+        "scenarios": [
+          {
+            "type": "draw",
+            "prob": 20,
+            "bet": "押平局"
+          },
+          {
+            "type": "away_win",
+            "prob": 15,
+            "bet": "押客队+1.5球"
+          }
+        ],
+        "recommended_bet": "爆冷比分推荐：1-1(9%)、0-1(5%) — 赔率高适合小注"
+      },
+      "simulations": 1000,
+      "type": "pre_match"
+    },
+    "result": {
+      "actualWinner": "home",
+      "actualScore": "2-0",
+      "directionCorrect": true,
+      "scoreCorrect": true,
+      "accuracy": 100,
+      "isUpset": false
+    },
+    "timestamp": "2026-06-12T22:08:54.851Z"
+  },
+  {
+    "matchId": "760414",
+    "homeTeam": "South Korea",
+    "awayTeam": "Czechia",
+    "homeShort": "韩国",
+    "awayShort": "捷克",
+    "homeScore": 2,
+    "awayScore": 1,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 55,
+        "draw_pct": 25,
+        "away_win_pct": 20
+      },
+      "score": {
+        "predicted": "2-1",
+        "confidence": 11,
+        "top_scores": [
+          [
+            "2-1",
+            11
+          ],
+          [
+            "1-0",
+            10
+          ],
+          [
+            "1-1",
+            9
+          ],
+          [
+            "2-0",
+            8
+          ],
+          [
+            "3-1",
+            5
+          ]
+        ]
+      },
+      "confidence_pct": 55,
+      "upset_analysis": {
+        "upset_prob": 45,
+        "score_upset_prob": 60,
+        "scenarios": [
+          {
+            "type": "draw",
+            "prob": 25,
+            "bet": "押平局"
+          },
+          {
+            "type": "away_win",
+            "prob": 20,
+            "bet": "押客队+0.5球"
+          }
+        ],
+        "recommended_bet": "爆冷比分推荐：1-2(7%)、0-1(6%) — 捷克有反击能力"
+      },
+      "simulations": 1000,
+      "type": "pre_match"
+    },
+    "result": {
+      "actualWinner": "home",
+      "actualScore": "2-1",
+      "directionCorrect": true,
+      "scoreCorrect": true,
+      "accuracy": 100,
+      "isUpset": false
+    },
+    "timestamp": "2026-06-12T22:08:54.853Z"
+  },
+  {
+    "matchId": "760416",
+    "homeTeam": "Canada",
+    "awayTeam": "Bosnia-Herzegovina",
+    "homeShort": "加拿大",
+    "awayShort": "波黑",
+    "homeScore": 1,
+    "awayScore": 1,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 50,
+        "draw_pct": 28,
+        "away_win_pct": 22
+      },
+      "score": {
+        "predicted": "2-1",
+        "confidence": 10,
+        "top_scores": [
+          [
+            "2-1",
+            10
+          ],
+          [
+            "1-1",
+            10
+          ],
+          [
+            "1-0",
+            9
+          ],
+          [
+            "2-0",
+            7
+          ],
+          [
+            "0-1",
+            5
+          ]
+        ]
+      },
+      "confidence_pct": 50,
+      "upset_analysis": {
+        "upset_prob": 50,
+        "score_upset_prob": 65,
+        "scenarios": [
+          {
+            "type": "draw",
+            "prob": 28,
+            "bet": "押平局"
+          },
+          {
+            "type": "away_win",
+            "prob": 22,
+            "bet": "押客队+0.5球"
+          }
+        ],
+        "recommended_bet": "爆冷比分推荐：1-1(10%)、0-1(5%)、1-2(4%) — 两队实力接近"
+      },
+      "simulations": 1000,
+      "type": "pre_match"
+    },
+    "result": {
+      "actualWinner": "draw",
+      "actualScore": "1-1",
+      "directionCorrect": false,
+      "scoreCorrect": false,
+      "accuracy": 0,
+      "isUpset": true
+    },
+    "timestamp": "2026-06-12T22:08:54.853Z"
+  },
+  {
+    "matchId": "760417",
+    "homeTeam": "United States",
+    "awayTeam": "Paraguay",
+    "homeShort": "USA",
+    "awayShort": "PAR",
+    "homeScore": 4,
+    "awayScore": 1,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 67.1,
+        "draw_pct": 16.6,
+        "away_win_pct": 16.3
+      },
+      "score": {
+        "predicted": "2-1",
+        "confidence": 8.4,
+        "top_scores": [
+          [
+            "2-1",
+            8.4
+          ],
+          [
+            "3-1",
+            7.7
+          ],
+          [
+            "2-0",
+            6.4
+          ],
+          [
+            "1-1",
+            6.3
+          ],
+          [
+            "3-0",
+            5.8
+          ],
+          [
+            "2-2",
+            5.8
+          ],
+          [
+            "4-1",
+            5.5
+          ],
+          [
+            "3-2",
+            5.2
+          ],
+          [
+            "1-0",
+            4.6
+          ],
+          [
+            "1-2",
+            4
+          ]
+        ]
+      },
+      "confidence_pct": 34.6,
+      "direction_confidence": 67.1,
+      "score_confidence": 8.4,
+      "upset_analysis": {
+        "upset_prob": 32.9,
+        "top_upset_scores": [
+          [
+            "1-1",
+            6.3
+          ],
+          [
+            "2-2",
+            5.8
+          ],
+          [
+            "1-2",
+            4
+          ],
+          [
+            "2-3",
+            2.5
+          ],
+          [
+            "3-3",
+            2.3
+          ]
+        ],
+        "scenarios": [
+          {
+            "type": "draw",
+            "prob": 16.6,
+            "bet": "押平局",
+            "scores": [
+              [
+                "1-1",
+                6.3
+              ],
+              [
+                "2-2",
+                5.8
+              ]
+            ]
+          },
+          {
+            "type": "away_win",
+            "prob": 16.3,
+            "bet": "押客队+1球",
+            "scores": [
+              [
+                "1-2",
+                4
+              ],
+              [
+                "2-3",
+                2.5
+              ]
+            ]
+          }
+        ],
+        "recommended_bet": "爆冷比分推荐：1-1(6.3%)、2-2(5.8%)"
+      },
+      "simulations": 100000,
+      "type": "pre_match",
+      "homeXG": 2.75,
+      "awayXG": 1.34,
+      "head_to_head": {
+        "matches": 8,
+        "us_wins": 4,
+        "draws": 2,
+        "par_wins": 2,
+        "us_goals": 12,
+        "par_goals": 8
+      }
+    },
+    "result": {
+      "actualWinner": "home",
+      "actualScore": "4-1",
+      "directionCorrect": true,
+      "scoreCorrect": false,
+      "accuracy": 63,
+      "isUpset": false
+    },
+    "timestamp": "2026-06-13T03:05:08.466Z"
+  },
+  {
+    "matchId": "760420",
+    "homeTeam": "Qatar",
+    "awayTeam": "Switzerland",
+    "homeShort": "QAT",
+    "awayShort": "SUI",
+    "homeScore": 1,
+    "awayScore": 1,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 16.4,
+        "draw_pct": 17.5,
+        "away_win_pct": 66.1
+      },
+      "score": {
+        "predicted": "0-2",
+        "confidence": 11.5
+      },
+      "confidence_pct": 66.1,
+      "simulations": 200000,
+      "type": "pre_match",
+      "locked": true,
+      "locked_reason": "比赛结束"
+    },
+    "result": {
+      "actualWinner": "draw",
+      "actualScore": "1-1",
+      "directionCorrect": false,
+      "scoreCorrect": false,
+      "accuracy": 4,
+      "isUpset": true
+    },
+    "timestamp": "2026-06-15T01:41:29.860Z"
+  },
+  {
+    "matchId": "760419",
+    "homeTeam": "Brazil",
+    "awayTeam": "Morocco",
+    "homeShort": "BRA",
+    "awayShort": "MAR",
+    "homeScore": 1,
+    "awayScore": 1,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 44.9,
+        "draw_pct": 19.7,
+        "away_win_pct": 35.4
+      },
+      "score": {
+        "predicted": "2-1",
+        "confidence": 7.1
+      },
+      "confidence_pct": 44.9,
+      "simulations": 200000,
+      "type": "pre_match",
+      "locked": true,
+      "locked_reason": "比赛结束"
+    },
+    "result": {
+      "actualWinner": "draw",
+      "actualScore": "1-1",
+      "directionCorrect": false,
+      "scoreCorrect": false,
+      "accuracy": 4,
+      "isUpset": true
+    },
+    "timestamp": "2026-06-15T01:41:29.865Z"
+  },
+  {
+    "matchId": "760418",
+    "homeTeam": "Haiti",
+    "awayTeam": "Scotland",
+    "homeShort": "HAI",
+    "awayShort": "SCO",
+    "homeScore": 0,
+    "awayScore": 1,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 18.9,
+        "draw_pct": 20.9,
+        "away_win_pct": 60.1
+      },
+      "score": {
+        "predicted": "0-2",
+        "confidence": 10.1
+      },
+      "confidence_pct": 60.1,
+      "simulations": 200000,
+      "type": "pre_match",
+      "locked": true,
+      "locked_reason": "比赛结束"
+    },
+    "result": {
+      "actualWinner": "away",
+      "actualScore": "0-1",
+      "directionCorrect": true,
+      "scoreCorrect": false,
+      "accuracy": 62,
+      "isUpset": false
+    },
+    "timestamp": "2026-06-15T01:41:29.865Z"
+  },
+  {
+    "matchId": "760421",
+    "homeTeam": "Australia",
+    "awayTeam": "Türkiye",
+    "homeShort": "AUS",
+    "awayShort": "TUR",
+    "homeScore": 2,
+    "awayScore": 0,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 39.7,
+        "draw_pct": 23.7,
+        "away_win_pct": 36.6
+      },
+      "score": {
+        "predicted": "1-1",
+        "confidence": 10.5
+      },
+      "confidence_pct": 39.7,
+      "simulations": 200000,
+      "type": "pre_match",
+      "locked": true,
+      "locked_reason": "比赛结束"
+    },
+    "result": {
+      "actualWinner": "home",
+      "actualScore": "2-0",
+      "directionCorrect": true,
+      "scoreCorrect": false,
+      "accuracy": 58,
+      "isUpset": false
+    },
+    "timestamp": "2026-06-15T01:41:29.865Z"
+  },
+  {
+    "matchId": "760422",
+    "homeTeam": "Germany",
+    "awayTeam": "Curaçao",
+    "homeShort": "GER",
+    "awayShort": "CUR",
+    "homeScore": 7,
+    "awayScore": 1,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 94.1,
+        "draw_pct": 4.7,
+        "away_win_pct": 1.2
+      },
+      "score": {
+        "predicted": "3-0",
+        "confidence": 9.2
+      },
+      "confidence_pct": 94.1,
+      "simulations": 200000,
+      "type": "pre_match",
+      "locked": true,
+      "locked_reason": "比赛结束"
+    },
+    "result": {
+      "actualWinner": "home",
+      "actualScore": "7-1",
+      "directionCorrect": true,
+      "scoreCorrect": false,
+      "accuracy": 69,
+      "isUpset": false
+    },
+    "timestamp": "2026-06-15T01:41:29.865Z"
+  },
+  {
+    "matchId": "760425",
+    "homeTeam": "Netherlands",
+    "awayTeam": "Japan",
+    "homeShort": "NED",
+    "awayShort": "JPN",
+    "homeScore": 2,
+    "awayScore": 2,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 54.8,
+        "draw_pct": 20.3,
+        "away_win_pct": 24.9
+      },
+      "score": {
+        "predicted": "2-1",
+        "confidence": 8.4
+      },
+      "confidence_pct": 54.8,
+      "simulations": 200000,
+      "type": "pre_match",
+      "locked": true,
+      "locked_reason": "比赛结束"
+    },
+    "result": {
+      "actualWinner": "draw",
+      "actualScore": "2-2",
+      "directionCorrect": false,
+      "scoreCorrect": false,
+      "accuracy": 4,
+      "isUpset": true
+    },
+    "timestamp": "2026-06-15T01:41:29.865Z"
+  },
+  {
+    "matchId": "760423",
+    "homeTeam": "Ivory Coast",
+    "awayTeam": "Ecuador",
+    "homeShort": "CIV",
+    "awayShort": "ECU",
+    "homeScore": 1,
+    "awayScore": 0,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 35.2,
+        "draw_pct": 26,
+        "away_win_pct": 38.8
+      },
+      "score": {
+        "predicted": "1-1",
+        "confidence": 10.5
+      },
+      "confidence_pct": 38.8,
+      "simulations": 200000,
+      "type": "pre_match",
+      "locked": true,
+      "locked_reason": "比赛结束"
+    },
+    "result": {
+      "actualWinner": "home",
+      "actualScore": "1-0",
+      "directionCorrect": false,
+      "scoreCorrect": false,
+      "accuracy": 7,
+      "isUpset": false
+    },
+    "timestamp": "2026-06-15T01:41:29.865Z"
+  },
+  {
+    "matchId": "760424",
+    "homeTeam": "Sweden",
+    "awayTeam": "Tunisia",
+    "homeLogo": "",
+    "awayLogo": "",
+    "homeScore": 5,
+    "awayScore": 1,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 55,
+        "draw_pct": 25,
+        "away_win_pct": 20
+      },
+      "score": {
+        "predicted": "2-1",
+        "confidence": 12
+      }
+    },
+    "result": {
+      "actualWinner": "home",
+      "actualScore": "5-1",
+      "directionCorrect": true,
+      "scoreCorrect": false,
+      "accuracy": 60,
+      "improvements": [
+        {
+          "type": "no_prediction",
+          "text": "无赛前预测数据"
+        }
+      ]
+    },
+    "timestamp": "2026-06-15T05:54:34.325Z",
+    "homeShort": "SWE",
+    "awayShort": "TUN"
+  },
+  {
+    "matchId": "760428",
+    "homeTeam": "Spain",
+    "awayTeam": "Cape Verde",
+    "homeShort": "Spain",
+    "awayShort": "Cape Verde",
+    "homeScore": 0,
+    "awayScore": 0,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 92.7,
+        "draw_pct": 5.9,
+        "away_win_pct": 1.4
+      },
+      "score": {
+        "predicted": "3-0",
+        "confidence": 16.2,
+        "top_scores": [
+          [
+            "3-0",
+            16.2
+          ],
+          [
+            "2-0",
+            14.7
+          ],
+          [
+            "4-0",
+            13.7
+          ],
+          [
+            "5-0",
+            9
+          ],
+          [
+            "1-0",
+            8.8
+          ],
+          [
+            "6-0",
+            5
+          ],
+          [
+            "3-1",
+            4.9
+          ],
+          [
+            "2-1",
+            4.4
+          ],
+          [
+            "4-1",
+            4.1
+          ],
+          [
+            "5-1",
+            2.7
+          ]
+        ]
+      },
+      "confidence_pct": 62.5,
+      "direction_confidence": 92.7,
+      "score_confidence": 16.2,
+      "upset_analysis": {
+        "upset_prob": 7.3,
+        "top_upset_scores": [
+          [
+            "0-0",
+            2.6
+          ],
+          [
+            "1-1",
+            2.6
+          ],
+          [
+            "0-1",
+            0.8
+          ],
+          [
+            "2-2",
+            0.6
+          ],
+          [
+            "1-2",
+            0.4
+          ]
+        ],
+        "scenarios": [],
+        "recommended_bet": "爆冷比分推荐：0-0(2.6%)、1-1(2.6%)"
+      },
+      "simulations": 200000,
+      "type": "pre_match",
+      "homeXG": 3.34,
+      "awayXG": 0.3,
+      "player_factors": {
+        "home": {
+          "adaptation": 0.9,
+          "injury_impact": 0.05,
+          "experience": 0.88,
+          "factor": 0.85
+        },
+        "away": {
+          "adaptation": 0.5,
+          "injury_impact": 0.15,
+          "experience": 0.2,
+          "factor": 0.35
+        }
+      },
+      "key_players": {
+        "home": [
+          "Pedri",
+          "Lamine Yamal",
+          "Álvaro Morata"
+        ],
+        "away": [
+          "Ryan Mendes",
+          "Garry Rodrigues",
+          "Júlio Tavares"
+        ]
+      },
+      "authoritative_predictions": {
+        "sources": [
+          {
+            "name": "Lucas_67",
+            "platform": "YouTube",
+            "viewers": 3324,
+            "prediction": "西班牙大胜",
+            "score_prediction": "3-0或4-0",
+            "confidence": "高",
+            "reasoning": "德国7球、瑞典5球，西班牙也会血洗佛得角"
+          },
+          {
+            "name": "中医师讲波 TCM Stadium",
+            "platform": "YouTube",
+            "viewers": 2292,
+            "prediction": "西班牙大胜",
+            "score_prediction": "4-0或5-0",
+            "confidence": "高",
+            "reasoning": "德国7球、瑞典5球，西班牙也要血洗佛得角"
+          },
+          {
+            "name": "ZC说故事",
+            "platform": "YouTube",
+            "viewers": 2207,
+            "prediction": "西班牙胜",
+            "score_prediction": "3-0",
+            "confidence": "中高",
+            "reasoning": "西班牙实力远超佛得角"
+          },
+          {
+            "name": "达文东足球",
+            "platform": "YouTube",
+            "viewers": 7368,
+            "prediction": "西班牙大胜",
+            "score_prediction": "4-0或5-0",
+            "confidence": "高",
+            "reasoning": "世界杯小组赛，西班牙会全力进攻"
+          },
+          {
+            "name": "老k足球新聞",
+            "platform": "YouTube",
+            "viewers": 8632,
+            "prediction": "西班牙大胜",
+            "score_prediction": "4-0或5-0",
+            "confidence": "高",
+            "reasoning": "世界杯首轮，强队通常全力进攻"
+          }
+        ],
+        "consensus": "西班牙大胜3-0或4-0",
+        "confidence": "高",
+        "key_factors": [
+          "排名差距66位",
+          "德国7-1、瑞典5-1，强队大胜趋势",
+          "西班牙tiki-taka控球打法",
+          "世界杯小组赛首轮，强队全力进攻"
+        ]
+      }
+    },
+    "result": {
+      "actualWinner": "draw",
+      "actualScore": "0-0",
+      "directionCorrect": false,
+      "scoreCorrect": false,
+      "accuracy": 1,
+      "isUpset": true
+    },
+    "timestamp": "2026-06-15T19:06:58.272Z"
+  },
+  {
+    "matchId": "760426",
+    "homeTeam": "Belgium",
+    "awayTeam": "Egypt",
+    "homeShort": "Belgium",
+    "awayShort": "Egypt",
+    "homeScore": 1,
+    "awayScore": 1,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 56.9,
+        "draw_pct": 25.8,
+        "away_win_pct": 17.4
+      },
+      "score": {
+        "predicted": "1-0",
+        "confidence": 16.3,
+        "top_scores": [
+          [
+            "1-0",
+            16.3
+          ],
+          [
+            "2-0",
+            12.3
+          ],
+          [
+            "1-1",
+            11.5
+          ],
+          [
+            "0-0",
+            10.7
+          ],
+          [
+            "2-1",
+            8.8
+          ],
+          [
+            "0-1",
+            7.6
+          ],
+          [
+            "3-0",
+            6.3
+          ],
+          [
+            "3-1",
+            4.5
+          ],
+          [
+            "1-2",
+            4.1
+          ],
+          [
+            "2-2",
+            3.2
+          ]
+        ]
+      },
+      "confidence_pct": 59.6,
+      "direction_confidence": 56.9,
+      "score_confidence": 16.3,
+      "upset_analysis": {
+        "upset_prob": 43.1,
+        "top_upset_scores": [
+          [
+            "1-1",
+            11.5
+          ],
+          [
+            "0-0",
+            10.7
+          ],
+          [
+            "0-1",
+            7.6
+          ],
+          [
+            "1-2",
+            4.1
+          ],
+          [
+            "2-2",
+            3.2
+          ]
+        ],
+        "scenarios": [
+          {
+            "type": "draw",
+            "prob": 25.8,
+            "bet": "押平局",
+            "scores": [
+              [
+                "1-1",
+                11.5
+              ],
+              [
+                "0-0",
+                10.7
+              ]
+            ]
+          },
+          {
+            "type": "away_win",
+            "prob": 17.4,
+            "bet": "押客队+1球",
+            "scores": [
+              [
+                "0-1",
+                7.6
+              ],
+              [
+                "1-2",
+                4.1
+              ]
+            ]
+          }
+        ],
+        "recommended_bet": "爆冷比分推荐：1-1(11.5%)、0-0(10.7%)"
+      },
+      "simulations": 200000,
+      "type": "pre_match",
+      "homeXG": 1.53,
+      "awayXG": 0.71,
+      "player_factors": {
+        "home": {
+          "adaptation": 0.8,
+          "injury_impact": 0.1,
+          "experience": 0.8,
+          "factor": 0.71
+        },
+        "away": {
+          "adaptation": 0.7,
+          "injury_impact": 0.1,
+          "experience": 0.55,
+          "factor": 0.58
+        }
+      },
+      "key_players": {
+        "home": [
+          "Kevin De Bruyne",
+          "Romelu Lukaku",
+          "Thibaut Courtois"
+        ],
+        "away": [
+          "Mohamed Salah",
+          "Mohamed Elneny",
+          "Ahmed Hegazi"
+        ]
+      },
+      "authoritative_predictions": {
+        "sources": [
+          {
+            "name": "ZC说故事",
+            "platform": "YouTube",
+            "viewers": 2108,
+            "prediction": "比利时胜",
+            "score_prediction": "2-1或2-0",
+            "confidence": "中高",
+            "reasoning": "比利时黄金一代，埃及有萨拉赫"
+          },
+          {
+            "name": "世界杯2026",
+            "platform": "YouTube",
+            "viewers": 321,
+            "prediction": "比利时胜",
+            "score_prediction": "2-1",
+            "confidence": "中",
+            "reasoning": "比利时实力更强，但埃及有萨拉赫"
+          },
+          {
+            "name": "綠茵前瞻社",
+            "platform": "YouTube",
+            "viewers": 56,
+            "prediction": "比利时胜",
+            "score_prediction": "2-1或1-0",
+            "confidence": "中",
+            "reasoning": "比利时黄金一代余晖，首轮可能不会全力进攻"
+          },
+          {
+            "name": "老k足球新聞",
+            "platform": "YouTube",
+            "viewers": 8632,
+            "prediction": "比利时胜",
+            "score_prediction": "2-0或2-1",
+            "confidence": "中高",
+            "reasoning": "比利时实力更强，但埃及有萨拉赫"
+          }
+        ],
+        "consensus": "比利时小胜2-0或2-1",
+        "confidence": "中高",
+        "key_factors": [
+          "比利时排名8 vs 埃及排名32",
+          "比利时黄金一代经验丰富",
+          "埃及有萨拉赫，反击能力强",
+          "世界杯首轮，比利时可能不会全力进攻"
+        ]
+      }
+    },
+    "result": {
+      "actualWinner": "draw",
+      "actualScore": "1-1",
+      "directionCorrect": false,
+      "scoreCorrect": false,
+      "accuracy": 5,
+      "isUpset": true
+    },
+    "timestamp": "2026-06-15T21:01:58.153Z"
+  },
+  {
+    "matchId": "760427",
+    "homeTeam": "Saudi Arabia",
+    "awayTeam": "Uruguay",
+    "homeLogo": "",
+    "awayLogo": "",
+    "homeScore": 1,
+    "awayScore": 1,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 13.7,
+        "draw_pct": 39.6,
+        "away_win_pct": 46.7
+      },
+      "score": {
+        "predicted": "0-1",
+        "confidence": 12,
+        "top_scores": [
+          [
+            "0-1",
+            12
+          ],
+          [
+            "0-2",
+            11.2
+          ],
+          [
+            "1-1",
+            10.6
+          ],
+          [
+            "1-2",
+            9.9
+          ],
+          [
+            "0-3",
+            6.8
+          ]
+        ]
+      },
+      "confidence_pct": 46.7,
+      "upset_analysis": {
+        "upset_prob": 53.3,
+        "score_upset_prob": 66.2,
+        "scenarios": [
+          {
+            "type": "draw",
+            "prob": 39.6,
+            "bet": "押平局"
+          },
+          {
+            "type": "home_win",
+            "prob": 13.7,
+            "bet": "押主队+1.5球"
+          }
+        ],
+        "recommended_bet": "如果押冷门：押平局赔率较好"
+      },
+      "simulations": 200000,
+      "type": "pre_match",
+      "home_win_pct": 13.7,
+      "draw_pct": 39.6,
+      "away_win_pct": 46.7,
+      "predicted_score": "0-1",
+      "confidence_stars": 2,
+      "num_runs": 200000,
+      "homeXG": 0.88,
+      "awayXG": 1.85,
+      "key_factors": [],
+      "home_advantage": [],
+      "away_advantage": [],
+      "goal_scorers": [],
+      "referee_impact": "",
+      "venue_impact": "",
+      "tactical_analysis": "主队控球进攻，客队强硬防守+反击。主队优势：技术、配合；客队优势：防守硬度、经验。",
+      "team_style_comparison": {
+        "home_style": "控球进攻",
+        "away_style": "强硬防守+反击",
+        "home_strengths": [
+          "技术",
+          "配合"
+        ],
+        "away_strengths": [
+          "防守硬度",
+          "经验",
+          "反击"
+        ],
+        "home_weaknesses": [
+          "身体对抗",
+          "防守"
+        ],
+        "away_weaknesses": [
+          "创造力"
+        ],
+        "key_tactics": [
+          "短传控球",
+          "边路突破",
+          "强硬防守",
+          "快速反击"
+        ]
+      },
+      "motivation_analysis": {
+        "home_motivation": "normal",
+        "away_motivation": "normal",
+        "home_factor": 1,
+        "away_factor": 1
+      },
+      "risk_note": "",
+      "analysis": "",
+      "timestamp": "2026-06-16T03:40:13.233Z",
+      "learning_adjustments": {
+        "rankWeight": 0.012,
+        "baseGoals": 1.42,
+        "homeBonus": 0,
+        "drawBoost": 47,
+        "diversityPenalty": "2-1"
+      }
+    },
+    "result": {
+      "actualWinner": "draw",
+      "actualScore": "2-2",
+      "directionCorrect": false,
+      "scoreCorrect": false,
+      "accuracy": 8,
+      "improvements": [
+        {
+          "type": "direction",
+          "text": "胜负方向预测错误",
+          "detail": "预测客胜，实际平局"
+        },
+        {
+          "type": "score",
+          "text": "比分预测偏差",
+          "detail": "预测0-1，实际2-2"
+        }
+      ]
+    },
+    "timestamp": "2026-06-16T05:47:36.365Z",
+    "homeShort": "KSA",
+    "awayShort": "URU"
+  },
+  {
+    "matchId": "760432",
+    "homeTeam": "France",
+    "awayTeam": "Senegal",
+    "homeLogo": "",
+    "awayLogo": "",
+    "homeScore": 3,
+    "awayScore": 1,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 35.8,
+        "draw_pct": 37,
+        "away_win_pct": 27.1
+      },
+      "score": {
+        "predicted": "1-0",
+        "confidence": 15.8,
+        "top_scores": [
+          [
+            "1-0",
+            15.8
+          ],
+          [
+            "0-0",
+            15.4
+          ],
+          [
+            "1-1",
+            13.4
+          ],
+          [
+            "0-1",
+            13.1
+          ],
+          [
+            "2-0",
+            8.1
+          ],
+          [
+            "2-1",
+            6.8
+          ],
+          [
+            "1-2",
+            5.7
+          ],
+          [
+            "0-2",
+            5.6
+          ],
+          [
+            "2-2",
+            2.9
+          ],
+          [
+            "3-0",
+            2.7
+          ],
+          [
+            "3-1",
+            2.3
+          ],
+          [
+            "1-3",
+            1.6
+          ],
+          [
+            "0-3",
+            1.6
+          ],
+          [
+            "3-2",
+            1
+          ],
+          [
+            "2-3",
+            0.8
+          ]
+        ]
+      },
+      "confidence_pct": 54.2,
+      "direction_confidence": 71,
+      "score_confidence": 13.7,
+      "upset_analysis": {
+        "upset_prob": 29,
+        "top_upset_scores": [
+          [
+            "1-1",
+            8.7
+          ],
+          [
+            "0-0",
+            6.1
+          ],
+          [
+            "0-1",
+            4
+          ],
+          [
+            "2-2",
+            3.1
+          ],
+          [
+            "1-2",
+            3
+          ]
+        ],
+        "scenarios": [
+          {
+            "type": "draw",
+            "prob": 18.5,
+            "bet": "押平局",
+            "scores": [
+              [
+                "1-1",
+                8.7
+              ],
+              [
+                "0-0",
+                6.1
+              ]
+            ]
+          },
+          {
+            "type": "away_win",
+            "prob": 10.5,
+            "bet": "押客队+1球",
+            "scores": [
+              [
+                "0-1",
+                4
+              ],
+              [
+                "1-2",
+                3
+              ]
+            ]
+          }
+        ],
+        "recommended_bet": "爆冷比分推荐：1-1(8.7%)、0-0(6.1%)"
+      },
+      "simulations": 200000,
+      "type": "pre_match",
+      "homeXG": 1.02,
+      "awayXG": 0.85,
+      "player_factors": {
+        "home": {
+          "adaptation": 0.9,
+          "injury_impact": 0.05,
+          "experience": 0.92,
+          "factor": 0.86
+        },
+        "away": {
+          "adaptation": 0.75,
+          "injury_impact": 0.1,
+          "experience": 0.65,
+          "factor": 0.64
+        }
+      },
+      "key_players": {
+        "home": [
+          "Kylian Mbappé",
+          "Ousmane Dembélé",
+          "Antoine Griezmann"
+        ],
+        "away": [
+          "Sadio Mané",
+          "Kalidou Koulibaly",
+          "Édouard Mendy"
+        ]
+      },
+      "star_player_rotation": {
+        "home_rotation": true,
+        "away_rotation": true,
+        "impact": "第一轮强队可能轮换阵容，胜率降低15%"
+      }
+    },
+    "result": {
+      "actualWinner": "home",
+      "actualScore": "3-1",
+      "directionCorrect": false,
+      "scoreCorrect": false,
+      "accuracy": null,
+      "improvements": [
+        {
+          "type": "direction",
+          "text": "胜负方向预测错误",
+          "detail": "预测平局，实际主胜"
+        },
+        {
+          "type": "score",
+          "text": "比分预测偏差",
+          "detail": "预测undefined，实际3-1"
+        }
+      ]
+    },
+    "timestamp": "2026-06-16T21:06:48.436Z",
+    "homeShort": "FRA",
+    "awayShort": "SEN"
+  },
+  {
+    "matchId": "760431",
+    "homeTeam": "Austria",
+    "awayTeam": "Jordan",
+    "homeShort": "Austria",
+    "awayShort": "Jordan",
+    "homeScore": 3,
+    "awayScore": 1,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 57.8,
+        "draw_pct": 29.1,
+        "away_win_pct": 13.1
+      },
+      "score": {
+        "predicted": "1-0",
+        "confidence": 22.4,
+        "top_scores": [
+          [
+            "1-0",
+            22.4
+          ],
+          [
+            "0-0",
+            17.2
+          ],
+          [
+            "2-0",
+            14.5
+          ],
+          [
+            "1-1",
+            10.2
+          ],
+          [
+            "0-1",
+            7.9
+          ],
+          [
+            "2-1",
+            6.6
+          ],
+          [
+            "3-0",
+            6.2
+          ],
+          [
+            "3-1",
+            3
+          ],
+          [
+            "1-2",
+            2.4
+          ],
+          [
+            "4-0",
+            2
+          ]
+        ]
+      },
+      "confidence_pct": 72.2,
+      "direction_confidence": 57.8,
+      "score_confidence": 22.4,
+      "upset_analysis": {
+        "upset_prob": 42.2,
+        "top_upset_scores": [
+          [
+            "0-0",
+            17.2
+          ],
+          [
+            "1-1",
+            10.2
+          ],
+          [
+            "0-1",
+            7.9
+          ],
+          [
+            "1-2",
+            2.4
+          ],
+          [
+            "0-2",
+            1.8
+          ]
+        ],
+        "scenarios": [
+          {
+            "type": "draw",
+            "prob": 29.1,
+            "bet": "押平局",
+            "scores": [
+              [
+                "0-0",
+                17.2
+              ],
+              [
+                "1-1",
+                10.2
+              ]
+            ]
+          },
+          {
+            "type": "away_win",
+            "prob": 13.1,
+            "bet": "押客队+1球",
+            "scores": [
+              [
+                "0-1",
+                7.9
+              ],
+              [
+                "1-2",
+                2.4
+              ]
+            ]
+          }
+        ],
+        "recommended_bet": "爆冷比分推荐：0-0(17.2%)、1-1(10.2%)"
+      },
+      "simulations": 200000,
+      "type": "pre_match",
+      "homeXG": 1.3,
+      "awayXG": 0.46,
+      "player_factors": {
+        "home": {
+          "adaptation": 0.75,
+          "injury_impact": 0.1,
+          "experience": 0.6,
+          "factor": 0.63
+        },
+        "away": {
+          "adaptation": 0.55,
+          "injury_impact": 0.15,
+          "experience": 0.35,
+          "factor": 0.41
+        }
+      },
+      "key_players": {
+        "home": [
+          "David Alaba",
+          "Marcel Sabitzer",
+          "Konrad Laimer"
+        ],
+        "away": [
+          "Mousa Al-Tamari",
+          "Yazeed Abulaila",
+          "Ehsan Haddad"
+        ]
+      }
+    },
+    "result": {
+      "actualWinner": "home",
+      "actualScore": "3-1",
+      "directionCorrect": true,
+      "scoreCorrect": false,
+      "accuracy": 62,
+      "isUpset": false
+    },
+    "timestamp": "2026-06-17T06:10:50.676Z"
+  },
+  {
+    "matchId": "760430",
+    "homeTeam": "Iraq",
+    "awayTeam": "Norway",
+    "homeShort": "IRQ",
+    "awayShort": "NOR",
+    "homeScore": 1,
+    "awayScore": 4,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 17,
+        "draw_pct": 36.6,
+        "away_win_pct": 46.4
+      },
+      "score": {
+        "predicted": "0-1",
+        "confidence": 10
+      }
+    },
+    "result": {
+      "actualWinner": "away",
+      "actualScore": "1-4",
+      "directionCorrect": true,
+      "scoreCorrect": false,
+      "accuracy": 60
+    },
+    "timestamp": "2026-06-17T00:00:00.000Z"
+  },
+  {
+    "matchId": "760433",
+    "homeTeam": "Argentina",
+    "awayTeam": "Algeria",
+    "homeShort": "ARG",
+    "awayShort": "ALG",
+    "homeScore": 3,
+    "awayScore": 0,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 52.1,
+        "draw_pct": 35.1,
+        "away_win_pct": 12.8
+      },
+      "score": {
+        "predicted": "1-0",
+        "confidence": 12
+      }
+    },
+    "result": {
+      "actualWinner": "home",
+      "actualScore": "3-0",
+      "directionCorrect": true,
+      "scoreCorrect": false,
+      "accuracy": 60
+    },
+    "timestamp": "2026-06-17T03:00:00.000Z"
+  },
+  {
+    "matchId": "760435",
+    "homeTeam": "Portugal",
+    "awayTeam": "Congo DR",
+    "homeShort": "POR",
+    "awayShort": "COD",
+    "homeScore": 1,
+    "awayScore": 1,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 52,
+        "draw_pct": 35.1,
+        "away_win_pct": 12.9
+      },
+      "score": {
+        "predicted": "1-0",
+        "confidence": 12
+      }
+    },
+    "result": {
+      "actualWinner": "draw",
+      "actualScore": "1-1",
+      "directionCorrect": false,
+      "scoreCorrect": false,
+      "accuracy": 4
+    },
+    "timestamp": "2026-06-17T03:00:00.000Z"
+  },
+  {
+    "matchId": "760437",
+    "homeTeam": "England",
+    "awayTeam": "Croatia",
+    "homeShort": "ENG",
+    "awayShort": "CRO",
+    "homeScore": 4,
+    "awayScore": 2,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 36.4,
+        "draw_pct": 36,
+        "away_win_pct": 27.6
+      },
+      "score": {
+        "predicted": "1-0",
+        "confidence": 12
+      }
+    },
+    "result": {
+      "actualWinner": "home",
+      "actualScore": "4-2",
+      "directionCorrect": true,
+      "scoreCorrect": false,
+      "accuracy": 60
+    },
+    "timestamp": "2026-06-17T06:00:00.000Z"
+  },
+  {
+    "matchId": "760434",
+    "homeTeam": "Ghana",
+    "awayTeam": "Panama",
+    "homeShort": "GHA",
+    "awayShort": "PAN",
+    "homeScore": 1,
+    "awayScore": 0,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 46.5,
+        "draw_pct": 36.6,
+        "away_win_pct": 16.9
+      },
+      "score": {
+        "predicted": "1-0",
+        "confidence": 12
+      }
+    },
+    "result": {
+      "actualWinner": "home",
+      "actualScore": "1-0",
+      "directionCorrect": true,
+      "scoreCorrect": true,
+      "accuracy": 100
+    },
+    "timestamp": "2026-06-17T06:00:00.000Z"
+  },
+  {
+    "matchId": "760429",
+    "homeTeam": "Saudi Arabia",
+    "awayTeam": "Uruguay",
+    "homeShort": "KSA",
+    "awayShort": "URU",
+    "homeScore": 1,
+    "awayScore": 1,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 12.5,
+        "draw_pct": 21.1,
+        "away_win_pct": 66.4
+      },
+      "score": {
+        "predicted": "0-2",
+        "confidence": 10
+      }
+    },
+    "result": {
+      "actualWinner": "draw",
+      "actualScore": "1-1",
+      "directionCorrect": false,
+      "scoreCorrect": false,
+      "accuracy": 4
+    },
+    "timestamp": "2026-06-17T00:00:00.000Z"
+  },
+  {
+    "matchId": "760436",
+    "homeTeam": "Uzbekistan",
+    "awayTeam": "Colombia",
+    "homeShort": "UZB",
+    "awayShort": "COL",
+    "homeScore": 1,
+    "awayScore": 3,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 17,
+        "draw_pct": 36.7,
+        "away_win_pct": 46.4
+      },
+      "score": {
+        "predicted": "0-1",
+        "confidence": 13.5
+      }
+    },
+    "result": {
+      "actualWinner": "away",
+      "actualScore": "1-3",
+      "directionCorrect": true,
+      "scoreCorrect": false,
+      "accuracy": 60
+    },
+    "timestamp": "2026-06-18T02:00:00.000Z"
+  },
+  {
+    "matchId": "760438",
+    "homeTeam": "Czechia",
+    "awayTeam": "South Africa",
+    "homeShort": "Czechia",
+    "awayShort": "South Africa",
+    "homeScore": 1,
+    "awayScore": 1,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 50.5,
+        "draw_pct": 32.5,
+        "away_win_pct": 17
+      },
+      "score": {
+        "predicted": "1-0",
+        "confidence": 21.9,
+        "top_scores": [
+          [
+            "1-0",
+            21.9
+          ],
+          [
+            "0-0",
+            19.7
+          ],
+          [
+            "2-0",
+            12.2
+          ],
+          [
+            "1-1",
+            11.1
+          ],
+          [
+            "0-1",
+            10.1
+          ],
+          [
+            "2-1",
+            6.3
+          ],
+          [
+            "3-0",
+            4.5
+          ],
+          [
+            "1-2",
+            2.9
+          ],
+          [
+            "0-2",
+            2.6
+          ],
+          [
+            "3-1",
+            2.3
+          ]
+        ]
+      },
+      "confidence_pct": 75.1,
+      "direction_confidence": 50.5,
+      "score_confidence": 21.9,
+      "upset_analysis": {
+        "upset_prob": 49.5,
+        "top_upset_scores": [
+          [
+            "0-0",
+            19.7
+          ],
+          [
+            "1-1",
+            11.1
+          ],
+          [
+            "0-1",
+            10.1
+          ],
+          [
+            "1-2",
+            2.9
+          ],
+          [
+            "0-2",
+            2.6
+          ]
+        ],
+        "scenarios": [
+          {
+            "type": "draw",
+            "prob": 32.5,
+            "bet": "押平局",
+            "scores": [
+              [
+                "0-0",
+                19.7
+              ],
+              [
+                "1-1",
+                11.1
+              ]
+            ]
+          },
+          {
+            "type": "away_win",
+            "prob": 17,
+            "bet": "押客队+1球",
+            "scores": [
+              [
+                "0-1",
+                10.1
+              ],
+              [
+                "1-2",
+                2.9
+              ]
+            ]
+          }
+        ],
+        "recommended_bet": "爆冷比分推荐：0-0(19.7%)、1-1(11.1%)"
+      },
+      "simulations": 200000,
+      "type": "pre_match",
+      "homeXG": 1.12,
+      "awayXG": 0.51,
+      "player_factors": {
+        "home": {
+          "adaptation": 0.7,
+          "injury_impact": 0.1,
+          "experience": 0.6,
+          "factor": 0.59
+        },
+        "away": {
+          "adaptation": 0.6,
+          "injury_impact": 0.15,
+          "experience": 0.4,
+          "factor": 0.46
+        }
+      },
+      "key_players": {
+        "home": [
+          "Patrik Schick",
+          "Tomáš Souček",
+          "Antonín Barák"
+        ],
+        "away": [
+          "Percy Tau",
+          "Bongani Zungu",
+          "Ronwen Williams"
+        ]
+      }
+    },
+    "result": {
+      "actualWinner": "draw",
+      "actualScore": "1-1",
+      "directionCorrect": false,
+      "scoreCorrect": false,
+      "accuracy": 7,
+      "isUpset": false
+    },
+    "timestamp": "2026-06-18T19:03:49.322Z"
+  },
+  {
+    "matchId": "760439",
+    "homeTeam": "Switzerland",
+    "awayTeam": "Bosnia-Herzegovina",
+    "homeShort": "Switzerland",
+    "awayShort": "Bosnia-Herz",
+    "homeScore": 4,
+    "awayScore": 1,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 71.8,
+        "draw_pct": 19.8,
+        "away_win_pct": 8.4
+      },
+      "score": {
+        "predicted": "1-0",
+        "confidence": 17.7,
+        "top_scores": [
+          [
+            "1-0",
+            17.7
+          ],
+          [
+            "2-0",
+            16.6
+          ],
+          [
+            "3-0",
+            10.6
+          ],
+          [
+            "0-0",
+            9.3
+          ],
+          [
+            "1-1",
+            8.4
+          ],
+          [
+            "2-1",
+            8
+          ],
+          [
+            "4-0",
+            5.1
+          ],
+          [
+            "3-1",
+            5
+          ],
+          [
+            "0-1",
+            4.4
+          ],
+          [
+            "4-1",
+            2.4
+          ]
+        ]
+      },
+      "confidence_pct": 62.6,
+      "direction_confidence": 71.8,
+      "score_confidence": 17.7,
+      "upset_analysis": {
+        "upset_prob": 28.2,
+        "top_upset_scores": [
+          [
+            "0-0",
+            9.3
+          ],
+          [
+            "1-1",
+            8.4
+          ],
+          [
+            "0-1",
+            4.4
+          ],
+          [
+            "1-2",
+            2
+          ],
+          [
+            "2-2",
+            1.9
+          ]
+        ],
+        "scenarios": [
+          {
+            "type": "draw",
+            "prob": 19.8,
+            "bet": "押平局",
+            "scores": [
+              [
+                "0-0",
+                9.3
+              ],
+              [
+                "1-1",
+                8.4
+              ]
+            ]
+          },
+          {
+            "type": "away_win",
+            "prob": 8.4,
+            "bet": "押客队+1球",
+            "scores": [
+              [
+                "0-1",
+                4.4
+              ],
+              [
+                "1-2",
+                2
+              ]
+            ]
+          }
+        ],
+        "recommended_bet": "爆冷比分推荐：0-0(9.3%)、1-1(8.4%)"
+      },
+      "simulations": 200000,
+      "type": "pre_match",
+      "homeXG": 1.9,
+      "awayXG": 0.48,
+      "player_factors": {
+        "home": {
+          "adaptation": 0.8,
+          "injury_impact": 0.05,
+          "experience": 0.8,
+          "factor": 0.73
+        },
+        "away": {
+          "adaptation": 0.65,
+          "injury_impact": 0.1,
+          "experience": 0.5,
+          "factor": 0.52
+        }
+      },
+      "key_players": {
+        "home": [
+          "Granit Xhaka",
+          "Xherdan Shaqiri",
+          "Yann Sommer"
+        ],
+        "away": [
+          "Edin Džeko",
+          "Miralem Pjanić",
+          "Sead Kolašinac"
+        ]
+      }
+    },
+    "result": {
+      "actualWinner": "home",
+      "actualScore": "4-1",
+      "directionCorrect": true,
+      "scoreCorrect": false,
+      "accuracy": 64,
+      "isUpset": false
+    },
+    "timestamp": "2026-06-18T22:03:49.468Z"
+  },
+  {
+    "matchId": "760441",
+    "homeTeam": "Mexico",
+    "awayTeam": "South Korea",
+    "homeShort": "Mexico",
+    "awayShort": "South Korea",
+    "homeScore": 1,
+    "awayScore": 0,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 47.2,
+        "draw_pct": 28.3,
+        "away_win_pct": 24.5
+      },
+      "score": {
+        "predicted": "1-0",
+        "confidence": 14.7,
+        "top_scores": [
+          [
+            "1-0",
+            14.7
+          ],
+          [
+            "1-1",
+            12.9
+          ],
+          [
+            "0-0",
+            11.1
+          ],
+          [
+            "2-0",
+            9.8
+          ],
+          [
+            "0-1",
+            9.7
+          ],
+          [
+            "2-1",
+            8.5
+          ],
+          [
+            "1-2",
+            5.6
+          ],
+          [
+            "3-0",
+            4.3
+          ],
+          [
+            "0-2",
+            4.2
+          ],
+          [
+            "2-2",
+            3.8
+          ]
+        ]
+      },
+      "confidence_pct": 58.2,
+      "direction_confidence": 47.2,
+      "score_confidence": 14.7,
+      "upset_analysis": {
+        "upset_prob": 52.8,
+        "top_upset_scores": [
+          [
+            "1-1",
+            12.9
+          ],
+          [
+            "0-0",
+            11.1
+          ],
+          [
+            "0-1",
+            9.7
+          ],
+          [
+            "1-2",
+            5.6
+          ],
+          [
+            "0-2",
+            4.2
+          ]
+        ],
+        "scenarios": [
+          {
+            "type": "draw",
+            "prob": 28.3,
+            "bet": "押平局",
+            "scores": [
+              [
+                "1-1",
+                12.9
+              ],
+              [
+                "0-0",
+                11.1
+              ]
+            ]
+          },
+          {
+            "type": "away_win",
+            "prob": 24.5,
+            "bet": "押客队+1球",
+            "scores": [
+              [
+                "0-1",
+                9.7
+              ],
+              [
+                "1-2",
+                5.6
+              ]
+            ]
+          }
+        ],
+        "recommended_bet": "爆冷比分推荐：1-1(12.9%)、0-0(11.1%)"
+      },
+      "simulations": 200000,
+      "type": "pre_match",
+      "homeXG": 1.32,
+      "awayXG": 0.87,
+      "player_factors": {
+        "home": {
+          "adaptation": 0.75,
+          "injury_impact": 0.1,
+          "experience": 0.75,
+          "factor": 0.66
+        },
+        "away": {
+          "adaptation": 0.75,
+          "injury_impact": 0.1,
+          "experience": 0.65,
+          "factor": 0.64
+        }
+      },
+      "key_players": {
+        "home": [
+          "Hirving Lozano",
+          "Raúl Jiménez",
+          "Edson Álvarez"
+        ],
+        "away": [
+          "Son Heung-min",
+          "Lee Kang-in",
+          "Kim Min-jae"
+        ]
+      }
+    },
+    "result": {
+      "actualWinner": "home",
+      "actualScore": "1-0",
+      "directionCorrect": true,
+      "scoreCorrect": true,
+      "accuracy": 89,
+      "isUpset": false
+    },
+    "timestamp": "2026-06-19T02:57:57.203Z"
+  },
+  {
+    "matchId": "760440",
+    "homeTeam": "Canada",
+    "awayTeam": "Qatar",
+    "homeShort": "CAN",
+    "awayShort": "QAT",
+    "homeScore": 6,
+    "awayScore": 0,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 48.8,
+        "draw_pct": 26,
+        "away_win_pct": 25.2
+      },
+      "score": {
+        "predicted": "1-0",
+        "confidence": 12.3
+      }
+    },
+    "result": {
+      "actualWinner": "home",
+      "actualScore": "6-0",
+      "directionCorrect": true,
+      "scoreCorrect": false,
+      "accuracy": 60
+    },
+    "timestamp": "2026-06-18T22:00:00.000Z"
+  },
+  {
+    "matchId": "760442",
+    "homeTeam": "United States",
+    "awayTeam": "Australia",
+    "homeShort": "USA",
+    "awayShort": "Australia",
+    "homeScore": 2,
+    "awayScore": 0,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 58.1,
+        "draw_pct": 25,
+        "away_win_pct": 16.9
+      },
+      "score": {
+        "predicted": "1-0",
+        "confidence": 15.3,
+        "top_scores": [
+          [
+            "1-0",
+            15.3
+          ],
+          [
+            "2-0",
+            12.4
+          ],
+          [
+            "1-1",
+            11.4
+          ],
+          [
+            "0-0",
+            9.8
+          ],
+          [
+            "2-1",
+            9.1
+          ],
+          [
+            "0-1",
+            7.1
+          ],
+          [
+            "3-0",
+            6.7
+          ],
+          [
+            "3-1",
+            4.9
+          ],
+          [
+            "1-2",
+            4.1
+          ],
+          [
+            "2-2",
+            3.4
+          ]
+        ]
+      },
+      "confidence_pct": 58,
+      "direction_confidence": 58.1,
+      "score_confidence": 15.3,
+      "upset_analysis": {
+        "upset_prob": 41.9,
+        "top_upset_scores": [
+          [
+            "1-1",
+            11.4
+          ],
+          [
+            "0-0",
+            9.8
+          ],
+          [
+            "0-1",
+            7.1
+          ],
+          [
+            "1-2",
+            4.1
+          ],
+          [
+            "2-2",
+            3.4
+          ]
+        ],
+        "scenarios": [
+          {
+            "type": "draw",
+            "prob": 25,
+            "bet": "押平局",
+            "scores": [
+              [
+                "1-1",
+                11.4
+              ],
+              [
+                "0-0",
+                9.8
+              ]
+            ]
+          },
+          {
+            "type": "away_win",
+            "prob": 16.9,
+            "bet": "押客队+1球",
+            "scores": [
+              [
+                "0-1",
+                7.1
+              ],
+              [
+                "1-2",
+                4.1
+              ]
+            ]
+          }
+        ],
+        "recommended_bet": "爆冷比分推荐：1-1(11.4%)、0-0(9.8%)"
+      },
+      "simulations": 200000,
+      "type": "pre_match",
+      "homeXG": 1.6,
+      "awayXG": 0.73,
+      "player_factors": {
+        "home": {
+          "adaptation": 0.8,
+          "injury_impact": 0.05,
+          "experience": 0.7,
+          "factor": 0.71
+        },
+        "away": {
+          "adaptation": 0.7,
+          "injury_impact": 0.1,
+          "experience": 0.6,
+          "factor": 0.59
+        }
+      },
+      "key_players": {
+        "home": [
+          "Christian Pulisic",
+          "Weston McKennie",
+          "Giovanni Reyna"
+        ],
+        "away": [
+          "Mathew Leckie",
+          "Aaron Mooy",
+          "Harry Souttar"
+        ]
+      }
+    },
+    "result": {
+      "actualWinner": "home",
+      "actualScore": "2-0",
+      "directionCorrect": true,
+      "scoreCorrect": false,
+      "accuracy": 62,
+      "isUpset": false
+    },
+    "timestamp": "2026-06-19T21:06:07.759Z"
+  },
+  {
+    "matchId": "760445",
+    "homeTeam": "Scotland",
+    "awayTeam": "Morocco",
+    "homeShort": "Scotland",
+    "awayShort": "Morocco",
+    "homeScore": 0,
+    "awayScore": 1,
+    "prediction": {
+      "direction": {
+        "home_win_pct": 14.7,
+        "draw_pct": 26.3,
+        "away_win_pct": 59.1
+      },
+      "score": {
+        "predicted": "0-1",
+        "confidence": 18.6,
+        "top_scores": [
+          [
+            "0-1",
+            18.6
+          ],
+          [
+            "0-2",
+            13.8
+          ],
+          [
+            "0-0",
+            12.7
+          ],
+          [
+            "1-1",
+            10.9
+          ],
+          [
+            "1-2",
+            8.2
+          ],
+          [
+            "1-0",
+            7.3
+          ],
+          [
+            "0-3",
+            6.8
+          ],
+          [
+            "1-3",
+            4.1
+          ],
+          [
+            "2-1",
+            3.3
+          ],
+          [
+            "0-4",
+            2.5
+          ]
+        ]
+      },
+      "confidence_pct": 64.3,
+      "direction_confidence": 59.1,
+      "score_confidence": 18.6,
+      "upset_analysis": {
+        "upset_prob": 40.9,
+        "top_upset_scores": [
+          [
+            "0-0",
+            12.7
+          ],
+          [
+            "1-1",
+            10.9
+          ],
+          [
+            "1-0",
+            7.3
+          ],
+          [
+            "2-1",
+            3.3
+          ],
+          [
+            "2-2",
+            2.4
+          ]
+        ],
+        "scenarios": [
+          {
+            "type": "draw",
+            "prob": 26.3,
+            "bet": "押平局",
+            "scores": [
+              [
+                "0-0",
+                12.7
+              ],
+              [
+                "1-1",
+                10.9
+              ]
+            ]
+          },
+          {
+            "type": "home_win",
+            "prob": 14.7,
+            "bet": "押主队+1球",
+            "scores": [
+              [
+                "1-0",
+                7.3
+              ],
+              [
+                "2-1",
+                3.3
+              ]
+            ]
+          }
+        ],
+        "recommended_bet": "爆冷比分推荐：0-0(12.7%)、1-1(10.9%)"
+      },
+      "simulations": 200000,
+      "type": "pre_match",
+      "homeXG": 0.59,
+      "awayXG": 1.49,
+      "player_factors": {
+        "home": {
+          "adaptation": 0.7,
+          "injury_impact": 0.1,
+          "experience": 0.55,
+          "factor": 0.58
+        },
+        "away": {
+          "adaptation": 0.85,
+          "injury_impact": 0.05,
+          "experience": 0.7,
+          "factor": 0.75
+        }
+      },
+      "key_players": {
+        "home": [
+          "Andy Robertson",
+          "John McGinn",
+          "Scott McTominay"
+        ],
+        "away": [
+          "Achraf Hakimi",
+          "Hakim Ziyech",
+          "Youssef En-Nesyri"
+        ]
+      }
+    },
+    "result": {
+      "actualWinner": "away",
+      "actualScore": "0-1",
+      "directionCorrect": true,
+      "scoreCorrect": true,
+      "accuracy": 92,
+      "isUpset": false
+    },
+    "timestamp": "2026-06-20T00:01:07.545Z"
+  }
+]

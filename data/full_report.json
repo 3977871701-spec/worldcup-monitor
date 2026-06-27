@@ -1,0 +1,83 @@
+{
+  "title": "2026世界杯完整预测报告",
+  "author": "AI足球分析师",
+  "date": "2026-06-18",
+  "summary": {
+    "total_matches": 24,
+    "prediction_accuracy": {
+      "direction": "54.2%",
+      "score": "12.5%",
+      "draw_rate": "37.5%",
+      "big_score_rate": "37.5%"
+    }
+  },
+  "group_winners": {
+    "A组": {
+      "1st": "Mexico",
+      "2nd": "South Korea",
+      "reason": "墨西哥东道主优势+首轮表现优异，韩国高位逼抢战术出色"
+    },
+    "B组": {
+      "1st": "Switzerland",
+      "2nd": "Canada",
+      "reason": "瑞士均衡攻防+排名优势，加拿大东道主+首轮平局波黑"
+    },
+    "C组": {
+      "1st": "Brazil",
+      "2nd": "Morocco",
+      "reason": "巴西五星冠军+技术流，摩洛哥2022四强+防守反击"
+    },
+    "D组": {
+      "1st": "USA",
+      "2nd": "Australia",
+      "reason": "美国东道主+首轮4-1大胜，澳大利亚身体对抗出色"
+    },
+    "E组": {
+      "1st": "Germany",
+      "2nd": "Netherlands",
+      "reason": "德国首轮7-1大胜+排名优势，荷兰高位逼抢+控球"
+    },
+    "F组": {
+      "1st": "Spain",
+      "2nd": "Ecuador",
+      "reason": "西班牙tiki-taka+排名第二，厄瓜多尔首轮表现不错"
+    },
+    "G组": {
+      "1st": "Uruguay",
+      "2nd": "Belgium",
+      "reason": "乌拉圭两届冠军+防守反击，比利时黄金一代"
+    },
+    "H组": {
+      "1st": "England",
+      "2nd": "Japan",
+      "reason": "英格兰首轮4-2大胜+排名优势，日本高位逼抢+技术"
+    },
+    "I组": {
+      "1st": "France",
+      "2nd": "Norway",
+      "reason": "法国卫冕冠军+姆巴佩，挪威哈兰德领衔"
+    },
+    "J组": {
+      "1st": "Argentina",
+      "2nd": "Austria",
+      "reason": "阿根廷梅西最后一届+排名第二，奥地利首轮3-1大胜"
+    },
+    "K组": {
+      "1st": "Portugal",
+      "2nd": "Egypt",
+      "reason": "葡萄牙C罗最后一届+技术流，埃及萨拉赫领衔"
+    },
+    "L组": {
+      "1st": "Ghana",
+      "2nd": "Ivory Coast",
+      "reason": "加纳首轮1-0小胜，科特迪瓦身体素质出色"
+    }
+  },
+  "champion_prediction": {
+    "champion": "Brazil",
+    "probability": "18%",
+    "reason": "五星冠军底蕴+技术流进攻+首轮1-1摩洛哥后状态调整",
+    "runner_up": "France",
+    "third": "England"
+  }
+}

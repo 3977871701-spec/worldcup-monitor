@@ -1,0 +1,156 @@
+{
+  "西班牙 vs 佛得角": {
+    "sources": [
+      {
+        "name": "Lucas_67",
+        "platform": "YouTube",
+        "viewers": 3324,
+        "prediction": "西班牙大胜",
+        "score_prediction": "3-0或4-0",
+        "confidence": "高",
+        "reasoning": "德国7球、瑞典5球，西班牙也会血洗佛得角"
+      },
+      {
+        "name": "中医师讲波 TCM Stadium",
+        "platform": "YouTube",
+        "viewers": 2292,
+        "prediction": "西班牙大胜",
+        "score_prediction": "4-0或5-0",
+        "confidence": "高",
+        "reasoning": "德国7球、瑞典5球，西班牙也要血洗佛得角"
+      },
+      {
+        "name": "ZC说故事",
+        "platform": "YouTube",
+        "viewers": 2207,
+        "prediction": "西班牙胜",
+        "score_prediction": "3-0",
+        "confidence": "中高",
+        "reasoning": "西班牙实力远超佛得角"
+      },
+      {
+        "name": "达文东足球",
+        "platform": "YouTube",
+        "viewers": 7368,
+        "prediction": "西班牙大胜",
+        "score_prediction": "4-0或5-0",
+        "confidence": "高",
+        "reasoning": "世界杯小组赛，西班牙会全力进攻"
+      },
+      {
+        "name": "老k足球新聞",
+        "platform": "YouTube",
+        "viewers": 8632,
+        "prediction": "西班牙大胜",
+        "score_prediction": "4-0或5-0",
+        "confidence": "高",
+        "reasoning": "世界杯首轮，强队通常全力进攻"
+      }
+    ],
+    "consensus": "西班牙大胜3-0或4-0",
+    "confidence": "高",
+    "key_factors": [
+      "排名差距66位",
+      "德国7-1、瑞典5-1，强队大胜趋势",
+      "西班牙tiki-taka控球打法",
+      "世界杯小组赛首轮，强队全力进攻"
+    ]
+  },
+  "比利时 vs 埃及": {
+    "sources": [
+      {
+        "name": "ZC说故事",
+        "platform": "YouTube",
+        "viewers": 2108,
+        "prediction": "比利时胜",
+        "score_prediction": "2-1或2-0",
+        "confidence": "中高",
+        "reasoning": "比利时黄金一代，埃及有萨拉赫"
+      },
+      {
+        "name": "世界杯2026",
+        "platform": "YouTube",
+        "viewers": 321,
+        "prediction": "比利时胜",
+        "score_prediction": "2-1",
+        "confidence": "中",
+        "reasoning": "比利时实力更强，但埃及有萨拉赫"
+      },
+      {
+        "name": "綠茵前瞻社",
+        "platform": "YouTube",
+        "viewers": 56,
+        "prediction": "比利时胜",
+        "score_prediction": "2-1或1-0",
+        "confidence": "中",
+        "reasoning": "比利时黄金一代余晖，首轮可能不会全力进攻"
+      },
+      {
+        "name": "老k足球新聞",
+        "platform": "YouTube",
+        "viewers": 8632,
+        "prediction": "比利时胜",
+        "score_prediction": "2-0或2-1",
+        "confidence": "中高",
+        "reasoning": "比利时实力更强，但埃及有萨拉赫"
+      }
+    ],
+    "consensus": "比利时小胜2-0或2-1",
+    "confidence": "中高",
+    "key_factors": [
+      "比利时排名8 vs 埃及排名32",
+      "比利时黄金一代经验丰富",
+      "埃及有萨拉赫，反击能力强",
+      "世界杯首轮，比利时可能不会全力进攻"
+    ]
+  },
+  "沙特 vs 乌拉圭": {
+    "sources": [
+      {
+        "name": "老k足球新聞",
+        "platform": "YouTube",
+        "viewers": 8632,
+        "prediction": "乌拉圭胜",
+        "score_prediction": "2-0或2-1",
+        "confidence": "高",
+        "reasoning": "乌拉圭实力远超沙特"
+      }
+    ],
+    "consensus": "乌拉圭胜2-0或2-1",
+    "confidence": "高",
+    "key_factors": [
+      "乌拉圭排名11 vs 沙特排名56",
+      "乌拉圭有苏亚雷斯、巴尔韦德等球星",
+      "沙特防守较弱"
+    ]
+  },
+  "伊朗 vs 新西兰": {
+    "sources": [
+      {
+        "name": "Lucas_67",
+        "platform": "YouTube",
+        "viewers": 3324,
+        "prediction": "伊朗胜",
+        "score_prediction": "2-0或2-1",
+        "confidence": "中",
+        "reasoning": "伊朗排名更高，但新西兰也不弱"
+      },
+      {
+        "name": "老k足球新聞",
+        "platform": "YouTube",
+        "viewers": 8632,
+        "prediction": "伊朗胜",
+        "score_prediction": "2-0或1-0",
+        "confidence": "中高",
+        "reasoning": "伊朗防守稳固，新西兰进攻能力有限"
+      }
+    ],
+    "consensus": "伊朗小胜2-0或1-0",
+    "confidence": "中",
+    "key_factors": [
+      "伊朗排名22 vs 新西兰排名88",
+      "伊朗防守稳固，新西兰进攻能力有限",
+      "世界杯小组赛，伊朗会稳扎稳打"
+    ]
+  }
+}

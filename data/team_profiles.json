@@ -1,0 +1,1116 @@
+{
+  "United States": {
+    "style": "高位逼抢+快速反击",
+    "tempo": "快",
+    "formation": "4-3-3",
+    "strengths": [
+      "速度",
+      "体能",
+      "逼抢"
+    ],
+    "weaknesses": [
+      "技术细腻度"
+    ],
+    "key_tactics": [
+      "边路突破",
+      "定位球"
+    ],
+    "vs_strong": "防守反击",
+    "vs_weak": "控球进攻",
+    "motivation": 1,
+    "notes": "东道主，主场优势大",
+    "motivation_factor": 1.2,
+    "rank": 14
+  },
+  "Paraguay": {
+    "style": "防守反击",
+    "tempo": "中",
+    "formation": "4-4-2",
+    "strengths": [
+      "防守纪律",
+      "反击"
+    ],
+    "weaknesses": [
+      "创造力",
+      "进攻火力"
+    ],
+    "key_tactics": [
+      "密集防守",
+      "长传反击"
+    ],
+    "vs_strong": "铁桶阵",
+    "vs_weak": "主动进攻",
+    "motivation": 0.9,
+    "notes": "南美球队技术细腻",
+    "rank": 51
+  },
+  "Qatar": {
+    "style": "控球进攻",
+    "tempo": "中",
+    "formation": "4-3-3",
+    "strengths": [
+      "技术",
+      "配合"
+    ],
+    "weaknesses": [
+      "身体对抗",
+      "经验"
+    ],
+    "key_tactics": [
+      "短传渗透",
+      "边路"
+    ],
+    "vs_strong": "防守反击",
+    "vs_weak": "控球压制",
+    "motivation": 0.85,
+    "notes": "亚洲冠军，技术型打法",
+    "rank": 45
+  },
+  "Switzerland": {
+    "style": "均衡攻防",
+    "tempo": "中快",
+    "formation": "4-2-3-1",
+    "strengths": [
+      "防守稳固",
+      "中场控制",
+      "大赛经验"
+    ],
+    "weaknesses": [
+      "锋线火力"
+    ],
+    "key_tactics": [
+      "中场控制",
+      "定位球",
+      "反击"
+    ],
+    "vs_strong": "稳固防守",
+    "vs_weak": "耐心进攻",
+    "motivation": 1,
+    "notes": "欧洲劲旅，防守出色",
+    "rank": 16,
+    "motivation_factor": 1.1
+  },
+  "Brazil": {
+    "style": "技术流进攻",
+    "tempo": "快",
+    "formation": "4-3-3",
+    "strengths": [
+      "个人技术",
+      "创造力",
+      "进攻"
+    ],
+    "weaknesses": [
+      "防守注意力"
+    ],
+    "key_tactics": [
+      "个人突破",
+      "配合渗透",
+      "任意球"
+    ],
+    "vs_strong": "技术压制",
+    "vs_weak": "全力进攻",
+    "motivation": 1,
+    "notes": "五星巴西，进攻华丽",
+    "rank": 3
+  },
+  "Morocco": {
+    "style": "防守反击+高位逼抢",
+    "tempo": "快",
+    "formation": "4-3-3",
+    "strengths": [
+      "逼抢",
+      "速度",
+      "团队"
+    ],
+    "weaknesses": [
+      "控球"
+    ],
+    "key_tactics": [
+      "高位逼抢",
+      "快速反击"
+    ],
+    "vs_strong": "逼抢+反击",
+    "vs_weak": "控球进攻",
+    "motivation": 1,
+    "notes": "非洲强队，2022世界杯四强",
+    "rank": 14
+  },
+  "Germany": {
+    "style": "高位逼抢+控球",
+    "tempo": "快",
+    "formation": "4-2-3-1",
+    "strengths": [
+      "逼抢",
+      "中场",
+      "纪律"
+    ],
+    "weaknesses": [
+      "锋线效率"
+    ],
+    "key_tactics": [
+      "高位逼抢",
+      "中场控制",
+      "传中"
+    ],
+    "vs_strong": "逼抢压制",
+    "vs_weak": "控球进攻",
+    "motivation": 1,
+    "notes": "日耳曼战车，纪律严明",
+    "motivation_factor": 1.2,
+    "rank": 10
+  },
+  "Curaçao": {
+    "style": "防守反击",
+    "tempo": "慢",
+    "formation": "5-4-1",
+    "strengths": [
+      "防守",
+      "体能"
+    ],
+    "weaknesses": [
+      "技术",
+      "经验",
+      "进攻"
+    ],
+    "key_tactics": [
+      "密集防守",
+      "长传"
+    ],
+    "vs_strong": "全力防守",
+    "vs_weak": "尝试进攻",
+    "motivation": 0.8,
+    "notes": "弱旅，以防守为主",
+    "rank": 78
+  },
+  "Argentina": {
+    "style": "技术流+高位逼抢",
+    "tempo": "快",
+    "formation": "4-3-3",
+    "strengths": [
+      "梅西",
+      "创造力",
+      "进攻"
+    ],
+    "weaknesses": [
+      "中场硬度"
+    ],
+    "key_tactics": [
+      "梅西组织",
+      "高位逼抢",
+      "任意球"
+    ],
+    "vs_strong": "技术对抗",
+    "vs_weak": "全力进攻",
+    "motivation": 1,
+    "notes": "卫冕冠军，梅西领衔",
+    "rank": 1,
+    "motivation_factor": 1.12
+  },
+  "Algeria": {
+    "style": "防守反击",
+    "tempo": "中",
+    "formation": "4-4-2",
+    "strengths": [
+      "速度",
+      "反击"
+    ],
+    "weaknesses": [
+      "控球",
+      "创造力"
+    ],
+    "key_tactics": [
+      "快速反击",
+      "边路突破"
+    ],
+    "vs_strong": "防守反击",
+    "vs_weak": "主动进攻",
+    "motivation": 0.9,
+    "notes": "非洲劲旅，速度型打法",
+    "rank": 37
+  },
+  "France": {
+    "style": "均衡攻防",
+    "tempo": "快",
+    "formation": "4-3-3",
+    "strengths": [
+      "个人能力",
+      "速度",
+      "深度"
+    ],
+    "weaknesses": [
+      "团队配合"
+    ],
+    "key_tactics": [
+      "个人突破",
+      "快速反击",
+      "定位球"
+    ],
+    "vs_strong": "反击",
+    "vs_weak": "控球进攻",
+    "motivation": 1,
+    "notes": "世界冠军级别，阵容豪华",
+    "rank": 4,
+    "motivation_factor": 1.12
+  },
+  "Senegal": {
+    "style": "高位逼抢+反击",
+    "tempo": "快",
+    "formation": "4-3-3",
+    "strengths": [
+      "体能",
+      "速度",
+      "逼抢"
+    ],
+    "weaknesses": [
+      "技术细节"
+    ],
+    "key_tactics": [
+      "高位逼抢",
+      "快速反击"
+    ],
+    "vs_strong": "逼抢+反击",
+    "vs_weak": "控球进攻",
+    "motivation": 1,
+    "notes": "非洲冠军，身体素质出色",
+    "rank": 20
+  },
+  "England": {
+    "style": "高位逼抢+控球",
+    "tempo": "快",
+    "formation": "4-3-3",
+    "strengths": [
+      "中场",
+      "逼抢",
+      "定位球"
+    ],
+    "weaknesses": [
+      "大赛心态"
+    ],
+    "key_tactics": [
+      "高位逼抢",
+      "传中",
+      "定位球"
+    ],
+    "vs_strong": "逼抢对抗",
+    "vs_weak": "控球进攻",
+    "motivation": 1,
+    "notes": "三狮军团，青年才俊",
+    "rank": 5,
+    "motivation_factor": 1.12
+  },
+  "Croatia": {
+    "style": "中场控制",
+    "tempo": "中",
+    "formation": "4-3-3",
+    "strengths": [
+      "中场",
+      "经验",
+      "技术"
+    ],
+    "weaknesses": [
+      "速度",
+      "锋线"
+    ],
+    "key_tactics": [
+      "中场控制",
+      "耐心传导"
+    ],
+    "vs_strong": "中场对抗",
+    "vs_weak": "控制比赛",
+    "motivation": 1,
+    "notes": "2022世界杯四强，中场强大",
+    "rank": 12
+  },
+  "Spain": {
+    "style": "tiki-taka控球",
+    "tempo": "中快",
+    "formation": "4-3-3",
+    "strengths": [
+      "控球",
+      "技术",
+      "配合"
+    ],
+    "weaknesses": [
+      "对抗",
+      "速度"
+    ],
+    "key_tactics": [
+      "短传控球",
+      "高位逼抢"
+    ],
+    "vs_strong": "控球消耗",
+    "vs_weak": "控球压制",
+    "motivation": 1,
+    "notes": "传控大师，技术流代表",
+    "rank": 2
+  },
+  "Cape Verde": {
+    "style": "防守反击",
+    "tempo": "慢",
+    "formation": "5-3-2",
+    "strengths": [
+      "防守",
+      "团队"
+    ],
+    "weaknesses": [
+      "技术",
+      "经验",
+      "个人能力"
+    ],
+    "key_tactics": [
+      "密集防守",
+      "定位球"
+    ],
+    "vs_strong": "全力防守",
+    "vs_weak": "尝试进攻",
+    "motivation": 0.8,
+    "notes": "非洲小国，防守为主",
+    "rank": 68
+  },
+  "Portugal": {
+    "style": "技术流+反击",
+    "tempo": "中快",
+    "formation": "4-3-3",
+    "strengths": [
+      "C罗",
+      "技术",
+      "创造力"
+    ],
+    "weaknesses": [
+      "防守稳定性"
+    ],
+    "key_tactics": [
+      "个人突破",
+      "反击",
+      "定位球"
+    ],
+    "vs_strong": "反击",
+    "vs_weak": "控球进攻",
+    "motivation": 1,
+    "notes": "C罗领衔，进攻华丽",
+    "rank": 6
+  },
+  "Congo DR": {
+    "style": "防守反击",
+    "tempo": "中",
+    "formation": "4-4-2",
+    "strengths": [
+      "身体",
+      "速度"
+    ],
+    "weaknesses": [
+      "技术",
+      "配合"
+    ],
+    "key_tactics": [
+      "身体对抗",
+      "反击"
+    ],
+    "vs_strong": "防守反击",
+    "vs_weak": "主动进攻",
+    "motivation": 0.85,
+    "notes": "非洲球队，身体素质好",
+    "rank": 53
+  },
+  "Netherlands": {
+    "style": "高位逼抢+控球",
+    "tempo": "快",
+    "formation": "4-3-3",
+    "strengths": [
+      "逼抢",
+      "技术",
+      "中场"
+    ],
+    "weaknesses": [
+      "锋线"
+    ],
+    "key_tactics": [
+      "高位逼抢",
+      "控球",
+      "边路"
+    ],
+    "vs_strong": "逼抢对抗",
+    "vs_weak": "控球进攻",
+    "motivation": 1,
+    "notes": "橙色军团，全攻全守",
+    "rank": 7
+  },
+  "Japan": {
+    "style": "高位逼抢+技术流",
+    "tempo": "快",
+    "formation": "4-3-3",
+    "strengths": [
+      "逼抢",
+      "技术",
+      "纪律",
+      "体能"
+    ],
+    "weaknesses": [
+      "身体对抗",
+      "高空球"
+    ],
+    "key_tactics": [
+      "高位逼抢",
+      "快速传递",
+      "边路"
+    ],
+    "vs_strong": "逼抢+反击",
+    "vs_weak": "控球进攻",
+    "motivation": 1,
+    "notes": "亚洲最强，战术纪律出色",
+    "rank": 18
+  },
+  "Ivory Coast": {
+    "style": "均衡攻防",
+    "tempo": "中快",
+    "formation": "4-3-3",
+    "strengths": [
+      "身体",
+      "技术",
+      "速度"
+    ],
+    "weaknesses": [
+      "稳定性"
+    ],
+    "key_tactics": [
+      "身体对抗",
+      "反击",
+      "个人突破"
+    ],
+    "vs_strong": "反击",
+    "vs_weak": "控球进攻",
+    "motivation": 0.9,
+    "notes": "非洲大象，身体素质出色",
+    "motivation_factor": 1.2,
+    "rank": 38
+  },
+  "Ecuador": {
+    "style": "高位逼抢",
+    "tempo": "快",
+    "formation": "4-4-2",
+    "strengths": [
+      "体能",
+      "逼抢",
+      "速度"
+    ],
+    "weaknesses": [
+      "技术",
+      "大赛经验"
+    ],
+    "key_tactics": [
+      "高位逼抢",
+      "快速反击"
+    ],
+    "vs_strong": "逼抢+反击",
+    "vs_weak": "主动进攻",
+    "motivation": 0.9,
+    "notes": "南美新锐，体能出色",
+    "rank": 30
+  },
+  "Sweden": {
+    "style": "防守反击+高空",
+    "tempo": "中",
+    "formation": "4-4-2",
+    "strengths": [
+      "防守",
+      "高空球",
+      "定位球"
+    ],
+    "weaknesses": [
+      "创造力",
+      "技术"
+    ],
+    "key_tactics": [
+      "防守反击",
+      "高空轰炸",
+      "定位球"
+    ],
+    "vs_strong": "防守反击",
+    "vs_weak": "高空进攻",
+    "motivation": 0.9,
+    "notes": "北欧海盗，身体对抗强",
+    "motivation_factor": 1.2,
+    "rank": 21
+  },
+  "Tunisia": {
+    "style": "防守反击",
+    "tempo": "中",
+    "formation": "4-3-3",
+    "strengths": [
+      "防守",
+      "团队"
+    ],
+    "weaknesses": [
+      "进攻火力",
+      "创造力"
+    ],
+    "key_tactics": [
+      "密集防守",
+      "反击"
+    ],
+    "vs_strong": "全力防守",
+    "vs_weak": "尝试进攻",
+    "motivation": 0.85,
+    "notes": "非洲劲旅，防守型打法",
+    "rank": 35
+  },
+  "Belgium": {
+    "style": "均衡攻防",
+    "tempo": "中快",
+    "formation": "3-4-3",
+    "strengths": [
+      "中场",
+      "创造力",
+      "经验"
+    ],
+    "weaknesses": [
+      "年龄",
+      "速度"
+    ],
+    "key_tactics": [
+      "中场控制",
+      "反击",
+      "个人突破"
+    ],
+    "vs_strong": "中场对抗",
+    "vs_weak": "控球进攻",
+    "motivation": 0.95,
+    "notes": "黄金一代，经验丰富",
+    "rank": 8
+  },
+  "Egypt": {
+    "style": "防守反击",
+    "tempo": "中",
+    "formation": "4-2-3-1",
+    "strengths": [
+      "防守",
+      "萨拉赫"
+    ],
+    "weaknesses": [
+      "中场",
+      "创造力"
+    ],
+    "key_tactics": [
+      "防守反击",
+      "萨拉赫突破"
+    ],
+    "vs_strong": "防守反击",
+    "vs_weak": "萨拉赫主导",
+    "motivation": 0.9,
+    "notes": "法老军团，萨拉赫核心",
+    "rank": 32
+  },
+  "Saudi Arabia": {
+    "style": "控球进攻",
+    "tempo": "中",
+    "formation": "4-3-3",
+    "strengths": [
+      "技术",
+      "配合"
+    ],
+    "weaknesses": [
+      "身体对抗",
+      "防守"
+    ],
+    "key_tactics": [
+      "短传控球",
+      "边路突破"
+    ],
+    "vs_strong": "防守反击",
+    "vs_weak": "控球进攻",
+    "motivation": 0.85,
+    "notes": "亚洲技术流，控球型打法",
+    "rank": 51
+  },
+  "Uruguay": {
+    "style": "强硬防守+反击",
+    "tempo": "中快",
+    "formation": "4-4-2",
+    "strengths": [
+      "防守硬度",
+      "经验",
+      "反击"
+    ],
+    "weaknesses": [
+      "创造力"
+    ],
+    "key_tactics": [
+      "强硬防守",
+      "快速反击",
+      "定位球"
+    ],
+    "vs_strong": "强硬防守",
+    "vs_weak": "控制比赛",
+    "motivation": 1,
+    "notes": "南美铁血，防守强硬",
+    "rank": 11
+  },
+  "Iran": {
+    "style": "防守反击",
+    "tempo": "中",
+    "formation": "4-5-1",
+    "strengths": [
+      "防守",
+      "纪律",
+      "体能"
+    ],
+    "weaknesses": [
+      "进攻",
+      "创造力"
+    ],
+    "key_tactics": [
+      "密集防守",
+      "反击",
+      "定位球"
+    ],
+    "vs_strong": "铁桶阵",
+    "vs_weak": "尝试进攻",
+    "motivation": 0.9,
+    "notes": "亚洲铁骑，防守稳固",
+    "rank": 22
+  },
+  "New Zealand": {
+    "style": "防守反击",
+    "tempo": "慢",
+    "formation": "4-4-2",
+    "strengths": [
+      "身体",
+      "高空球"
+    ],
+    "weaknesses": [
+      "技术",
+      "速度",
+      "经验"
+    ],
+    "key_tactics": [
+      "高空球",
+      "定位球"
+    ],
+    "vs_strong": "全力防守",
+    "vs_weak": "身体对抗",
+    "motivation": 0.7,
+    "notes": "大洋洲代表，实力有限",
+    "rank": 88
+  },
+  "Iraq": {
+    "style": "防守反击",
+    "tempo": "中",
+    "formation": "4-4-2",
+    "strengths": [
+      "防守",
+      "体能"
+    ],
+    "weaknesses": [
+      "技术",
+      "进攻"
+    ],
+    "key_tactics": [
+      "密集防守",
+      "反击"
+    ],
+    "vs_strong": "全力防守",
+    "vs_weak": "尝试进攻",
+    "motivation": 0.85,
+    "notes": "中东球队，防守为主",
+    "rank": 55
+  },
+  "Norway": {
+    "style": "高空+反击",
+    "tempo": "中",
+    "formation": "4-3-3",
+    "strengths": [
+      "身体",
+      "高空球",
+      "哈兰德"
+    ],
+    "weaknesses": [
+      "技术",
+      "配合"
+    ],
+    "key_tactics": [
+      "高空轰炸",
+      "哈兰德",
+      "反击"
+    ],
+    "vs_strong": "防守反击",
+    "vs_weak": "高空进攻",
+    "motivation": 0.9,
+    "notes": "北欧海盗，哈兰德领衔",
+    "rank": 42
+  },
+  "Austria": {
+    "style": "高位逼抢",
+    "tempo": "快",
+    "formation": "4-3-3",
+    "strengths": [
+      "逼抢",
+      "体能",
+      "中场"
+    ],
+    "weaknesses": [
+      "锋线"
+    ],
+    "key_tactics": [
+      "高位逼抢",
+      "中场控制"
+    ],
+    "vs_strong": "逼抢对抗",
+    "vs_weak": "控球进攻",
+    "motivation": 0.95,
+    "notes": "欧洲劲旅，逼抢出色",
+    "rank": 25,
+    "motivation_factor": 1.1400000000000001
+  },
+  "Jordan": {
+    "style": "防守反击",
+    "tempo": "中",
+    "formation": "4-4-2",
+    "strengths": [
+      "防守",
+      "体能"
+    ],
+    "weaknesses": [
+      "技术",
+      "进攻"
+    ],
+    "key_tactics": [
+      "密集防守",
+      "反击"
+    ],
+    "vs_strong": "全力防守",
+    "vs_weak": "尝试进攻",
+    "motivation": 0.8,
+    "notes": "中东球队，防守为主",
+    "rank": 62
+  },
+  "Ghana": {
+    "style": "均衡攻防",
+    "tempo": "中快",
+    "formation": "4-3-3",
+    "strengths": [
+      "身体",
+      "速度",
+      "技术"
+    ],
+    "weaknesses": [
+      "稳定性",
+      "配合"
+    ],
+    "key_tactics": [
+      "反击",
+      "个人突破"
+    ],
+    "vs_strong": "反击",
+    "vs_weak": "主动进攻",
+    "motivation": 0.9,
+    "notes": "非洲劲旅，身体素质出色",
+    "rank": 44,
+    "motivation_factor": 1.12
+  },
+  "Panama": {
+    "style": "防守反击",
+    "tempo": "中",
+    "formation": "4-4-2",
+    "strengths": [
+      "防守",
+      "体能"
+    ],
+    "weaknesses": [
+      "技术",
+      "进攻"
+    ],
+    "key_tactics": [
+      "密集防守",
+      "反击"
+    ],
+    "vs_strong": "全力防守",
+    "vs_weak": "尝试进攻",
+    "motivation": 0.8,
+    "notes": "中北美代表，防守为主",
+    "rank": 52
+  },
+  "Uzbekistan": {
+    "style": "防守反击",
+    "tempo": "中",
+    "formation": "4-4-2",
+    "strengths": [
+      "防守",
+      "体能"
+    ],
+    "weaknesses": [
+      "技术",
+      "经验"
+    ],
+    "key_tactics": [
+      "密集防守",
+      "反击"
+    ],
+    "vs_strong": "全力防守",
+    "vs_weak": "尝试进攻",
+    "motivation": 0.8,
+    "notes": "中亚球队，世界杯新军",
+    "rank": 60
+  },
+  "Colombia": {
+    "style": "技术流+反击",
+    "tempo": "中快",
+    "formation": "4-3-3",
+    "strengths": [
+      "技术",
+      "创造力",
+      "反击"
+    ],
+    "weaknesses": [
+      "防守稳定性"
+    ],
+    "key_tactics": [
+      "技术配合",
+      "反击",
+      "个人突破"
+    ],
+    "vs_strong": "反击",
+    "vs_weak": "控球进攻",
+    "motivation": 0.95,
+    "notes": "南美劲旅，技术出色",
+    "rank": 13
+  },
+  "Czechia": {
+    "style": "均衡攻防",
+    "tempo": "中",
+    "formation": "4-2-3-1",
+    "strengths": [
+      "中场",
+      "技术",
+      "定位球"
+    ],
+    "weaknesses": [
+      "锋线"
+    ],
+    "key_tactics": [
+      "中场控制",
+      "定位球",
+      "反击"
+    ],
+    "vs_strong": "中场对抗",
+    "vs_weak": "控制比赛",
+    "motivation": 0.9,
+    "notes": "东欧劲旅，技术细腻",
+    "rank": 36
+  },
+  "South Africa": {
+    "style": "控球进攻",
+    "tempo": "中",
+    "formation": "4-3-3",
+    "strengths": [
+      "技术",
+      "速度"
+    ],
+    "weaknesses": [
+      "防守",
+      "经验"
+    ],
+    "key_tactics": [
+      "控球",
+      "边路突破"
+    ],
+    "vs_strong": "防守反击",
+    "vs_weak": "控球进攻",
+    "motivation": 0.85,
+    "notes": "非洲劲旅，技术型打法",
+    "rank": 58
+  },
+  "Bosnia-Herzegovina": {
+    "style": "防守反击",
+    "tempo": "中",
+    "formation": "4-4-2",
+    "strengths": [
+      "防守",
+      "经验",
+      "哲科"
+    ],
+    "weaknesses": [
+      "速度",
+      "创造力"
+    ],
+    "key_tactics": [
+      "防守反击",
+      "哲科支点",
+      "定位球"
+    ],
+    "vs_strong": "防守反击",
+    "vs_weak": "哲科主导",
+    "motivation": 0.85,
+    "notes": "巴尔干铁骑，哲科核心",
+    "rank": 63
+  },
+  "Canada": {
+    "style": "高位逼抢+反击",
+    "tempo": "快",
+    "formation": "4-3-3",
+    "strengths": [
+      "速度",
+      "体能",
+      "逼抢"
+    ],
+    "weaknesses": [
+      "技术",
+      "大赛经验"
+    ],
+    "key_tactics": [
+      "高位逼抢",
+      "快速反击"
+    ],
+    "vs_strong": "逼抢+反击",
+    "vs_weak": "主动进攻",
+    "motivation": 0.9,
+    "notes": "北美新锐，速度型打法",
+    "rank": 43,
+    "motivation_factor": 1.06
+  },
+  "Mexico": {
+    "style": "技术流+逼抢",
+    "tempo": "快",
+    "formation": "4-3-3",
+    "strengths": [
+      "技术",
+      "逼抢",
+      "速度"
+    ],
+    "weaknesses": [
+      "防守",
+      "大赛心态"
+    ],
+    "key_tactics": [
+      "技术配合",
+      "逼抢",
+      "反击"
+    ],
+    "vs_strong": "逼抢+反击",
+    "vs_weak": "控球进攻",
+    "motivation": 0.95,
+    "notes": "中北美之王，技术出色",
+    "motivation_factor": 1.2,
+    "rank": 15
+  },
+  "South Korea": {
+    "style": "高位逼抢+跑动",
+    "tempo": "快",
+    "formation": "4-4-2",
+    "strengths": [
+      "体能",
+      "逼抢",
+      "跑动",
+      "孙兴慜"
+    ],
+    "weaknesses": [
+      "创造力",
+      "技术"
+    ],
+    "key_tactics": [
+      "高位逼抢",
+      "跑动",
+      "反击"
+    ],
+    "vs_strong": "逼抢+反击",
+    "vs_weak": "跑动压制",
+    "motivation": 1,
+    "notes": "太极虎，孙兴慜领衔",
+    "motivation_factor": 1.2,
+    "rank": 23
+  },
+  "Australia": {
+    "style": "身体对抗+高空",
+    "tempo": "中",
+    "formation": "4-3-3",
+    "strengths": [
+      "身体",
+      "高空球",
+      "体能"
+    ],
+    "weaknesses": [
+      "技术",
+      "创造力"
+    ],
+    "key_tactics": [
+      "身体对抗",
+      "高空轰炸",
+      "定位球"
+    ],
+    "vs_strong": "身体对抗",
+    "vs_weak": "高空进攻",
+    "motivation": 0.9,
+    "notes": "袋鼠军团，身体对抗强",
+    "motivation_factor": 1.2,
+    "rank": 24
+  },
+  "Scotland": {
+    "style": "防守反击+高空",
+    "tempo": "中",
+    "formation": "3-5-2",
+    "strengths": [
+      "防守",
+      "高空球",
+      "定位球"
+    ],
+    "weaknesses": [
+      "技术",
+      "创造力"
+    ],
+    "key_tactics": [
+      "防守反击",
+      "高空球",
+      "定位球"
+    ],
+    "vs_strong": "防守反击",
+    "vs_weak": "高空进攻",
+    "motivation": 0.85,
+    "notes": "苏格兰风笛，硬朗型打法",
+    "rank": 40
+  },
+  "Haiti": {
+    "style": "防守反击",
+    "tempo": "中",
+    "formation": "4-4-2",
+    "strengths": [
+      "速度",
+      "体能"
+    ],
+    "weaknesses": [
+      "技术",
+      "经验",
+      "组织"
+    ],
+    "key_tactics": [
+      "反击",
+      "个人突破"
+    ],
+    "vs_strong": "全力防守",
+    "vs_weak": "速度反击",
+    "motivation": 0.75,
+    "notes": "加勒比球队，速度型打法",
+    "rank": 87
+  },
+  "Türkiye": {
+    "style": "高位逼抢+技术",
+    "tempo": "快",
+    "formation": "4-3-3",
+    "strengths": [
+      "逼抢",
+      "技术",
+      "中场"
+    ],
+    "weaknesses": [
+      "防守稳定性"
+    ],
+    "key_tactics": [
+      "高位逼抢",
+      "技术配合",
+      "反击"
+    ],
+    "vs_strong": "逼抢对抗",
+    "vs_weak": "技术压制",
+    "motivation": 0.95,
+    "notes": "星月军团，技术与逼抢并重",
+    "rank": 26
+  }
+}

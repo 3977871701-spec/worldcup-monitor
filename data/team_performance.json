@@ -1,0 +1,420 @@
+{
+  "Mexico": {
+    "matches": [
+      {
+        "opponent": "South Africa",
+        "date": "2026-06-12",
+        "score": "2-0",
+        "is_home": true
+      }
+    ],
+    "total_goals_scored": 2,
+    "total_goals_conceded": 0,
+    "wins": 1,
+    "draws": 0,
+    "losses": 0,
+    "avg_goals_scored": 2.0,
+    "avg_goals_conceded": 0.0,
+    "win_rate": 100.0,
+    "form_trend": "上升"
+  },
+  "South Africa": {
+    "matches": [
+      {
+        "opponent": "Mexico",
+        "date": "2026-06-12",
+        "score": "2-0",
+        "is_home": false
+      }
+    ],
+    "total_goals_scored": 0,
+    "total_goals_conceded": 2,
+    "wins": 0,
+    "draws": 0,
+    "losses": 1,
+    "avg_goals_scored": 0.0,
+    "avg_goals_conceded": 2.0,
+    "win_rate": 0.0,
+    "form_trend": "下降"
+  },
+  "South Korea": {
+    "matches": [
+      {
+        "opponent": "Czechia",
+        "date": "2026-06-12",
+        "score": "2-1",
+        "is_home": true
+      }
+    ],
+    "total_goals_scored": 2,
+    "total_goals_conceded": 1,
+    "wins": 1,
+    "draws": 0,
+    "losses": 0,
+    "avg_goals_scored": 2.0,
+    "avg_goals_conceded": 1.0,
+    "win_rate": 100.0,
+    "form_trend": "上升"
+  },
+  "Czechia": {
+    "matches": [
+      {
+        "opponent": "South Korea",
+        "date": "2026-06-12",
+        "score": "2-1",
+        "is_home": false
+      }
+    ],
+    "total_goals_scored": 1,
+    "total_goals_conceded": 2,
+    "wins": 0,
+    "draws": 0,
+    "losses": 1,
+    "avg_goals_scored": 1.0,
+    "avg_goals_conceded": 2.0,
+    "win_rate": 0.0,
+    "form_trend": "下降"
+  },
+  "Canada": {
+    "matches": [
+      {
+        "opponent": "Bosnia-Herzegovina",
+        "date": "2026-06-12",
+        "score": "1-1",
+        "is_home": true
+      }
+    ],
+    "total_goals_scored": 1,
+    "total_goals_conceded": 1,
+    "wins": 0,
+    "draws": 1,
+    "losses": 0,
+    "avg_goals_scored": 1.0,
+    "avg_goals_conceded": 1.0,
+    "win_rate": 0.0,
+    "form_trend": "平稳"
+  },
+  "Bosnia-Herzegovina": {
+    "matches": [
+      {
+        "opponent": "Canada",
+        "date": "2026-06-12",
+        "score": "1-1",
+        "is_home": false
+      }
+    ],
+    "total_goals_scored": 1,
+    "total_goals_conceded": 1,
+    "wins": 0,
+    "draws": 1,
+    "losses": 0,
+    "avg_goals_scored": 1.0,
+    "avg_goals_conceded": 1.0,
+    "win_rate": 0.0,
+    "form_trend": "平稳"
+  },
+  "United States": {
+    "matches": [
+      {
+        "opponent": "Paraguay",
+        "date": "2026-06-13",
+        "score": "4-1",
+        "is_home": true
+      }
+    ],
+    "total_goals_scored": 4,
+    "total_goals_conceded": 1,
+    "wins": 1,
+    "draws": 0,
+    "losses": 0,
+    "avg_goals_scored": 4.0,
+    "avg_goals_conceded": 1.0,
+    "win_rate": 100.0,
+    "form_trend": "上升"
+  },
+  "Paraguay": {
+    "matches": [
+      {
+        "opponent": "United States",
+        "date": "2026-06-13",
+        "score": "4-1",
+        "is_home": false
+      }
+    ],
+    "total_goals_scored": 1,
+    "total_goals_conceded": 4,
+    "wins": 0,
+    "draws": 0,
+    "losses": 1,
+    "avg_goals_scored": 1.0,
+    "avg_goals_conceded": 4.0,
+    "win_rate": 0.0,
+    "form_trend": "下降"
+  },
+  "Qatar": {
+    "matches": [
+      {
+        "opponent": "Switzerland",
+        "date": "2026-06-15",
+        "score": "1-1",
+        "is_home": true
+      }
+    ],
+    "total_goals_scored": 1,
+    "total_goals_conceded": 1,
+    "wins": 0,
+    "draws": 1,
+    "losses": 0,
+    "avg_goals_scored": 1.0,
+    "avg_goals_conceded": 1.0,
+    "win_rate": 0.0,
+    "form_trend": "平稳"
+  },
+  "Switzerland": {
+    "matches": [
+      {
+        "opponent": "Qatar",
+        "date": "2026-06-15",
+        "score": "1-1",
+        "is_home": false
+      }
+    ],
+    "total_goals_scored": 1,
+    "total_goals_conceded": 1,
+    "wins": 0,
+    "draws": 1,
+    "losses": 0,
+    "avg_goals_scored": 1.0,
+    "avg_goals_conceded": 1.0,
+    "win_rate": 0.0,
+    "form_trend": "平稳"
+  },
+  "Brazil": {
+    "matches": [
+      {
+        "opponent": "Morocco",
+        "date": "2026-06-15",
+        "score": "1-1",
+        "is_home": true
+      }
+    ],
+    "total_goals_scored": 1,
+    "total_goals_conceded": 1,
+    "wins": 0,
+    "draws": 1,
+    "losses": 0,
+    "avg_goals_scored": 1.0,
+    "avg_goals_conceded": 1.0,
+    "win_rate": 0.0,
+    "form_trend": "平稳"
+  },
+  "Morocco": {
+    "matches": [
+      {
+        "opponent": "Brazil",
+        "date": "2026-06-15",
+        "score": "1-1",
+        "is_home": false
+      }
+    ],
+    "total_goals_scored": 1,
+    "total_goals_conceded": 1,
+    "wins": 0,
+    "draws": 1,
+    "losses": 0,
+    "avg_goals_scored": 1.0,
+    "avg_goals_conceded": 1.0,
+    "win_rate": 0.0,
+    "form_trend": "平稳"
+  },
+  "Haiti": {
+    "matches": [
+      {
+        "opponent": "Scotland",
+        "date": "2026-06-15",
+        "score": "0-1",
+        "is_home": true
+      }
+    ],
+    "total_goals_scored": 0,
+    "total_goals_conceded": 1,
+    "wins": 0,
+    "draws": 0,
+    "losses": 1,
+    "avg_goals_scored": 0.0,
+    "avg_goals_conceded": 1.0,
+    "win_rate": 0.0,
+    "form_trend": "下降"
+  },
+  "Scotland": {
+    "matches": [
+      {
+        "opponent": "Haiti",
+        "date": "2026-06-15",
+        "score": "0-1",
+        "is_home": false
+      }
+    ],
+    "total_goals_scored": 1,
+    "total_goals_conceded": 0,
+    "wins": 1,
+    "draws": 0,
+    "losses": 0,
+    "avg_goals_scored": 1.0,
+    "avg_goals_conceded": 0.0,
+    "win_rate": 100.0,
+    "form_trend": "上升"
+  },
+  "Australia": {
+    "matches": [
+      {
+        "opponent": "Türkiye",
+        "date": "2026-06-15",
+        "score": "2-0",
+        "is_home": true
+      }
+    ],
+    "total_goals_scored": 2,
+    "total_goals_conceded": 0,
+    "wins": 1,
+    "draws": 0,
+    "losses": 0,
+    "avg_goals_scored": 2.0,
+    "avg_goals_conceded": 0.0,
+    "win_rate": 100.0,
+    "form_trend": "上升"
+  },
+  "Türkiye": {
+    "matches": [
+      {
+        "opponent": "Australia",
+        "date": "2026-06-15",
+        "score": "2-0",
+        "is_home": false
+      }
+    ],
+    "total_goals_scored": 0,
+    "total_goals_conceded": 2,
+    "wins": 0,
+    "draws": 0,
+    "losses": 1,
+    "avg_goals_scored": 0.0,
+    "avg_goals_conceded": 2.0,
+    "win_rate": 0.0,
+    "form_trend": "下降"
+  },
+  "Germany": {
+    "matches": [
+      {
+        "opponent": "Curaçao",
+        "date": "2026-06-15",
+        "score": "7-1",
+        "is_home": true
+      }
+    ],
+    "total_goals_scored": 7,
+    "total_goals_conceded": 1,
+    "wins": 1,
+    "draws": 0,
+    "losses": 0,
+    "avg_goals_scored": 7.0,
+    "avg_goals_conceded": 1.0,
+    "win_rate": 100.0,
+    "form_trend": "上升"
+  },
+  "Curaçao": {
+    "matches": [
+      {
+        "opponent": "Germany",
+        "date": "2026-06-15",
+        "score": "7-1",
+        "is_home": false
+      }
+    ],
+    "total_goals_scored": 1,
+    "total_goals_conceded": 7,
+    "wins": 0,
+    "draws": 0,
+    "losses": 1,
+    "avg_goals_scored": 1.0,
+    "avg_goals_conceded": 7.0,
+    "win_rate": 0.0,
+    "form_trend": "下降"
+  },
+  "Netherlands": {
+    "matches": [
+      {
+        "opponent": "Japan",
+        "date": "2026-06-15",
+        "score": "2-2",
+        "is_home": true
+      }
+    ],
+    "total_goals_scored": 2,
+    "total_goals_conceded": 2,
+    "wins": 0,
+    "draws": 1,
+    "losses": 0,
+    "avg_goals_scored": 2.0,
+    "avg_goals_conceded": 2.0,
+    "win_rate": 0.0,
+    "form_trend": "平稳"
+  },
+  "Japan": {
+    "matches": [
+      {
+        "opponent": "Netherlands",
+        "date": "2026-06-15",
+        "score": "2-2",
+        "is_home": false
+      }
+    ],
+    "total_goals_scored": 2,
+    "total_goals_conceded": 2,
+    "wins": 0,
+    "draws": 1,
+    "losses": 0,
+    "avg_goals_scored": 2.0,
+    "avg_goals_conceded": 2.0,
+    "win_rate": 0.0,
+    "form_trend": "平稳"
+  },
+  "Ivory Coast": {
+    "matches": [
+      {
+        "opponent": "Ecuador",
+        "date": "2026-06-15",
+        "score": "1-0",
+        "is_home": true
+      }
+    ],
+    "total_goals_scored": 1,
+    "total_goals_conceded": 0,
+    "wins": 1,
+    "draws": 0,
+    "losses": 0,
+    "avg_goals_scored": 1.0,
+    "avg_goals_conceded": 0.0,
+    "win_rate": 100.0,
+    "form_trend": "上升"
+  },
+  "Ecuador": {
+    "matches": [
+      {
+        "opponent": "Ivory Coast",
+        "date": "2026-06-15",
+        "score": "1-0",
+        "is_home": false
+      }
+    ],
+    "total_goals_scored": 0,
+    "total_goals_conceded": 1,
+    "wins": 0,
+    "draws": 0,
+    "losses": 1,
+    "avg_goals_scored": 0.0,
+    "avg_goals_conceded": 1.0,
+    "win_rate": 0.0,
+    "form_trend": "下降"
+  }
+}

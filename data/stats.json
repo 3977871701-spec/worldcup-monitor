@@ -1,0 +1,164 @@
+{
+  "total": 30,
+  "directionCorrect": 18,
+  "directionRate": 60,
+  "scoreCorrect": 5,
+  "scoreRate": 17,
+  "avgAccuracy": 44,
+  "upsets": 6,
+  "realtime_correct": 2,
+  "realtime_total": 2,
+  "realtime_rate": 100,
+  "realtime_details": [
+    {
+      "match": "墨西哥 vs 南非",
+      "correct": true,
+      "note": "方向正确"
+    },
+    {
+      "match": "韩国 vs 捷克",
+      "correct": true,
+      "note": "方向正确"
+    },
+    {
+      "match": "加拿大 vs 波黑",
+      "correct": false,
+      "note": "方向错误"
+    },
+    {
+      "match": "USA vs PAR",
+      "correct": true,
+      "note": "方向正确"
+    },
+    {
+      "match": "QAT vs SUI",
+      "correct": false,
+      "note": "方向错误"
+    },
+    {
+      "match": "BRA vs MAR",
+      "correct": false,
+      "note": "方向错误"
+    },
+    {
+      "match": "HAI vs SCO",
+      "correct": true,
+      "note": "方向正确"
+    },
+    {
+      "match": "AUS vs TUR",
+      "correct": true,
+      "note": "方向正确"
+    },
+    {
+      "match": "GER vs CUR",
+      "correct": true,
+      "note": "方向正确"
+    },
+    {
+      "match": "NED vs JPN",
+      "correct": false,
+      "note": "方向错误"
+    },
+    {
+      "match": "CIV vs ECU",
+      "correct": false,
+      "note": "方向错误"
+    },
+    {
+      "match": "SWE vs TUN",
+      "correct": true,
+      "note": "方向正确"
+    },
+    {
+      "match": "Spain vs Cape Verde",
+      "correct": false,
+      "note": "方向错误"
+    },
+    {
+      "match": "Belgium vs Egypt",
+      "correct": false,
+      "note": "方向错误"
+    },
+    {
+      "match": "KSA vs URU",
+      "correct": false,
+      "note": "方向错误"
+    },
+    {
+      "match": "FRA vs SEN",
+      "correct": false,
+      "note": "方向错误"
+    },
+    {
+      "match": "Austria vs Jordan",
+      "correct": true,
+      "note": "方向正确"
+    },
+    {
+      "match": "IRQ vs NOR",
+      "correct": true,
+      "note": "方向正确"
+    },
+    {
+      "match": "ARG vs ALG",
+      "correct": true,
+      "note": "方向正确"
+    },
+    {
+      "match": "POR vs COD",
+      "correct": false,
+      "note": "方向错误"
+    },
+    {
+      "match": "ENG vs CRO",
+      "correct": true,
+      "note": "方向正确"
+    },
+    {
+      "match": "GHA vs PAN",
+      "correct": true,
+      "note": "方向正确"
+    },
+    {
+      "match": "KSA vs URU",
+      "correct": false,
+      "note": "方向错误"
+    },
+    {
+      "match": "UZB vs COL",
+      "correct": true,
+      "note": "方向正确"
+    },
+    {
+      "match": "Czechia vs South Africa",
+      "correct": false,
+      "note": "方向错误"
+    },
+    {
+      "match": "Switzerland vs Bosnia-Herz",
+      "correct": true,
+      "note": "方向正确"
+    },
+    {
+      "match": "Mexico vs South Korea",
+      "correct": true,
+      "note": "方向正确"
+    },
+    {
+      "match": "CAN vs QAT",
+      "correct": true,
+      "note": "方向正确"
+    },
+    {
+      "match": "USA vs Australia",
+      "correct": true,
+      "note": "方向正确"
+    },
+    {
+      "match": "Scotland vs Morocco",
+      "correct": true,
+      "note": "方向正确"
+    }
+  ]
+}
