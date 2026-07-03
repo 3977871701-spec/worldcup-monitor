@@ -227,46 +227,54 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 /* ODDS SECTION */
 .odds-section{background:var(--inner-bg);border-radius:14px;padding:12px;margin-bottom:10px;border:1px solid var(--inner-border)}
 
-/* BRACKET / 淘汰赛对阵图 */
+/* BRACKET / 淘汰赛对阵图 (FIFA 2026 Official) */
 .bracket-full-width{max-width:none!important;padding-left:0!important;padding-right:0!important}
-.bracket-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:12px;scroll-snap-type:x mandatory;margin:0 -16px}
-.bracket-scroll{display:flex;gap:0;min-width:max-content;align-items:flex-start}
-.bracket-round{display:flex;flex-direction:column;gap:12px;min-width:240px;padding:0 24px;scroll-snap-align:start;position:relative}
-.bracket-round-title{text-align:center;font-size:15px;font-weight:800;color:var(--accent);margin-bottom:16px;padding:10px 16px;background:linear-gradient(135deg,rgba(0,122,255,.1),rgba(88,86,214,.1));border-radius:14px;white-space:nowrap;letter-spacing:.02em}
-.bracket-matches{display:flex;flex-direction:column;gap:12px;position:relative}
-.bracket-match{background:var(--card);border-radius:16px;padding:12px 14px;box-shadow:var(--shadow);border:1px solid var(--border);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);transition:.2s;position:relative;min-height:80px}
-.bracket-match:hover{transform:translateY(-1px);box-shadow:0 4px 20px rgba(0,0,0,.1)}
-.bracket-match.winner-home{border-left:3px solid var(--green)}
-.bracket-match.winner-away{border-right:3px solid var(--green)}
-.bracket-match.settled{opacity:1}
-.bracket-match.live-match{border:2px solid var(--green);animation:livePulse 2s infinite}
-@keyframes livePulse{0%,100%{box-shadow:0 0 0 0 rgba(52,199,89,.3)}50%{box-shadow:0 0 12px 4px rgba(52,199,89,.15)}}
-.bm-time{font-size:11px;color:var(--accent);text-align:center;margin-bottom:8px;font-weight:600}
-.bm-team{display:flex;align-items:center;gap:8px;padding:4px 0;font-size:13px}
-.bm-team.home{flex-direction:row}
-.bm-team.away{flex-direction:row}
-.bm-logo{width:32px;height:32px;border-radius:50%;object-fit:contain;background:var(--bg);padding:2px;flex-shrink:0}
-.bm-name{flex:1;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.bm-rank{font-size:10px;color:var(--secondary);font-weight:500;min-width:24px;text-align:right}
-.bm-score{font-size:15px;font-weight:800;min-width:24px;text-align:center;font-variant-numeric:tabular-nums}
-.bm-loser .bm-name{color:var(--secondary);font-weight:400;text-decoration:line-through;opacity:.6}
-.bm-loser .bm-score{color:var(--secondary);opacity:.6}
-.bm-team.winner .bm-name{color:var(--green);font-weight:700}
-.bm-team.winner .bm-score{color:var(--green)}
-.bm-result{position:absolute;top:6px;right:8px;font-size:11px}
-.bm-pred{font-size:11px;color:var(--accent);text-align:center;margin-top:6px;font-weight:600}
-.bm-venue{font-size:10px;color:var(--secondary);text-align:center;margin-top:4px}
-.bm-flag{font-size:14px;margin-right:2px}
-.bracket-champion{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:160px;padding:0 24px;scroll-snap-align:start}
-.champion-card{background:linear-gradient(135deg,rgba(255,215,0,.12),rgba(255,165,0,.08));border-radius:22px;padding:28px;text-align:center;box-shadow:0 4px 30px rgba(255,215,0,.15);border:3px solid #FFD700;backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);min-width:140px}
-.champion-trophy{font-size:56px;margin-bottom:12px;animation:trophyBounce 3s ease-in-out infinite}
-@keyframes trophyBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
-.champion-label{font-size:14px;font-weight:800;color:#FFD700;margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em}
-.champion-team{font-size:18px;font-weight:800;color:var(--text)}
-/* Bracket connector lines */
-.bracket-round:not(:last-child)::after{content:'';position:absolute;right:0;top:50%;width:24px;height:2px;background:linear-gradient(90deg,var(--border),var(--accent));animation:connectorPulse 3s infinite}
-.bracket-round:not(:last-child) .bracket-matches::after{content:'';position:absolute;right:-24px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--accent),var(--border),var(--accent));animation:connectorPulse 3s infinite}
-@keyframes connectorPulse{0%,100%{opacity:.4}50%{opacity:1}}
+.bracket-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:0 0 16px;scroll-snap-type:x mandatory}
+.bracket-grid{display:grid;grid-template-columns:repeat(9,minmax(135px,1fr));gap:0;align-items:start;width:100%;min-width:1200px}
+.bracket-col{display:flex;flex-direction:column;position:relative}
+.bracket-col-title{text-align:center;font-size:13px;font-weight:800;color:var(--accent);padding:10px 8px;background:linear-gradient(135deg,rgba(0,122,255,.08),rgba(88,86,214,.08));border-radius:10px;margin:0 4px 8px;white-space:nowrap;letter-spacing:.01em}
+.bracket-col-matches{display:flex;flex-direction:column;justify-content:space-around;height:100%;padding:0 4px;gap:4px}
+.bracket-center-match{display:flex;align-items:center;justify-content:center;padding:4px 0}
+.bracket-champion{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px 4px}
+.champion-card{background:linear-gradient(135deg,rgba(255,215,0,.12),rgba(255,165,0,.08));border-radius:18px;padding:20px;text-align:center;box-shadow:0 4px 30px rgba(255,215,0,.15);border:2px solid #FFD700;backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);min-width:100px}
+.champion-trophy{font-size:44px;margin-bottom:8px;animation:trophyBounce 3s ease-in-out infinite}
+@keyframes trophyBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+.champion-label{font-size:12px;font-weight:800;color:#FFD700;margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em}
+.champion-team{font-size:14px;font-weight:800;color:var(--text)}
+.bmatch{background:var(--card);border-radius:10px;padding:8px 10px;box-shadow:var(--shadow);border:1px solid var(--border);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);transition:.2s;position:relative;font-size:12px;min-height:56px}
+.bmatch:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,0,0,.1)}
+.bmatch.settled-w{border-left:3px solid var(--green)}
+.bmatch.settled-l{border-left:3px solid var(--secondary)}
+.bmatch.live-match{border:2px solid var(--green);animation:bracketLivePulse 2s infinite}
+@keyframes bracketLivePulse{0%,100%{box-shadow:0 0 0 0 rgba(52,199,89,.3)}50%{box-shadow:0 0 8px 3px rgba(52,199,89,.15)}}
+.bmatch-id{font-size:9px;color:var(--secondary);font-weight:700;text-align:left;margin-bottom:4px;letter-spacing:.03em}
+.bteam{display:flex;align-items:center;gap:4px;padding:2px 0;font-size:11px;transition:.2s}
+.bteam.loser{opacity:.4}
+.bteam .flag{font-size:12px;flex-shrink:0}
+.bteam .code{font-weight:700;min-width:28px;letter-spacing:.02em;font-size:11px}
+.bteam .score{font-weight:800;min-width:20px;text-align:center;font-variant-numeric:tabular-nums;font-size:12px;margin-left:auto}
+.bteam .pen{font-size:9px;color:var(--secondary);font-weight:600;margin-left:1px}
+.bteam.winner .code{color:var(--green)}
+.bteam.winner .score{color:var(--green)}
+.bteam.loser .code{color:var(--secondary)}
+.bteam.loser .score{color:var(--secondary)}
+.bmatch-status{font-size:9px;color:var(--secondary);text-align:center;margin-top:3px;font-weight:500}
+.bmatch-status.finished{color:var(--accent);font-weight:600}
+/* Bracket connector lines (CSS pseudo-elements) */
+.bracket-col:not(:first-child) .bmatch::before{content:'';position:absolute;left:-16px;top:50%;width:16px;height:2px;background:linear-gradient(90deg,var(--accent),var(--border));opacity:.5}
+.bracket-col:not(:last-child) .bmatch::after{content:'';position:absolute;right:-16px;top:50%;width:16px;height:2px;background:linear-gradient(90deg,var(--border),var(--accent));opacity:.5}
+.bracket-col:not(:first-child):not(:last-child) .bmatch:first-child::before{border-bottom:2px solid var(--accent);border-bottom-left-radius:6px;height:calc(50% + 8px);top:0;width:16px;border-left:2px solid var(--accent);background:none;opacity:.3}
+.bracket-col:not(:first-child):not(:last-child) .bmatch:nth-child(2)::before{border-top:2px solid var(--accent);border-top-left-radius:6px;height:calc(50% + 8px);bottom:auto;width:16px;border-left:2px solid var(--accent);background:none;opacity:.3}
+@media(max-width:640px){
+  .bracket-grid{grid-template-columns:repeat(9,minmax(100px,1fr));min-width:900px}
+  .bracket-col-title{font-size:11px;padding:8px 4px}
+  .bmatch{padding:6px 8px;font-size:10px;min-height:48px}
+  .bteam .code{font-size:10px;min-width:22px}
+  .bteam .score{font-size:11px}
+  .bteam .flag{font-size:10px}
+  .bmatch-id{font-size:8px}
+  .champion-trophy{font-size:36px}
+}
 
 /* RESPONSIVE */
 .theme-toggle{position:absolute;top:14px;right:16px;background:var(--search-bg);border:none;border-radius:20px;padding:6px 12px;font-size:16px;cursor:pointer;z-index:110;transition:.3s;backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);line-height:1;display:flex;align-items:center;gap:4px}
@@ -283,12 +291,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   .accuracy-stats{gap:6px}
   .accuracy-stat{min-width:60px}
   .accuracy-stat .num{font-size:20px}
-  .bracket-round{min-width:170px;padding:0 8px}
-  .bracket-match{padding:10px 12px;min-height:70px}
-  .bm-logo{width:28px;height:28px}
-  .bm-name{font-size:11px}
-  .bm-score{font-size:13px}
-  .champion-trophy{font-size:44px}
+
 }
 </style>
 </head>
@@ -1706,234 +1709,188 @@ function toggleFinished(){
   });
 })();
 
-// === Knockout Bracket (淘汰赛对阵图) ===
+// === Knockout Bracket (FIFA 2026 Official) ===
 function buildBracketData() {
-  // Round of 32 (15 matches with actual team names from API)
-  const r32Ids = ['760493','760494','760495','760496','760497','760498','760499','760500',
-                  '760501','760502','760503','760504','760505','760506','760507'];
-
-  function getMatchInfo(eid) {
-    const ev = (allEvents || []).find(e => e.id === eid);
-    const pred = window.__preds?.[eid];
-    const settlement = window.__settlementsMap?.[eid];
-    if (!ev) {
-      if (pred) {
-        return {
-          id: eid, state: 'pre',
-          home: { name: pred.home.name, logo: pred.home.logo, rank: pred.home.rank, score: 0 },
-          away: { name: pred.away.name, logo: pred.away.logo, rank: pred.away.rank, score: 0 },
-          predScore: pred.prediction?.predicted_score || '?',
-          date: pred.date, time_bj: pred.time_bj,
-          venue: pred.venue || ''
-        };
-      }
+  const TEAM_FLAGS={
+    'Australia':'🇦🇺','Egypt':'🇪🇬','Argentina':'🇦🇷','Cape Verde':'🇨🇻','Colombia':'🇨🇴','Ghana':'🇬🇭',
+    'Canada':'🇨🇦','Morocco':'🇲🇦','Paraguay':'🇵🇾','France':'🇫🇷','Brazil':'🇧🇷','Norway':'🇳🇴',
+    'Mexico':'🇲🇽','England':'🏴󠁧󠁢󠁥󠁮󠁧󠁿','Portugal':'🇵🇹','Spain':'🇪🇸','United States':'🇺🇸','USA':'🇺🇸',
+    'Belgium':'🇧🇪','Germany':'🇩🇪','Croatia':'🇭🇷','Sweden':'🇸🇪','South Africa':'🇿🇦','Netherlands':'🇳🇱',
+    'Senegal':'🇸🇳','Bosnia-Herzegovina':'🇧🇦','Bosnia':'🇧🇦','Austria':'🇦🇹','Switzerland':'🇨🇭',
+    'Japan':'🇯🇵','Denmark':'🇩🇰','Uruguay':'🇺🇾','Poland':'🇵🇱','Serbia':'🇷🇸','Korea':'🇰🇷',
+    'South Korea':'🇰🇷','Ivory Coast':'🇨🇮','Cameroon':'🇨🇲','Tunisia':'🇹🇳','Iran':'🇮🇷',
+    'Saudi Arabia':'🇸🇦','Ecuador':'🇪🇨','Turkey':'🇹🇷','Qatar':'🇶🇦','Peru':'🇵🇪','Chile':'🇨🇱',
+    'Jamaica':'🇯🇲','Panama':'🇵🇦','Honduras':'🇭🇳','Costa Rica':'🇨🇷','Haiti':'🇭🇹','Curaçao':'🇨🇼',
+    'New Zealand':'🇳🇿','Scotland':'🏴󠁧󠁢󠁳󠁣󠁴󠁿','Wales':'🏴󠁧󠁢󠁷󠁬󠁳󠁿','Ireland':'🇮🇪','Czechia':'🇨🇿'
+  };
+  function flag(n){return TEAM_FLAGS[n]||'';}
+  function code3(n){
+    const m={'United States':'USA','South Korea':'KOR','Bosnia-Herzegovina':'BIH','New Zealand':'NZL',
+      'Saudi Arabia':'KSA','South Africa':'RSA','Cape Verde':'CPV','Costa Rica':'CRC',
+      'Ivory Coast':'CIV','DR Congo':'COD','Congo DR':'COD'};
+    return m[n]||(n.length<=3?n.toUpperCase():n.slice(0,3).toUpperCase());
+  }
+  function getMatch(eid){
+    const ev=(allEvents||[]).find(e=>e.id===eid);
+    const pred=window.__preds?.[eid];
+    const settlement=window.__settlementsMap?.[eid];
+    if(!ev){
+      if(pred)return{id:eid,state:'pre',
+        home:{name:pred.home.name,logo:pred.home.logo,rank:pred.home.rank,score:0},
+        away:{name:pred.away.name,logo:pred.away.logo,rank:pred.away.rank,score:0},
+        predScore:pred.prediction?.predicted_score||'?',date:pred.date,time_bj:pred.time_bj,venue:pred.venue||''};
       return null;
     }
-    const comp = ev.competitions?.[0];
-    const cs = comp?.competitors || [];
-    const h = cs.find(x => x.homeAway === 'home') || cs[0];
-    const a = cs.find(x => x.homeAway === 'away') || cs[1];
-    const state = ev.status?.type?.state || 'pre';
-    const homeName = h?.team?.shortDisplayName || '?';
-    const awayName = a?.team?.shortDisplayName || '?';
-    const homeScore = parseInt(h?.score || '0');
-    const awayScore = parseInt(a?.score || '0');
-    let winner = '';
-    if (state === 'post') {
-      if (homeScore > awayScore) winner = 'home';
-      else if (awayScore > homeScore) winner = 'away';
+    const comp=ev.competitions?.[0];const cs=comp?.competitors||[];
+    const h=cs.find(x=>x.homeAway==='home')||cs[0];
+    const a=cs.find(x=>x.homeAway==='away')||cs[1];
+    const state=ev.status?.type?.state||'pre';
+    const hName=h?.team?.shortDisplayName||'?';
+    const aName=a?.team?.shortDisplayName||'?';
+    let hScore=parseInt(h?.score||'0'),aScore=parseInt(a?.score||'0');
+    let winner='',penH=0,penA=0;
+    if(settlement&&state==='post'){
+      winner=settlement.result?.actualWinner||'';
+      const as=settlement.result?.actualScore||'';
+      if(as.includes('(')){
+        const m=as.match(/(\d+)\((\d+)\)-(\d+)\((\d+)\)/);
+        if(m){hScore=parseInt(m[1]);aScore=parseInt(m[3]);penH=parseInt(m[2]);penA=parseInt(m[4]);}
+      } else {
+        hScore=settlement.homeScore||hScore;aScore=settlement.awayScore||aScore;
+      }
+    } else if(state==='post'){
+      if(hScore>aScore)winner='home';else if(aScore>hScore)winner='away';
     }
-    if (settlement && state === 'post') {
-      winner = settlement.result?.actualWinner || winner;
-    }
-    return {
-      id: eid, state, date: ev.date,
-      home: { name: homeName, logo: h?.team?.logo || '', rank: window.__teamRanks?.[homeName] || pred?.home?.rank || '?', score: homeScore },
-      away: { name: awayName, logo: a?.team?.logo || '', rank: window.__teamRanks?.[awayName] || pred?.away?.rank || '?', score: awayScore },
-      predScore: pred?.prediction?.predicted_score || '',
-      winner,
-      venue: comp?.venue?.fullName || pred?.venue || ''
-    };
+    return{id:eid,state,date:ev.date,
+      home:{name:hName,logo:h?.team?.logo||'',rank:window.__teamRanks?.[hName]||pred?.home?.rank||'?',score:hScore,pen:penH},
+      away:{name:aName,logo:a?.team?.logo||'',rank:window.__teamRanks?.[aName]||pred?.away?.rank||'?',score:aScore,pen:penA},
+      predScore:pred?.prediction?.predicted_score||'',winner,venue:comp?.venue?.fullName||pred?.venue||''};
   }
 
-  // Round of 32
-  const round32 = [];
-  for (const eid of r32Ids) {
-    const info = getMatchInfo(eid);
-    if (info) round32.push(info);
+  // FIFA Match IDs mapping (scraped from fifa.com bracket)
+  // Left half R32: M74=GER-PAR, M77=FRA-SWE, M73=RSA-CAN, M75=NED-MAR
+  const leftR32=[getMatch('760497'),getMatch('760495'),getMatch('760496'),getMatch('760498')];
+  // Right half R32: M83=POR-ESP, M84=BEL-SEN, M81=USA-BIH, M82=AUT-COL(placeholder)
+  // Note: ESPN ID 760506 = POR vs ESP, 760493 = BEL vs SEN, 760494 = USA vs BIH
+  const rightR32=[getMatch('760506'),getMatch('760493'),getMatch('760494'),futureMatch('M82','2026-07-07','7/7')];
+
+  // All 15 R32 matches in order (ESPN IDs)
+  const allR32=['760493','760494','760495','760496','760497','760498','760499','760500',
+                '760501','760502','760503','760504','760505','760506','760507'].map(getMatch);
+
+  // Build future match placeholder
+  function futureMatch(fifaId,date,timeBj){
+    return{id:fifaId,state:'future',home:{name:'待定',logo:'',rank:'?',score:0},
+      away:{name:'待定',logo:'',rank:'?',score:0},predScore:'',date,time_bj:timeBj,winner:''};
   }
 
-  // Round of 16: 760508 (Switzerland vs R32 W15), 760509 (R32 W14 vs R32 W16) from API
-  // Plus 6 more placeholders for other R16 matches
-  const round16 = [];
-  const r16ApiIds = ['760508','760509'];
-  for (const eid of r16ApiIds) {
-    const info = getMatchInfo(eid);
-    if (info) round16.push(info);
-  }
-  // Add remaining R16 placeholder matches (winners from R32 matches 1-12)
-  const r16Placeholders = [
-    {home: 'R32 W1', away: 'R32 W2', date: '2026-07-08T01:00Z', time_bj: '7/8 09:00'},
-    {home: 'R32 W3', away: 'R32 W4', date: '2026-07-08T21:00Z', time_bj: '7/9 05:00'},
-    {home: 'R32 W5', away: 'R32 W6', date: '2026-07-09T01:00Z', time_bj: '7/9 09:00'},
-    {home: 'R32 W7', away: 'R32 W8', date: '2026-07-08T17:00Z', time_bj: '7/9 01:00'},
-    {home: 'R32 W9', away: 'R32 W10', date: '2026-07-09T17:00Z', time_bj: '7/10 01:00'},
-    {home: 'R32 W11', away: 'R32 W12', date: '2026-07-10T01:00Z', time_bj: '7/10 09:00'},
-  ];
-  for (let i = 0; i < r16Placeholders.length; i++) {
-    const p = r16Placeholders[i];
-    round16.push({
-      id: 'r16_ph_' + i, state: 'pre',
-      home: { name: p.home, logo: '', rank: '?', score: 0 },
-      away: { name: p.away, logo: '', rank: '?', score: 0 },
-      predScore: '', date: p.date, time_bj: p.time_bj
-    });
-  }
-
-  // Quarter-finals (760510-760513)
-  const quarter = [];
-  const qfIds = ['760510','760511','760512','760513'];
-  const qfTimes = ['7/10 04:00','7/11 03:00','7/12 05:00','7/12 09:00'];
-  for (let i = 0; i < qfIds.length; i++) {
-    const info = getMatchInfo(qfIds[i]);
-    if (info) {
-      if (!info.time_bj) info.time_bj = qfTimes[i];
-      quarter.push(info);
-    } else {
-      quarter.push({
-        id: qfIds[i], state: 'pre',
-        home: { name: 'QF W' + (i*2+1), logo: '', rank: '?', score: 0 },
-        away: { name: 'QF W' + (i*2+2), logo: '', rank: '?', score: 0 },
-        predScore: '', date: '', time_bj: qfTimes[i]
-      });
-    }
-  }
-
-  // Semi-finals (760514-760515)
-  const semi = [];
-  const sfIds = ['760514','760515'];
-  const sfTimes = ['7/15 03:00','7/16 03:00'];
-  for (let i = 0; i < sfIds.length; i++) {
-    const info = getMatchInfo(sfIds[i]);
-    if (info) {
-      if (!info.time_bj) info.time_bj = sfTimes[i];
-      semi.push(info);
-    } else {
-      semi.push({
-        id: sfIds[i], state: 'pre',
-        home: { name: 'SF W' + (i*2+1), logo: '', rank: '?', score: 0 },
-        away: { name: 'SF W' + (i*2+2), logo: '', rank: '?', score: 0 },
-        predScore: '', date: '', time_bj: sfTimes[i]
-      });
-    }
-  }
-
-  // Final (760517)
-  let finalMatch = getMatchInfo('760517');
-  if (!finalMatch) {
-    finalMatch = {
-      id: '760517', state: 'pre',
-      home: { name: 'SF W1', logo: '', rank: '?', score: 0 },
-      away: { name: 'SF W2', logo: '', rank: '?', score: 0 },
-      predScore: '', date: '2026-07-19T19:00Z', time_bj: '7/20 03:00'
-    };
-  } else if (!finalMatch.time_bj) {
-    finalMatch.time_bj = '7/20 03:00';
-  }
-
-  return { round32, round16, quarter, semi, final: [finalMatch] };
+  return{
+    leftR32,
+    rightR32,
+    allR32,
+    r16Left:[futureMatch('M89','2026-07-05','7/5'),futureMatch('M90','2026-07-05','7/5')],
+    r16Right:[futureMatch('M93','2026-07-07','7/7'),futureMatch('M94','2026-07-07','7/7')],
+    qfLeft:[futureMatch('M97','2026-07-10','7/10')],
+    qfRight:[futureMatch('M98','2026-07-11','7/11')],
+    sf:[futureMatch('M101','2026-07-14','7/14'),futureMatch('M102','2026-07-15','7/15')],
+    finalMatch:futureMatch('M104','2026-07-19','7/19')
+  };
 }
 
-function renderBracket() {
-  const area = document.getElementById('bracket-area');
-  if (!area) return;
-  const TEAM_FLAGS = {
-      'Argentina':'🇦🇷','Brazil':'🇧🇷','France':'🇫🇷','England':'🏴󠁧󠁢󠁥󠁮󠁧󠁿','Germany':'🇩🇪','Spain':'🇪🇸',
-      'Netherlands':'🇳🇱','Portugal':'🇵🇹','Belgium':'🇧🇪','Croatia':'🇭🇷','Morocco':'🇲🇦','Japan':'🇯🇵',
-      'Mexico':'🇲🇽','United States':'🇺🇸','USA':'🇺🇸','Canada':'🇨🇦','Australia':'🇦🇺','South Korea':'🇰🇷',
-      'Switzerland':'🇨🇭','Turkey':'🇹🇷','Qatar':'🇶🇦','Ecuador':'🇪🇨','Colombia':'🇨🇴','Uruguay':'🇺🇾',
-      'Senegal':'🇸🇳','Ghana':'🇬🇭','Cameroon':'🇨🇲','Serbia':'🇷🇸','Poland':'🇵🇱','Denmark':'🇩🇰',
-      'Sweden':'🇸🇪','Norway':'🇳🇴','Saudi Arabia':'🇸🇦','Iran':'🇮🇷','Tunisia':'🇹🇳','Egypt':'🇪🇬',
-      'Paraguay':'🇵🇾','Bolivia':'🇧🇴','Chile':'🇨🇱','Peru':'🇵🇪','Panama':'🇵🇦','Costa Rica':'🇨🇷',
-      'Honduras':'🇭🇳','Jamaica':'🇯🇲','New Zealand':'🇳🇿','Cape Verde':'🇨🇻','Algeria':'🇩🇿',
-      'Mali':'🇲🇱','DR Congo':'🇨🇩','Congo DR':'🇨🇩','Iraq':'🇮🇶','Jordan':'🇯🇴','Uzbekistan':'🇺🇿',
-      'Scotland':'🏴󠁧󠁢󠁳󠁣󠁴󠁿','Wales':'🏴󠁧󠁢󠁷󠁬󠁳󠁿','Austria':'🇦🇹','Hungary':'🇭🇺','Romania':'🇷🇴',
-      'Ukraine':'🇺🇦','Slovenia':'🇸🇮','Slovakia':'🇸🇰','Greece':'🇬🇷','Finland':'🇫🇮',
-      'Bosnia-Herzegovina':'🇧🇦','Bosnia':'🇧🇦','Haiti':'🇭🇹','South Africa':'🇿🇦','Ivory Coast':'🇨🇮',
-      'Czechia':'🇨🇿','Czech':'🇨🇿','Ireland':'🇮🇪','Portugal':'🇵🇹','Korea':'🇰🇷'
-    };
-    function flag(name) { return TEAM_FLAGS[name] || ''; }
+function renderBracket(){
+  const area=document.getElementById('bracket-area');
+  if(!area)return;
+  const bracket=buildBracketData();
 
-    const bracket = buildBracketData();
-  
-    function teamLogo(logo) {
-      return logo ? `<img class="bm-logo" src="${logo}" onerror="this.style.display='none'">` : '<div class="bm-logo" style="background:var(--search-bg)"></div>';
-    }
-    function matchCard(m) {
-      const isHomeWinner = m.winner === 'home';
-      const isAwayWinner = m.winner === 'away';
-      const isSettled = m.state === 'post';
-      const isLive = m.state === 'in';
-      const predHtml = m.predScore && m.state === 'pre' ? `<div class="bm-pred">📊 预测 ${m.predScore}</div>` : '';
-      const timeHtml = m.state === 'pre' && m.time_bj ? `<div class="bm-time">⏰ ${m.time_bj}</div>` : '';
-      const settledClass = isSettled ? (isHomeWinner ? 'winner-home' : isAwayWinner ? 'winner-away' : 'settled') : '';
-      const liveClass = isLive ? 'live-match' : '';
-      const resultIcon = isSettled ? (isHomeWinner ? '✅' : isAwayWinner ? '✅' : '🤝') : '';
-      const venueHtml = m.venue ? `<div class="bm-venue">🏟️ ${cn(m.venue)}</div>` : '';
-    
-      return `<div class="bracket-match ${settledClass} ${liveClass}">
-        ${timeHtml}
-        <div class="bm-team home ${isHomeWinner ? 'winner' : ''} ${isAwayWinner ? 'bm-loser' : ''}">
-          ${teamLogo(m.home.logo)}
-          <span class="bm-flag">${flag(m.home.name)}</span>
-          <span class="bm-name">${cn(m.home.name)}</span>
-          <span class="bm-rank">#${m.home.rank}</span>
-          <span class="bm-score">${isSettled ? m.home.score : (m.state === 'pre' ? '-' : m.home.score)}</span>
-        </div>
-        <div class="bm-team away ${isAwayWinner ? 'winner' : ''} ${isHomeWinner ? 'bm-loser' : ''}">
-          ${teamLogo(m.away.logo)}
-          <span class="bm-flag">${flag(m.away.name)}</span>
-          <span class="bm-name">${cn(m.away.name)}</span>
-          <span class="bm-rank">#${m.away.rank}</span>
-          <span class="bm-score">${isSettled ? m.away.score : (m.state === 'pre' ? '-' : m.away.score)}</span>
-        </div>
-        ${predHtml}
-        ${resultIcon ? `<div class="bm-result">${resultIcon}</div>` : ''}
-        ${venueHtml}
-      </div>`;
-    }
+  const TEAM_FLAGS={
+    'Australia':'🇦🇺','Egypt':'🇪🇬','Argentina':'🇦🇷','Cape Verde':'🇨🇻','Colombia':'🇨🇴','Ghana':'🇬🇭',
+    'Canada':'🇨🇦','Morocco':'🇲🇦','Paraguay':'🇵🇾','France':'🇫🇷','Brazil':'🇧🇷','Norway':'🇳🇴',
+    'Mexico':'🇲🇽','England':'🏴󠁧󠁢󠁥󠁮󠁧󠁿','Portugal':'🇵🇹','Spain':'🇪🇸','United States':'🇺🇸','USA':'🇺🇸',
+    'Belgium':'🇧🇪','Germany':'🇩🇪','Croatia':'🇭🇷','Sweden':'🇸🇪','South Africa':'🇿🇦','Netherlands':'🇳🇱',
+    'Senegal':'🇸🇳','Bosnia-Herzegovina':'🇧🇦','Bosnia':'🇧🇦','Austria':'🇦🇹'
+  };
+  function flag(n){return TEAM_FLAGS[n]||'';}
+  function code3(n){
+    const m={'United States':'USA','South Korea':'KOR','Bosnia-Herzegovina':'BIH','New Zealand':'NZL',
+      'Saudi Arabia':'KSA','South Africa':'RSA','Cape Verde':'CPV','Costa Rica':'CRC',
+      'Ivory Coast':'CIV','DR Congo':'COD','Congo DR':'COD'};
+    return m[n]||(n.length<=3?n.toUpperCase():n.slice(0,3).toUpperCase());
+  }
 
-  function roundColumn(title, matches) {
-    return `<div class="bracket-round">
-      <div class="bracket-round-title">${title}</div>
-      <div class="bracket-matches">${matches.map(matchCard).join('')}</div>
+  function matchCard(m,fifaId){
+    if(!m)return `<div class="bmatch" style="opacity:.3"><div class="bmatch-id">${fifaId||'?'}</div><div class="bteam"><span class="flag">⏳</span><span class="code">待定</span><span class="score">-</span></div><div class="bteam"><span class="flag">⏳</span><span class="code">待定</span><span class="score">-</span></div><div class="bmatch-status">待赛</div></div>`;
+    const isHomeW=m.winner==='home',isAwayW=m.winner==='away';
+    const settled=m.state==='post';
+    const live=m.state==='in';
+    const settledClass=settled?(isHomeW?'settled-w':'settled-l'):'';
+    const liveClass=live?'live-match':'';
+    const hPen=m.home.pen?`<span class="pen">(${m.home.pen})</span>`:'';
+    const aPen=m.away.pen?`<span class="pen">(${m.away.pen})</span>`:'';
+    const hScore=settled?m.home.score:(m.state==='pre'?'-':m.home.score);
+    const aScore=settled?m.away.score:(m.state==='pre'?'-':m.away.score);
+    const hLoserClass=isAwayW?'loser':'';
+    const aLoserClass=isHomeW?'loser':'';
+    const hWinnerClass=isHomeW?'winner':'';
+    const aWinnerClass=isAwayW?'winner':'';
+    const statusHtml=m.state==='post'?'全场结束':m.time_bj?`⏰ ${m.time_bj}`:'待赛';
+    const statusClass=m.state==='post'?'finished':'';
+    const matchId=fifaId||m.id||'';
+
+    return `<div class="bmatch ${settledClass} ${liveClass}">
+      <div class="bmatch-id">${matchId}</div>
+      <div class="bteam ${hWinnerClass} ${hLoserClass}">
+        <span class="flag">${flag(m.home.name)}</span>
+        <span class="code">${code3(m.home.name)}</span>
+        <span class="score">${hScore}</span>${hPen}
+      </div>
+      <div class="bteam ${aWinnerClass} ${aLoserClass}">
+        <span class="flag">${flag(m.away.name)}</span>
+        <span class="code">${code3(m.away.name)}</span>
+        <span class="score">${aScore}</span>${aPen}
+      </div>
+      <div class="bmatch-status ${statusClass}">${statusHtml}</div>
     </div>`;
   }
 
-  const championHtml = `<div class="bracket-champion">
-    <div class="champion-card">
-      <div class="champion-trophy">🏆</div>
-      <div class="champion-label">冠军</div>
-      <div class="champion-team">待定</div>
-    </div>
-  </div>`;
+  function col(title,matches,fifaIds){
+    return `<div class="bracket-col">
+      <div class="bracket-col-title">${title}</div>
+      <div class="bracket-col-matches">${matches.map((m,i)=>matchCard(m,fifaIds?.[i])).join('')}</div>
+    </div>`;
+  }
 
-  const html = `<div class="bracket-wrap">
-    <div class="bracket-scroll">
-      ${roundColumn('32强 · Round of 32', bracket.round32)}
-      ${roundColumn('16强 · Round of 16', bracket.round16)}
-      ${roundColumn('8强 · Quarter-finals', bracket.quarter)}
-      ${roundColumn('4强 · Semi-finals', bracket.semi)}
-      ${roundColumn('决赛 · Final', bracket.final)}
-      ${championHtml}
+  const leftR32=bracket.leftR32;
+  const rightR32=bracket.rightR32;
+  const r16L=bracket.r16Left;
+  const r16R=bracket.r16Right;
+  const qfL=bracket.qfLeft;
+  const qfR=bracket.qfRight;
+  const sf=bracket.sf;
+  const fin=bracket.finalMatch;
+
+  const html=`<div class="bracket-scroll">
+  <div class="bracket-grid">
+    ${col('32强',leftR32,['M74','M77','M73','M75'])}
+    ${col('16强',r16L,['M89','M90'])}
+    ${col('8强',qfL,['M97'])}
+    ${col('4强',[sf[0]],['M101'])}
+    <div class="bracket-col">
+      <div class="bracket-col-title">🏆 决赛</div>
+      <div class="bracket-center-match">${matchCard(fin,'M104')}</div>
+      <div class="bracket-champion"><div class="champion-card"><div class="champion-trophy">🏆</div><div class="champion-label">冠军</div><div class="champion-team">待定</div></div></div>
     </div>
+    ${col('4强',[sf[1]],['M102'])}
+    ${col('8强',qfR,['M98'])}
+    ${col('16强',r16R,['M93','M94'])}
+    ${col('32强',rightR32,['M83','M84','M81','M82'])}
   </div>
-  <div style="text-align:center;margin-top:12px;font-size:11px;color:var(--secondary)">
-    📊 淘汰赛对阵图 · 数据来自ESPN API · 滑动查看完整对阵 →
-    <br>✅ 已完成 | 📊 AI预测比分 | ⏰ 北京时间
-  </div>`;
+</div>
+<div style="text-align:center;margin-top:12px;font-size:11px;color:var(--secondary)">
+  📊 淘汰赛对阵图 · FIFA 2026 Official Bracket · 横向滑动查看
+  <br>✅ 已完成 | ⏰ 北京时间 | 🏆 淘汰赛阶段
+</div>`;
 
-  area.innerHTML = html;
+  area.innerHTML=html;
 }
 
 // === Initialization ===
