@@ -227,6 +227,38 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 /* ODDS SECTION */
 .odds-section{background:var(--inner-bg);border-radius:14px;padding:12px;margin-bottom:10px;border:1px solid var(--inner-border)}
 
+/* BRACKET / 淘汰赛对阵图 */
+.bracket-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:12px;scroll-snap-type:x mandatory}
+.bracket-scroll{display:flex;gap:0;min-width:max-content;align-items:flex-start}
+.bracket-round{display:flex;flex-direction:column;gap:8px;min-width:200px;padding:0 16px;scroll-snap-align:start;position:relative}
+.bracket-round-title{text-align:center;font-size:13px;font-weight:700;color:var(--accent);margin-bottom:12px;padding:6px 12px;background:rgba(0,122,255,.06);border-radius:12px;white-space:nowrap}
+.bracket-matches{display:flex;flex-direction:column;gap:8px;position:relative}
+.bracket-match{background:var(--card);border-radius:14px;padding:10px 12px;box-shadow:var(--shadow);border:1px solid var(--border);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);transition:.2s;position:relative;min-height:68px}
+.bracket-match:hover{transform:translateY(-1px);box-shadow:0 4px 20px rgba(0,0,0,.1)}
+.bracket-match.winner-home{border-left:3px solid var(--green)}
+.bracket-match.winner-away{border-right:3px solid var(--green)}
+.bracket-match.settled{opacity:1}
+.bm-time{font-size:10px;color:var(--accent);text-align:center;margin-bottom:6px;font-weight:600}
+.bm-team{display:flex;align-items:center;gap:6px;padding:3px 0;font-size:12px}
+.bm-team.home{flex-direction:row}
+.bm-team.away{flex-direction:row}
+.bm-logo{width:24px;height:24px;border-radius:50%;object-fit:contain;background:var(--bg);padding:2px;flex-shrink:0}
+.bm-name{flex:1;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bm-rank{font-size:10px;color:var(--secondary);font-weight:500;min-width:24px;text-align:right}
+.bm-score{font-size:14px;font-weight:800;min-width:20px;text-align:center;font-variant-numeric:tabular-nums}
+.bm-team.winner .bm-name{color:var(--green);font-weight:700}
+.bm-team.winner .bm-score{color:var(--green)}
+.bm-result{position:absolute;top:4px;right:6px;font-size:10px}
+.bm-pred{font-size:10px;color:var(--accent);text-align:center;margin-top:4px;font-weight:600}
+.bracket-champion{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:140px;padding:0 16px;scroll-snap-align:start}
+.champion-card{background:linear-gradient(135deg,rgba(0,122,255,.08),rgba(88,86,214,.08));border-radius:18px;padding:20px;text-align:center;box-shadow:var(--shadow);border:2px solid var(--accent);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);min-width:120px}
+.champion-trophy{font-size:40px;margin-bottom:8px}
+.champion-label{font-size:13px;font-weight:700;color:var(--accent);margin-bottom:4px}
+.champion-team{font-size:16px;font-weight:800;color:var(--text)}
+/* Bracket connector lines */
+.bracket-round:not(:last-child)::after{content:'';position:absolute;right:0;top:50%;width:16px;height:2px;background:var(--border)}
+.bracket-round:not(:last-child) .bracket-matches::before{content:'';position:absolute;right:-16px;top:0;bottom:0;width:2px;background:var(--border)}
+
 /* RESPONSIVE */
 .theme-toggle{position:absolute;top:14px;right:16px;background:var(--search-bg);border:none;border-radius:20px;padding:6px 12px;font-size:16px;cursor:pointer;z-index:110;transition:.3s;backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);line-height:1;display:flex;align-items:center;gap:4px}
 .theme-toggle:hover{background:rgba(0,122,255,.12)}
@@ -242,6 +274,11 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   .accuracy-stats{gap:6px}
   .accuracy-stat{min-width:60px}
   .accuracy-stat .num{font-size:20px}
+  .bracket-round{min-width:170px;padding:0 8px}
+  .bracket-match{padding:8px 10px;min-height:60px}
+  .bm-logo{width:20px;height:20px}
+  .bm-name{font-size:11px}
+  .bm-score{font-size:13px}
 }
 </style>
 </head>
@@ -283,6 +320,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   <div class="tab" data-tab="standings">📊 积分榜</div>
   <div class="tab" data-tab="schedule">📅 赛程</div>
   <div class="tab" data-tab="champion">🏆 冠军预测</div>
+  <div class="tab" data-tab="bracket">🗺️ 淘汰赛</div>
 </div>
 
 <div class="container">
@@ -322,6 +360,11 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   </div>
 
   <div class="tab-content" id="tab-champion"><div id="champion-area"></div></div>
+
+  <div class="tab-content" id="tab-bracket">
+    <div class="sec-title">🗺️ 淘汰赛对阵图 · Knockout Bracket</div>
+    <div id="bracket-area"></div>
+  </div>
 </div>
 
 <div class="footer">
@@ -482,6 +525,7 @@ document.querySelectorAll('.tab').forEach(t=>{
     if(t.dataset.tab === 'predict') renderOdds();
     if(t.dataset.tab === 'champion') renderChampion();
     if(t.dataset.tab === 'standings') fetchStandings();
+    if(t.dataset.tab === 'bracket') renderBracket();
   });
 });
 
@@ -1655,6 +1699,213 @@ function toggleFinished(){
     t.addEventListener('click',()=>setTimeout(updateSticky,50));
   });
 })();
+
+// === Knockout Bracket (淘汰赛对阵图) ===
+function buildBracketData() {
+  // Round of 32 (15 matches with actual team names from API)
+  const r32Ids = ['760493','760494','760495','760496','760497','760498','760499','760500',
+                  '760501','760502','760503','760504','760505','760506','760507'];
+
+  function getMatchInfo(eid) {
+    const ev = (allEvents || []).find(e => e.id === eid);
+    const pred = window.__preds?.[eid];
+    const settlement = window.__settlementsMap?.[eid];
+    if (!ev) {
+      if (pred) {
+        return {
+          id: eid, state: 'pre',
+          home: { name: pred.home.name, logo: pred.home.logo, rank: pred.home.rank, score: 0 },
+          away: { name: pred.away.name, logo: pred.away.logo, rank: pred.away.rank, score: 0 },
+          predScore: pred.prediction?.predicted_score || '?',
+          date: pred.date, time_bj: pred.time_bj
+        };
+      }
+      return null;
+    }
+    const comp = ev.competitions?.[0];
+    const cs = comp?.competitors || [];
+    const h = cs.find(x => x.homeAway === 'home') || cs[0];
+    const a = cs.find(x => x.homeAway === 'away') || cs[1];
+    const state = ev.status?.type?.state || 'pre';
+    const homeName = h?.team?.shortDisplayName || '?';
+    const awayName = a?.team?.shortDisplayName || '?';
+    const homeScore = parseInt(h?.score || '0');
+    const awayScore = parseInt(a?.score || '0');
+    let winner = '';
+    if (state === 'post') {
+      if (homeScore > awayScore) winner = 'home';
+      else if (awayScore > homeScore) winner = 'away';
+    }
+    if (settlement && state === 'post') {
+      winner = settlement.result?.actualWinner || winner;
+    }
+    return {
+      id: eid, state, date: ev.date,
+      home: { name: homeName, logo: h?.team?.logo || '', rank: window.__teamRanks?.[homeName] || pred?.home?.rank || '?', score: homeScore },
+      away: { name: awayName, logo: a?.team?.logo || '', rank: window.__teamRanks?.[awayName] || pred?.away?.rank || '?', score: awayScore },
+      predScore: pred?.prediction?.predicted_score || '',
+      winner
+    };
+  }
+
+  // Round of 32
+  const round32 = [];
+  for (const eid of r32Ids) {
+    const info = getMatchInfo(eid);
+    if (info) round32.push(info);
+  }
+
+  // Round of 16: 760508 (Switzerland vs R32 W15), 760509 (R32 W14 vs R32 W16) from API
+  // Plus 6 more placeholders for other R16 matches
+  const round16 = [];
+  const r16ApiIds = ['760508','760509'];
+  for (const eid of r16ApiIds) {
+    const info = getMatchInfo(eid);
+    if (info) round16.push(info);
+  }
+  // Add remaining R16 placeholder matches (winners from R32 matches 1-12)
+  const r16Placeholders = [
+    {home: 'R32 W1', away: 'R32 W2', date: '2026-07-08T01:00Z', time_bj: '7/8 09:00'},
+    {home: 'R32 W3', away: 'R32 W4', date: '2026-07-08T21:00Z', time_bj: '7/9 05:00'},
+    {home: 'R32 W5', away: 'R32 W6', date: '2026-07-09T01:00Z', time_bj: '7/9 09:00'},
+    {home: 'R32 W7', away: 'R32 W8', date: '2026-07-08T17:00Z', time_bj: '7/9 01:00'},
+    {home: 'R32 W9', away: 'R32 W10', date: '2026-07-09T17:00Z', time_bj: '7/10 01:00'},
+    {home: 'R32 W11', away: 'R32 W12', date: '2026-07-10T01:00Z', time_bj: '7/10 09:00'},
+  ];
+  for (let i = 0; i < r16Placeholders.length; i++) {
+    const p = r16Placeholders[i];
+    round16.push({
+      id: 'r16_ph_' + i, state: 'pre',
+      home: { name: p.home, logo: '', rank: '?', score: 0 },
+      away: { name: p.away, logo: '', rank: '?', score: 0 },
+      predScore: '', date: p.date, time_bj: p.time_bj
+    });
+  }
+
+  // Quarter-finals (760510-760513)
+  const quarter = [];
+  const qfIds = ['760510','760511','760512','760513'];
+  const qfTimes = ['7/10 04:00','7/11 03:00','7/12 05:00','7/12 09:00'];
+  for (let i = 0; i < qfIds.length; i++) {
+    const info = getMatchInfo(qfIds[i]);
+    if (info) {
+      if (!info.time_bj) info.time_bj = qfTimes[i];
+      quarter.push(info);
+    } else {
+      quarter.push({
+        id: qfIds[i], state: 'pre',
+        home: { name: 'QF W' + (i*2+1), logo: '', rank: '?', score: 0 },
+        away: { name: 'QF W' + (i*2+2), logo: '', rank: '?', score: 0 },
+        predScore: '', date: '', time_bj: qfTimes[i]
+      });
+    }
+  }
+
+  // Semi-finals (760514-760515)
+  const semi = [];
+  const sfIds = ['760514','760515'];
+  const sfTimes = ['7/15 03:00','7/16 03:00'];
+  for (let i = 0; i < sfIds.length; i++) {
+    const info = getMatchInfo(sfIds[i]);
+    if (info) {
+      if (!info.time_bj) info.time_bj = sfTimes[i];
+      semi.push(info);
+    } else {
+      semi.push({
+        id: sfIds[i], state: 'pre',
+        home: { name: 'SF W' + (i*2+1), logo: '', rank: '?', score: 0 },
+        away: { name: 'SF W' + (i*2+2), logo: '', rank: '?', score: 0 },
+        predScore: '', date: '', time_bj: sfTimes[i]
+      });
+    }
+  }
+
+  // Final (760517)
+  let finalMatch = getMatchInfo('760517');
+  if (!finalMatch) {
+    finalMatch = {
+      id: '760517', state: 'pre',
+      home: { name: 'SF W1', logo: '', rank: '?', score: 0 },
+      away: { name: 'SF W2', logo: '', rank: '?', score: 0 },
+      predScore: '', date: '2026-07-19T19:00Z', time_bj: '7/20 03:00'
+    };
+  } else if (!finalMatch.time_bj) {
+    finalMatch.time_bj = '7/20 03:00';
+  }
+
+  return { round32, round16, quarter, semi, final: [finalMatch] };
+}
+
+function renderBracket() {
+  const area = document.getElementById('bracket-area');
+  if (!area) return;
+
+  const bracket = buildBracketData();
+  
+  function teamLogo(logo) {
+    return logo ? `<img class="bm-logo" src="${logo}" onerror="this.style.display='none'">` : '<div class="bm-logo" style="background:var(--search-bg)"></div>';
+  }
+
+  function matchCard(m) {
+    const isHomeWinner = m.winner === 'home';
+    const isAwayWinner = m.winner === 'away';
+    const isSettled = m.state === 'post';
+    const predHtml = m.predScore && m.state === 'pre' ? `<div class="bm-pred">📊 预测 ${m.predScore}</div>` : '';
+    const timeHtml = m.state === 'pre' && m.time_bj ? `<div class="bm-time">⏰ ${m.time_bj}</div>` : '';
+    const settledClass = isSettled ? (isHomeWinner ? 'winner-home' : isAwayWinner ? 'winner-away' : 'settled') : '';
+    const resultIcon = isSettled ? (isHomeWinner ? '✅' : isAwayWinner ? '✅' : '🤝') : '';
+    
+    return `<div class="bracket-match ${settledClass}">
+      ${timeHtml}
+      <div class="bm-team home ${isHomeWinner ? 'winner' : ''}">
+        ${teamLogo(m.home.logo)}
+        <span class="bm-name">${cn(m.home.name)}</span>
+        <span class="bm-rank">#${m.home.rank}</span>
+        <span class="bm-score">${isSettled ? m.home.score : (m.state === 'pre' ? '-' : m.home.score)}</span>
+      </div>
+      <div class="bm-team away ${isAwayWinner ? 'winner' : ''}">
+        ${teamLogo(m.away.logo)}
+        <span class="bm-name">${cn(m.away.name)}</span>
+        <span class="bm-rank">#${m.away.rank}</span>
+        <span class="bm-score">${isSettled ? m.away.score : (m.state === 'pre' ? '-' : m.away.score)}</span>
+      </div>
+      ${predHtml}
+      ${resultIcon ? `<div class="bm-result">${resultIcon}</div>` : ''}
+    </div>`;
+  }
+
+  function roundColumn(title, matches) {
+    return `<div class="bracket-round">
+      <div class="bracket-round-title">${title}</div>
+      <div class="bracket-matches">${matches.map(matchCard).join('')}</div>
+    </div>`;
+  }
+
+  const championHtml = `<div class="bracket-champion">
+    <div class="champion-card">
+      <div class="champion-trophy">🏆</div>
+      <div class="champion-label">冠军</div>
+      <div class="champion-team">待定</div>
+    </div>
+  </div>`;
+
+  const html = `<div class="bracket-wrap">
+    <div class="bracket-scroll">
+      ${roundColumn('32强 · Round of 32', bracket.round32)}
+      ${roundColumn('16强 · Round of 16', bracket.round16)}
+      ${roundColumn('8强 · Quarter-finals', bracket.quarter)}
+      ${roundColumn('4强 · Semi-finals', bracket.semi)}
+      ${roundColumn('决赛 · Final', bracket.final)}
+      ${championHtml}
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:12px;font-size:11px;color:var(--secondary)">
+    📊 淘汰赛对阵图 · 数据来自ESPN API · 滑动查看完整对阵 →
+    <br>✅ 已完成 | 📊 AI预测比分 | ⏰ 北京时间
+  </div>`;
+
+  area.innerHTML = html;
+}
 
 // === Initialization ===
 async function init() {
