@@ -36,7 +36,7 @@ function savePredictions() {
 // 从ESPN API获取比赛数据
 async function fetchESPNData() {
   return new Promise((resolve, reject) => {
-    const url = `${ESPN_API}/scoreboard?dates=20260611-20260628`;
+    const url = `${ESPN_API}/scoreboard?dates=20260611-20260720`;
     https.get(url, { headers: { 'Accept-Encoding': 'identity' } }, (res) => {
       let data = '';
       res.on('data', chunk => data += chunk);

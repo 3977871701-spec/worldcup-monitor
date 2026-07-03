@@ -456,15 +456,15 @@ body{background:var(--bg);color:var(--text);font-family:'PingFang SC','Noto Sans
     <div id="sch-area"></div>
   </div>
   
-  <!-- 体彩赔率 -->
-  <div class="panel" id="panel-odds" style="display:none">
-    <div class="p-head"><h2>💰 体彩赔率（sporttery.cn）</h2></div>
+  <!-- 体彩赔率 TAB -->
+  <div class="tab-content" id="tab-odds">
+    <div class="sec-title">💰 体彩赔率（sporttery.cn）</div>
     <div id="odds-area"></div>
   </div>
-  
-  <!-- 冠军预测 -->
-  <div class="panel" id="panel-champion" style="display:none">
-    <div class="p-head"><h2>🏆 冠军预测 & 排名预测</h2></div>
+
+  <!-- 冠军预测 TAB -->
+  <div class="tab-content" id="tab-champion">
+    <div class="sec-title">🏆 冠军预测 & 排名预测</div>
     <div id="champion-area"></div>
   </div>
 </div>
@@ -608,21 +608,10 @@ document.querySelectorAll('.tab').forEach(t=>{
     const tabEl = document.getElementById(tabId);
     if(tabEl) tabEl.classList.add('active');
     
-    // 特殊处理odds标签
-    if(t.dataset.tab === 'odds') {
-      document.getElementById('panel-odds').style.display = 'block';
-      renderOdds();
-    } else {
-      document.getElementById('panel-odds').style.display = 'none';
-    }
-    
-    // 特殊处理champion标签
-    if(t.dataset.tab === 'champion') {
-      document.getElementById('panel-champion').style.display = 'block';
-      renderChampion();
-    } else {
-      document.getElementById('panel-champion').style.display = 'none';
-    }
+    // Trigger lazy-load for tabs that need it
+    if(t.dataset.tab === 'odds') renderOdds();
+    if(t.dataset.tab === 'champion') renderChampion();
+    if(t.dataset.tab === 'standings') fetchStandings();
   });
 });
 
@@ -1429,7 +1418,7 @@ async function fetchStats(){
 
 async function refresh(){
   try{
-    const d=await fetchJ(ESPN+'/scoreboard?dates=20260611-20260628');
+    const d=await fetchJ(ESPN+'/scoreboard?dates=20260611-20260720');
     const events=d.events||[];
     allEvents=events;
     const live=events.filter(e=>isLive(e.status?.type?.state));
@@ -1506,9 +1495,11 @@ async function fetchStandings() {
       renderStandingsGroups(groups);
     } else {
       console.log('积分榜数据结构:', Object.keys(d));
+      renderStandingsFallback();
     }
   } catch(e) {
     console.log('积分榜更新失败:', e);
+    renderStandingsFallback();
   }
 }
 
@@ -1715,8 +1706,8 @@ function renderRealtimeMatchList() {
     const statusText = isLive ? '🔴 直播中' : (state === 'post' ? '已结束' : bjTime(e.date));
     
     const isFinished = state === 'post';
-    const cardClick = isFinished ? '' : `onclick="window.location.href='/realtime.html?id=${e.id}'"`;
-    const btnHtml = isFinished ? '<div style="text-align:center;font-size:11px;color:var(--muted);margin-top:8px">✅ 已结束</div>' : `<button class="rt-match-btn" onclick="event.stopPropagation();window.location.href='/realtime.html?id=${e.id}'">⚡ 查看实时预测</button>`;
+    const cardClick = isFinished ? '' : `onclick="selectRealtimeMatch('${e.id}')"`;
+    const btnHtml = isFinished ? '<div style="text-align:center;font-size:11px;color:var(--muted);margin-top:8px">✅ 已结束</div>' : `<button class="rt-match-btn" onclick="event.stopPropagation();selectRealtimeMatch('${e.id}')">⚡ 查看实时预测</button>`;
     
     html += `<div class="rt-match-card ${statusClass}" data-match-id="${e.id}" ${cardClick}>
       <div class="rt-match-header">
@@ -1915,121 +1906,19 @@ async function init() {
 
 init();
 
-// === STANDINGS DATA ===
-const STANDINGS = {
-  'A组': [
-    {team:'墨西哥',flag:'🇲🇽',played:1,won:1,draw:0,lost:0,gf:2,ga:0,gd:2,pts:3},
-    {team:'韩国',flag:'🇰🇷',played:1,won:1,draw:0,lost:0,gf:2,ga:1,gd:1,pts:3},
-    {team:'南非',flag:'🇿🇦',played:1,won:0,draw:0,lost:1,gf:0,ga:2,gd:-2,pts:0},
-    {team:'捷克',flag:'🇨🇿',played:1,won:0,draw:0,lost:1,gf:1,ga:2,gd:-1,pts:0},
-  ],
-  'B组': [
-    {team:'加拿大',flag:'🇨🇦',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'瑞士',flag:'🇨🇭',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'波黑',flag:'🇧🇦',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'卡塔尔',flag:'🇶🇦',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-  ],
-  'C组': [
-    {team:'巴西',flag:'🇧🇷',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'苏格兰',flag:'🏴󠁧󠁢󠁳󠁣󠁴󠁿',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'摩洛哥',flag:'🇲🇦',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'海地',flag:'🇭🇹',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-  ],
-  'D组': [
-    {team:'美国',flag:'🇺🇸',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'巴拉圭',flag:'🇵🇾',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'土耳其',flag:'🇹🇷',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'澳大利亚',flag:'🇦🇺',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-  ],
-  'E组': [
-    {team:'德国',flag:'🇩🇪',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'科特迪瓦',flag:'🇨🇮',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'厄瓜多尔',flag:'🇪🇨',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'库拉索',flag:'🇨🇼',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-  ],
-  'F组': [
-    {team:'荷兰',flag:'🇳🇱',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'日本',flag:'🇯🇵',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'瑞典',flag:'🇸🇪',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'突尼斯',flag:'🇹🇳',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-  ],
-  'G组': [
-    {team:'西班牙',flag:'🇪🇸',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'比利时',flag:'🇧🇪',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'沙特',flag:'🇸🇦',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'佛得角',flag:'🇨🇻',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-  ],
-  'H组': [
-    {team:'法国',flag:'🇫🇷',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'塞内加尔',flag:'🇸🇳',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'挪威',flag:'🇳🇴',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'伊拉克',flag:'🇮🇶',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-  ],
-  'I组': [
-    {team:'阿根廷',flag:'🇦🇷',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'奥地利',flag:'🇦🇹',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'阿尔及利亚',flag:'🇩🇿',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'约旦',flag:'🇯🇴',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-  ],
-  'J组': [
-    {team:'葡萄牙',flag:'🇵🇹',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'英格兰',flag:'🏴󠁧󠁢󠁥󠁮󠁧󠁿',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'哥伦比亚',flag:'🇨🇴',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'刚果(金)',flag:'🇨🇩',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-  ],
-  'K组': [
-    {team:'克罗地亚',flag:'🇭🇷',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'加纳',flag:'🇬🇭',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'巴拿马',flag:'🇵🇦',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'乌兹别克斯坦',flag:'🇺🇿',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-  ],
-  'L组': [
-    {team:'乌拉圭',flag:'🇺🇾',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'埃及',flag:'🇪🇬',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'伊朗',flag:'🇮🇷',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-    {team:'新西兰',flag:'🇳🇿',played:0,won:0,draw:0,lost:0,gf:0,ga:0,gd:0,pts:0},
-  ],
-};
+// Standings data - rely on fetchStandings() from ESPN API with fallback rendering
+// Static STANDINGS object removed - was outdated (all 0 played)
 
-function renderStandings() {
-  let html = '';
-  for(const [group, teams] of Object.entries(STANDINGS)) {
-    html += `<div class="sec-title">📊 ${group}</div>`;
-    html += `<div style="overflow-x:auto"><table style="width:100%;font-size:12px;border-collapse:collapse">
-      <thead><tr style="color:var(--muted);border-bottom:1px solid var(--border)">
-        <th style="text-align:left;padding:8px 4px">球队</th>
-        <th style="padding:8px 4px">赛</th>
-        <th style="padding:8px 4px">胜</th>
-        <th style="padding:8px 4px">平</th>
-        <th style="padding:8px 4px">负</th>
-        <th style="padding:8px 4px">进</th>
-        <th style="padding:8px 4px">失</th>
-        <th style="padding:8px 4px">净</th>
-        <th style="padding:8px 4px;color:var(--accent)">积分</th>
-      </tr></thead><tbody>`;
-    teams.sort((a,b) => b.pts - a.pts || b.gd - a.gd || b.gf - a.gf);
-    teams.forEach((t, i) => {
-      const qualified = i < 2 ? 'background:rgba(16,185,129,.05)' : '';
-      const gdColor = t.gd > 0 ? 'color:var(--accent)' : t.gd < 0 ? 'color:var(--red)' : '';
-      html += `<tr style="border-bottom:1px solid var(--border);${qualified}">
-        <td style="padding:8px 4px;font-weight:600">${t.flag} ${t.team}</td>
-        <td style="padding:8px 4px;text-align:center">${t.played}</td>
-        <td style="padding:8px 4px;text-align:center">${t.won}</td>
-        <td style="padding:8px 4px;text-align:center">${t.draw}</td>
-        <td style="padding:8px 4px;text-align:center">${t.lost}</td>
-        <td style="padding:8px 4px;text-align:center">${t.gf}</td>
-        <td style="padding:8px 4px;text-align:center">${t.ga}</td>
-        <td style="padding:8px 4px;text-align:center;${gdColor}">${t.gd > 0 ? '+' : ''}${t.gd}</td>
-        <td style="padding:8px 4px;text-align:center;font-weight:800;color:var(--accent)">${t.pts}</td>
-      </tr>`;
-    });
-    html += '</tbody></table></div>';
+// Fallback standings rendering when ESPN API fails
+function renderStandingsFallback() {
+  const stdArea = document.getElementById('std-area');
+  if (stdArea) {
+    stdArea.innerHTML = '<div class="empty"><div class="icon">📊</div><p>积分榜数据加载中...<br><span style="font-size:12px;color:var(--muted)">数据来自ESPN API，请稍候刷新</span></p></div>';
   }
-  document.getElementById('std-area').innerHTML = html;
 }
 
-// 初始化积分榜
-renderStandings();
+// Initial standings render with fallback
+renderStandingsFallback();
 
 
 // === REALTIME TAB UPDATE ===
@@ -2235,8 +2124,16 @@ function renderAllData() {
     document.getElementById('predAvgConf').textContent = avgConf + '%';
   }
   
-  // 更新赛程
-  document.getElementById('sch-area').innerHTML = renderSchedule(allEvents);
+  // 更新赛程（确保settlement数据已加载）
+  if (!settlementData || !settlementData.length) {
+    fetchSettlements().then(() => {
+      document.getElementById('sch-area').innerHTML = renderSchedule(allEvents);
+      renderSettlementStats();
+      markPredictionResults();
+    });
+  } else {
+    document.getElementById('sch-area').innerHTML = renderSchedule(allEvents);
+  }
   
   // 渲染结算统计
   renderSettlementStats();
@@ -2254,6 +2151,9 @@ function renderAllData() {
   document.getElementById('dot').className = 'dot live';
   document.getElementById('stxt').textContent = live.length ? `${live.length} 场直播中` : '监控中';
   document.getElementById('upd').textContent = '更新: ' + new Date().toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+  
+  // 检测直播比赛变化（集成在renderAllData中，避免monkey-patching）
+  checkLiveMatchChanges();
 }
 
 // 初始化API连接
@@ -2276,8 +2176,9 @@ async function initAPI() {
   connectSSE();
 }
 
-// 替换原有的refresh函数
-const originalRefresh = refresh;
+// 替换原有的refresh函数 - 直接集成API优先逻辑（避免monkey-patching）
+// 注意：refresh函数已在此文件中定义，这里重写以支持API优先
+const _refreshFromESPN = refresh;
 refresh = async function() {
   // 如果API可用，优先使用API数据
   if (matchDataFromAPI && matchDataFromAPI.events?.length > 0) {
@@ -2287,7 +2188,7 @@ refresh = async function() {
   }
   
   // 否则使用原有逻辑
-  await originalRefresh();
+  await _refreshFromESPN();
 };
 
 
@@ -2360,7 +2261,7 @@ function showLiveMatchNotification(matches) {
           <img src="${match.awayLogo}" class="live-notif-logo" onerror="this.style.display='none'">
         </div>
         <div class="live-notif-names">${cn(match.home)} vs ${cn(match.away)}</div>
-        <button class="live-notif-btn" onclick="window.location.href='/realtime.html?id=${match.id}'">
+        <button class="live-notif-btn" onclick="this.parentElement.parentElement.parentElement.remove(); selectRealtimeMatch('${match.id}')">
           ⚡ 查看实时预测
         </button>
       </div>
@@ -2394,22 +2295,7 @@ function switchToRealtimeTab() {
   });
 }
 
-// 在refresh函数中添加直播比赛检测
-const originalRenderAllData = typeof renderAllData === 'function' ? renderAllData : null;
-
-if (originalRenderAllData) {
-  renderAllData = function() {
-    originalRenderAllData();
-    checkLiveMatchChanges();
-  };
-} else {
-  // 如果renderAllData不存在，在refresh后检测
-  const origRefresh = refresh;
-  refresh = async function() {
-    await origRefresh();
-    checkLiveMatchChanges();
-  };
-}
+// Live match detection is now integrated into renderAllData() above (fix #10)
 
 
 // === SEARCH ===
@@ -2486,7 +2372,7 @@ function exportSearch(){
   if(!cards.length){alert('请先搜索');return;}
   let text='⚽ 2026 FIFA 世界杯 - 搜索结果\n';
   text+='导出时间: '+new Date().toLocaleString('zh-CN')+'\n';
-  text+='='+'='.repeat(50)+'\n\n';
+  text+='='.repeat(50)+'\n\n';
   cards.forEach((card,i)=>{
     const name=card.dataset.name||'';
     const detail=card.textContent.replace(/\s+/g,' ').trim().substring(0,300);
