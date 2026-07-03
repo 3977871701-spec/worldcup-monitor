@@ -228,36 +228,45 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 .odds-section{background:var(--inner-bg);border-radius:14px;padding:12px;margin-bottom:10px;border:1px solid var(--inner-border)}
 
 /* BRACKET / 淘汰赛对阵图 */
-.bracket-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:12px;scroll-snap-type:x mandatory}
+.bracket-full-width{max-width:none!important;padding-left:0!important;padding-right:0!important}
+.bracket-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:12px;scroll-snap-type:x mandatory;margin:0 -16px}
 .bracket-scroll{display:flex;gap:0;min-width:max-content;align-items:flex-start}
-.bracket-round{display:flex;flex-direction:column;gap:8px;min-width:200px;padding:0 16px;scroll-snap-align:start;position:relative}
-.bracket-round-title{text-align:center;font-size:13px;font-weight:700;color:var(--accent);margin-bottom:12px;padding:6px 12px;background:rgba(0,122,255,.06);border-radius:12px;white-space:nowrap}
-.bracket-matches{display:flex;flex-direction:column;gap:8px;position:relative}
-.bracket-match{background:var(--card);border-radius:14px;padding:10px 12px;box-shadow:var(--shadow);border:1px solid var(--border);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);transition:.2s;position:relative;min-height:68px}
+.bracket-round{display:flex;flex-direction:column;gap:12px;min-width:240px;padding:0 24px;scroll-snap-align:start;position:relative}
+.bracket-round-title{text-align:center;font-size:15px;font-weight:800;color:var(--accent);margin-bottom:16px;padding:10px 16px;background:linear-gradient(135deg,rgba(0,122,255,.1),rgba(88,86,214,.1));border-radius:14px;white-space:nowrap;letter-spacing:.02em}
+.bracket-matches{display:flex;flex-direction:column;gap:12px;position:relative}
+.bracket-match{background:var(--card);border-radius:16px;padding:12px 14px;box-shadow:var(--shadow);border:1px solid var(--border);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);transition:.2s;position:relative;min-height:80px}
 .bracket-match:hover{transform:translateY(-1px);box-shadow:0 4px 20px rgba(0,0,0,.1)}
 .bracket-match.winner-home{border-left:3px solid var(--green)}
 .bracket-match.winner-away{border-right:3px solid var(--green)}
 .bracket-match.settled{opacity:1}
-.bm-time{font-size:10px;color:var(--accent);text-align:center;margin-bottom:6px;font-weight:600}
-.bm-team{display:flex;align-items:center;gap:6px;padding:3px 0;font-size:12px}
+.bracket-match.live-match{border:2px solid var(--green);animation:livePulse 2s infinite}
+@keyframes livePulse{0%,100%{box-shadow:0 0 0 0 rgba(52,199,89,.3)}50%{box-shadow:0 0 12px 4px rgba(52,199,89,.15)}}
+.bm-time{font-size:11px;color:var(--accent);text-align:center;margin-bottom:8px;font-weight:600}
+.bm-team{display:flex;align-items:center;gap:8px;padding:4px 0;font-size:13px}
 .bm-team.home{flex-direction:row}
 .bm-team.away{flex-direction:row}
-.bm-logo{width:24px;height:24px;border-radius:50%;object-fit:contain;background:var(--bg);padding:2px;flex-shrink:0}
+.bm-logo{width:32px;height:32px;border-radius:50%;object-fit:contain;background:var(--bg);padding:2px;flex-shrink:0}
 .bm-name{flex:1;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .bm-rank{font-size:10px;color:var(--secondary);font-weight:500;min-width:24px;text-align:right}
-.bm-score{font-size:14px;font-weight:800;min-width:20px;text-align:center;font-variant-numeric:tabular-nums}
+.bm-score{font-size:15px;font-weight:800;min-width:24px;text-align:center;font-variant-numeric:tabular-nums}
+.bm-loser .bm-name{color:var(--secondary);font-weight:400;text-decoration:line-through;opacity:.6}
+.bm-loser .bm-score{color:var(--secondary);opacity:.6}
 .bm-team.winner .bm-name{color:var(--green);font-weight:700}
 .bm-team.winner .bm-score{color:var(--green)}
-.bm-result{position:absolute;top:4px;right:6px;font-size:10px}
-.bm-pred{font-size:10px;color:var(--accent);text-align:center;margin-top:4px;font-weight:600}
-.bracket-champion{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:140px;padding:0 16px;scroll-snap-align:start}
-.champion-card{background:linear-gradient(135deg,rgba(0,122,255,.08),rgba(88,86,214,.08));border-radius:18px;padding:20px;text-align:center;box-shadow:var(--shadow);border:2px solid var(--accent);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);min-width:120px}
-.champion-trophy{font-size:40px;margin-bottom:8px}
-.champion-label{font-size:13px;font-weight:700;color:var(--accent);margin-bottom:4px}
-.champion-team{font-size:16px;font-weight:800;color:var(--text)}
+.bm-result{position:absolute;top:6px;right:8px;font-size:11px}
+.bm-pred{font-size:11px;color:var(--accent);text-align:center;margin-top:6px;font-weight:600}
+.bm-venue{font-size:10px;color:var(--secondary);text-align:center;margin-top:4px}
+.bm-flag{font-size:14px;margin-right:2px}
+.bracket-champion{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:160px;padding:0 24px;scroll-snap-align:start}
+.champion-card{background:linear-gradient(135deg,rgba(255,215,0,.12),rgba(255,165,0,.08));border-radius:22px;padding:28px;text-align:center;box-shadow:0 4px 30px rgba(255,215,0,.15);border:3px solid #FFD700;backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);min-width:140px}
+.champion-trophy{font-size:56px;margin-bottom:12px;animation:trophyBounce 3s ease-in-out infinite}
+@keyframes trophyBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.champion-label{font-size:14px;font-weight:800;color:#FFD700;margin-bottom:6px;text-transform:uppercase;letter-spacing:.05em}
+.champion-team{font-size:18px;font-weight:800;color:var(--text)}
 /* Bracket connector lines */
-.bracket-round:not(:last-child)::after{content:'';position:absolute;right:0;top:50%;width:16px;height:2px;background:var(--border)}
-.bracket-round:not(:last-child) .bracket-matches::before{content:'';position:absolute;right:-16px;top:0;bottom:0;width:2px;background:var(--border)}
+.bracket-round:not(:last-child)::after{content:'';position:absolute;right:0;top:50%;width:24px;height:2px;background:linear-gradient(90deg,var(--border),var(--accent));animation:connectorPulse 3s infinite}
+.bracket-round:not(:last-child) .bracket-matches::after{content:'';position:absolute;right:-24px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--accent),var(--border),var(--accent));animation:connectorPulse 3s infinite}
+@keyframes connectorPulse{0%,100%{opacity:.4}50%{opacity:1}}
 
 /* RESPONSIVE */
 .theme-toggle{position:absolute;top:14px;right:16px;background:var(--search-bg);border:none;border-radius:20px;padding:6px 12px;font-size:16px;cursor:pointer;z-index:110;transition:.3s;backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);line-height:1;display:flex;align-items:center;gap:4px}
@@ -275,10 +284,11 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
   .accuracy-stat{min-width:60px}
   .accuracy-stat .num{font-size:20px}
   .bracket-round{min-width:170px;padding:0 8px}
-  .bracket-match{padding:8px 10px;min-height:60px}
-  .bm-logo{width:20px;height:20px}
+  .bracket-match{padding:10px 12px;min-height:70px}
+  .bm-logo{width:28px;height:28px}
   .bm-name{font-size:11px}
   .bm-score{font-size:13px}
+  .champion-trophy{font-size:44px}
 }
 </style>
 </head>
@@ -314,17 +324,16 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 </div>
 
 <div class="tabs">
-  <div class="tab active" data-tab="live">🔴 实时比分</div>
+  <div class="tab active" data-tab="bracket">🗺️ 淘汰赛</div>
+  <div class="tab" data-tab="live">🔴 实时比分</div>
   <div class="tab" data-tab="predict">🔮 AI预测</div>
   <div class="tab" data-tab="realtime">⚡ 实时预测</div>
-  <div class="tab" data-tab="standings">📊 积分榜</div>
   <div class="tab" data-tab="schedule">📅 赛程</div>
   <div class="tab" data-tab="champion">🏆 冠军预测</div>
-  <div class="tab" data-tab="bracket">🗺️ 淘汰赛</div>
 </div>
 
 <div class="container">
-  <div class="tab-content active" id="tab-live">
+  <div class="tab-content" id="tab-live">
     <div class="stats-bar" id="statsBar">
       <div class="stat-item"><div class="stat-num" id="statToday">-</div><div class="stat-label">今日比赛</div></div>
       <div class="stat-item"><div class="stat-num" id="statRemaining">-</div><div class="stat-label">剩余比赛</div></div>
@@ -352,8 +361,6 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
     </div>
   </div>
 
-  <div class="tab-content" id="tab-standings"><div id="std-area"></div></div>
-
   <div class="tab-content" id="tab-schedule">
     <div id="settlement-stats-area"></div>
     <div id="sch-area"></div>
@@ -361,7 +368,7 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 
   <div class="tab-content" id="tab-champion"><div id="champion-area"></div></div>
 
-  <div class="tab-content" id="tab-bracket">
+  <div class="tab-content active bracket-full-width" id="tab-bracket">
     <div class="sec-title">🗺️ 淘汰赛对阵图 · Knockout Bracket</div>
     <div id="bracket-area"></div>
   </div>
@@ -524,7 +531,6 @@ document.querySelectorAll('.tab').forEach(t=>{
     if(tabEl) tabEl.classList.add('active');
     if(t.dataset.tab === 'predict') renderOdds();
     if(t.dataset.tab === 'champion') renderChampion();
-    if(t.dataset.tab === 'standings') fetchStandings();
     if(t.dataset.tab === 'bracket') renderBracket();
   });
 });
@@ -1717,7 +1723,8 @@ function buildBracketData() {
           home: { name: pred.home.name, logo: pred.home.logo, rank: pred.home.rank, score: 0 },
           away: { name: pred.away.name, logo: pred.away.logo, rank: pred.away.rank, score: 0 },
           predScore: pred.prediction?.predicted_score || '?',
-          date: pred.date, time_bj: pred.time_bj
+          date: pred.date, time_bj: pred.time_bj,
+          venue: pred.venue || ''
         };
       }
       return null;
@@ -1744,7 +1751,8 @@ function buildBracketData() {
       home: { name: homeName, logo: h?.team?.logo || '', rank: window.__teamRanks?.[homeName] || pred?.home?.rank || '?', score: homeScore },
       away: { name: awayName, logo: a?.team?.logo || '', rank: window.__teamRanks?.[awayName] || pred?.away?.rank || '?', score: awayScore },
       predScore: pred?.prediction?.predicted_score || '',
-      winner
+      winner,
+      venue: comp?.venue?.fullName || pred?.venue || ''
     };
   }
 
@@ -1839,40 +1847,61 @@ function buildBracketData() {
 function renderBracket() {
   const area = document.getElementById('bracket-area');
   if (!area) return;
+  const TEAM_FLAGS = {
+      'Argentina':'🇦🇷','Brazil':'🇧🇷','France':'🇫🇷','England':'🏴󠁧󠁢󠁥󠁮󠁧󠁿','Germany':'🇩🇪','Spain':'🇪🇸',
+      'Netherlands':'🇳🇱','Portugal':'🇵🇹','Belgium':'🇧🇪','Croatia':'🇭🇷','Morocco':'🇲🇦','Japan':'🇯🇵',
+      'Mexico':'🇲🇽','United States':'🇺🇸','USA':'🇺🇸','Canada':'🇨🇦','Australia':'🇦🇺','South Korea':'🇰🇷',
+      'Switzerland':'🇨🇭','Turkey':'🇹🇷','Qatar':'🇶🇦','Ecuador':'🇪🇨','Colombia':'🇨🇴','Uruguay':'🇺🇾',
+      'Senegal':'🇸🇳','Ghana':'🇬🇭','Cameroon':'🇨🇲','Serbia':'🇷🇸','Poland':'🇵🇱','Denmark':'🇩🇰',
+      'Sweden':'🇸🇪','Norway':'🇳🇴','Saudi Arabia':'🇸🇦','Iran':'🇮🇷','Tunisia':'🇹🇳','Egypt':'🇪🇬',
+      'Paraguay':'🇵🇾','Bolivia':'🇧🇴','Chile':'🇨🇱','Peru':'🇵🇪','Panama':'🇵🇦','Costa Rica':'🇨🇷',
+      'Honduras':'🇭🇳','Jamaica':'🇯🇲','New Zealand':'🇳🇿','Cape Verde':'🇨🇻','Algeria':'🇩🇿',
+      'Mali':'🇲🇱','DR Congo':'🇨🇩','Congo DR':'🇨🇩','Iraq':'🇮🇶','Jordan':'🇯🇴','Uzbekistan':'🇺🇿',
+      'Scotland':'🏴󠁧󠁢󠁳󠁣󠁴󠁿','Wales':'🏴󠁧󠁢󠁷󠁬󠁳󠁿','Austria':'🇦🇹','Hungary':'🇭🇺','Romania':'🇷🇴',
+      'Ukraine':'🇺🇦','Slovenia':'🇸🇮','Slovakia':'🇸🇰','Greece':'🇬🇷','Finland':'🇫🇮',
+      'Bosnia-Herzegovina':'🇧🇦','Bosnia':'🇧🇦','Haiti':'🇭🇹','South Africa':'🇿🇦','Ivory Coast':'🇨🇮',
+      'Czechia':'🇨🇿','Czech':'🇨🇿','Ireland':'🇮🇪','Portugal':'🇵🇹','Korea':'🇰🇷'
+    };
+    function flag(name) { return TEAM_FLAGS[name] || ''; }
 
-  const bracket = buildBracketData();
+    const bracket = buildBracketData();
   
-  function teamLogo(logo) {
-    return logo ? `<img class="bm-logo" src="${logo}" onerror="this.style.display='none'">` : '<div class="bm-logo" style="background:var(--search-bg)"></div>';
-  }
-
-  function matchCard(m) {
-    const isHomeWinner = m.winner === 'home';
-    const isAwayWinner = m.winner === 'away';
-    const isSettled = m.state === 'post';
-    const predHtml = m.predScore && m.state === 'pre' ? `<div class="bm-pred">📊 预测 ${m.predScore}</div>` : '';
-    const timeHtml = m.state === 'pre' && m.time_bj ? `<div class="bm-time">⏰ ${m.time_bj}</div>` : '';
-    const settledClass = isSettled ? (isHomeWinner ? 'winner-home' : isAwayWinner ? 'winner-away' : 'settled') : '';
-    const resultIcon = isSettled ? (isHomeWinner ? '✅' : isAwayWinner ? '✅' : '🤝') : '';
+    function teamLogo(logo) {
+      return logo ? `<img class="bm-logo" src="${logo}" onerror="this.style.display='none'">` : '<div class="bm-logo" style="background:var(--search-bg)"></div>';
+    }
+    function matchCard(m) {
+      const isHomeWinner = m.winner === 'home';
+      const isAwayWinner = m.winner === 'away';
+      const isSettled = m.state === 'post';
+      const isLive = m.state === 'in';
+      const predHtml = m.predScore && m.state === 'pre' ? `<div class="bm-pred">📊 预测 ${m.predScore}</div>` : '';
+      const timeHtml = m.state === 'pre' && m.time_bj ? `<div class="bm-time">⏰ ${m.time_bj}</div>` : '';
+      const settledClass = isSettled ? (isHomeWinner ? 'winner-home' : isAwayWinner ? 'winner-away' : 'settled') : '';
+      const liveClass = isLive ? 'live-match' : '';
+      const resultIcon = isSettled ? (isHomeWinner ? '✅' : isAwayWinner ? '✅' : '🤝') : '';
+      const venueHtml = m.venue ? `<div class="bm-venue">🏟️ ${cn(m.venue)}</div>` : '';
     
-    return `<div class="bracket-match ${settledClass}">
-      ${timeHtml}
-      <div class="bm-team home ${isHomeWinner ? 'winner' : ''}">
-        ${teamLogo(m.home.logo)}
-        <span class="bm-name">${cn(m.home.name)}</span>
-        <span class="bm-rank">#${m.home.rank}</span>
-        <span class="bm-score">${isSettled ? m.home.score : (m.state === 'pre' ? '-' : m.home.score)}</span>
-      </div>
-      <div class="bm-team away ${isAwayWinner ? 'winner' : ''}">
-        ${teamLogo(m.away.logo)}
-        <span class="bm-name">${cn(m.away.name)}</span>
-        <span class="bm-rank">#${m.away.rank}</span>
-        <span class="bm-score">${isSettled ? m.away.score : (m.state === 'pre' ? '-' : m.away.score)}</span>
-      </div>
-      ${predHtml}
-      ${resultIcon ? `<div class="bm-result">${resultIcon}</div>` : ''}
-    </div>`;
-  }
+      return `<div class="bracket-match ${settledClass} ${liveClass}">
+        ${timeHtml}
+        <div class="bm-team home ${isHomeWinner ? 'winner' : ''} ${isAwayWinner ? 'bm-loser' : ''}">
+          ${teamLogo(m.home.logo)}
+          <span class="bm-flag">${flag(m.home.name)}</span>
+          <span class="bm-name">${cn(m.home.name)}</span>
+          <span class="bm-rank">#${m.home.rank}</span>
+          <span class="bm-score">${isSettled ? m.home.score : (m.state === 'pre' ? '-' : m.home.score)}</span>
+        </div>
+        <div class="bm-team away ${isAwayWinner ? 'winner' : ''} ${isHomeWinner ? 'bm-loser' : ''}">
+          ${teamLogo(m.away.logo)}
+          <span class="bm-flag">${flag(m.away.name)}</span>
+          <span class="bm-name">${cn(m.away.name)}</span>
+          <span class="bm-rank">#${m.away.rank}</span>
+          <span class="bm-score">${isSettled ? m.away.score : (m.state === 'pre' ? '-' : m.away.score)}</span>
+        </div>
+        ${predHtml}
+        ${resultIcon ? `<div class="bm-result">${resultIcon}</div>` : ''}
+        ${venueHtml}
+      </div>`;
+    }
 
   function roundColumn(title, matches) {
     return `<div class="bracket-round">
@@ -1912,7 +1941,7 @@ async function init() {
   console.log('🚀 世界杯监控系统启动...');
   await refresh();
   setInterval(refresh, POLL);
-  renderStandingsFallback();
+  renderBracket();
   console.log('✅ 系统就绪');
 }
 
