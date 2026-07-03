@@ -1,1 +1,5102 @@
-{}
+{
+  "760487": {
+    "spread": "BRA -0.5",
+    "overUnder": 2.5,
+    "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -140,
+      "spreadOdds": -150.0,
+      "team": {
+        "id": "205",
+        "uid": "s:600~t:205",
+        "location": "Brazil",
+        "name": "Brazil",
+        "abbreviation": "BRA",
+        "displayName": "Brazil",
+        "shortDisplayName": "Brazil",
+        "color": "fee000",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/205/brazil",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/205/brazil",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:205&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/205/brazil",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:205&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/205/brazil",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:205&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:205&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/205/brazil",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:205&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": true
+    },
+    "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 425,
+      "spreadOdds": 120.0,
+      "team": {
+        "id": "627",
+        "uid": "s:600~t:627",
+        "location": "Japan",
+        "name": "Japan",
+        "abbreviation": "JPN",
+        "displayName": "Japan",
+        "shortDisplayName": "Japan",
+        "color": "000555",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/627/japan",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/627/japan",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:627&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/627/japan",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:627&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/627/japan",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:627&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:627&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/627/japan",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:627&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": false
+    }
+  },
+  "760489": {
+    "spread": "GER -1.5",
+    "overUnder": 2.5,
+    "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -275,
+      "spreadOdds": 105.0,
+      "team": {
+        "id": "481",
+        "uid": "s:600~t:481",
+        "location": "Germany",
+        "name": "Germany",
+        "abbreviation": "GER",
+        "displayName": "Germany",
+        "shortDisplayName": "Germany",
+        "color": "FFFFFF",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/481/germany",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/481/germany",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:481&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/481/germany",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:481&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/481/germany",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:481&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:481&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/481/germany",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:481&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": true
+    },
+    "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 800,
+      "spreadOdds": -135.0,
+      "team": {
+        "id": "210",
+        "uid": "s:600~t:210",
+        "location": "Paraguay",
+        "name": "Paraguay",
+        "abbreviation": "PAR",
+        "displayName": "Paraguay",
+        "shortDisplayName": "Paraguay",
+        "color": "ea2300",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/210/paraguay",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/210/paraguay",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:210&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/210/paraguay",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:210&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/210/paraguay",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:210&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:210&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/210/paraguay",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:210&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": false
+    }
+  },
+  "760488": {
+    "spread": "NED -0.5",
+    "overUnder": 2.5,
+    "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": 130,
+      "spreadOdds": 125.0,
+      "team": {
+        "id": "449",
+        "uid": "s:600~t:449",
+        "location": "Netherlands",
+        "name": "Netherlands",
+        "abbreviation": "NED",
+        "displayName": "Netherlands",
+        "shortDisplayName": "Netherlands",
+        "color": "fb5d00",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/449/netherlands",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/449/netherlands",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:449&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/449/netherlands",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:449&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/449/netherlands",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:449&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:449&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/449/netherlands",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:449&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": true
+    },
+    "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 250,
+      "spreadOdds": -155.0,
+      "team": {
+        "id": "2869",
+        "uid": "s:600~t:2869",
+        "location": "Morocco",
+        "name": "Morocco",
+        "abbreviation": "MAR",
+        "displayName": "Morocco",
+        "shortDisplayName": "Morocco",
+        "color": "df2027",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/2869/morocco",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/2869/morocco",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2869&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/2869/morocco",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2869&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/2869/morocco",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2869&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2869&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/2869/morocco",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2869&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": false
+    }
+  },
+  "760490": {
+    "spread": "NOR -0.5",
+    "overUnder": 2.5,
+    "homeTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 265,
+      "spreadOdds": -125.0,
+      "team": {
+        "id": "4789",
+        "uid": "s:600~t:4789",
+        "location": "Ivory Coast",
+        "name": "Ivory Coast",
+        "abbreviation": "CIV",
+        "displayName": "Ivory Coast",
+        "shortDisplayName": "Ivory Coast",
+        "color": "FF8200",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/4789/ivory-coast",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/4789/ivory-coast",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:4789&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/4789/ivory-coast",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:4789&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/4789/ivory-coast",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:4789&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:4789&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/4789/ivory-coast",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:4789&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": false
+    },
+    "awayTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": 105,
+      "spreadOdds": 100.0,
+      "team": {
+        "id": "464",
+        "uid": "s:600~t:464",
+        "location": "Norway",
+        "name": "Norway",
+        "abbreviation": "NOR",
+        "displayName": "Norway",
+        "shortDisplayName": "Norway",
+        "color": "C8102E",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/464/norway",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/464/norway",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:464&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/464/norway",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:464&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/464/norway",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:464&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:464&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/464/norway",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:464&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": true
+    }
+  },
+  "760492": {
+    "spread": "FRA -1.5",
+    "overUnder": 3.5,
+    "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -370,
+      "spreadOdds": -140.0,
+      "team": {
+        "id": "478",
+        "uid": "s:600~t:478",
+        "location": "France",
+        "name": "France",
+        "abbreviation": "FRA",
+        "displayName": "France",
+        "shortDisplayName": "France",
+        "color": "000080",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/478/france",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/478/france",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:478&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/478/france",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:478&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/478/france",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:478&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:478&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/478/france",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:478&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": true
+    },
+    "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 950,
+      "spreadOdds": 110.0,
+      "team": {
+        "id": "466",
+        "uid": "s:600~t:466",
+        "location": "Sweden",
+        "name": "Sweden",
+        "abbreviation": "SWE",
+        "displayName": "Sweden",
+        "shortDisplayName": "Sweden",
+        "color": "fecb00",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/466/sweden",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/466/sweden",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:466&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/466/sweden",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:466&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/466/sweden",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:466&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:466&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/466/sweden",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:466&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": false
+    }
+  },
+  "760491": {
+    "spread": "MEX -0.5",
+    "overUnder": 1.5,
+    "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": 120,
+      "spreadOdds": 115.0,
+      "team": {
+        "id": "203",
+        "uid": "s:600~t:203",
+        "location": "Mexico",
+        "name": "Mexico",
+        "abbreviation": "MEX",
+        "displayName": "Mexico",
+        "shortDisplayName": "Mexico",
+        "color": "006847",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/203/mexico",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/203/mexico",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:203&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/203/mexico",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:203&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/203/mexico",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:203&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:203&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/203/mexico",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:203&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": true
+    },
+    "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 300,
+      "spreadOdds": -145.0,
+      "team": {
+        "id": "209",
+        "uid": "s:600~t:209",
+        "location": "Ecuador",
+        "name": "Ecuador",
+        "abbreviation": "ECU",
+        "displayName": "Ecuador",
+        "shortDisplayName": "Ecuador",
+        "color": "ffdd00",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/209/ecuador",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/209/ecuador",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:209&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/209/ecuador",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:209&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/209/ecuador",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:209&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:209&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/209/ecuador",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:209&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": false
+    }
+  },
+  "760495": {
+    "spread": "ENG -1.5",
+    "overUnder": 2.5,
+    "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -350,
+      "spreadOdds": -115.0,
+      "team": {
+        "id": "448",
+        "uid": "s:600~t:448",
+        "location": "England",
+        "name": "England",
+        "abbreviation": "ENG",
+        "displayName": "England",
+        "shortDisplayName": "England",
+        "color": "ffffff",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/448/england",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/448/england",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:448&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/448/england",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:448&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/448/england",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:448&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:448&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/448/england",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:448&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": true
+    },
+    "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 1100,
+      "spreadOdds": -110.0,
+      "team": {
+        "id": "2850",
+        "uid": "s:600~t:2850",
+        "location": "Congo DR",
+        "name": "Congo DR",
+        "abbreviation": "COD",
+        "displayName": "Congo DR",
+        "shortDisplayName": "Congo DR",
+        "color": "418fde",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/2850/congo-dr",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/2850/congo-dr",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2850&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/2850/congo-dr",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2850&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/2850/congo-dr",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2850&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2850&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/2850/congo-dr",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2850&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": false
+    }
+  },
+  "760493": {
+    "spread": "BEL -0.5",
+    "overUnder": 2.5,
+    "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": 120,
+      "spreadOdds": 115.0,
+      "team": {
+        "id": "459",
+        "uid": "s:600~t:459",
+        "location": "Belgium",
+        "name": "Belgium",
+        "abbreviation": "BEL",
+        "displayName": "Belgium",
+        "shortDisplayName": "Belgium",
+        "color": "E30613",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/459/belgium",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/459/belgium",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:459&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/459/belgium",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:459&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/459/belgium",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:459&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:459&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/459/belgium",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:459&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": true
+    },
+    "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 255,
+      "spreadOdds": -145.0,
+      "team": {
+        "id": "654",
+        "uid": "s:600~t:654",
+        "location": "Senegal",
+        "name": "Senegal",
+        "abbreviation": "SEN",
+        "displayName": "Senegal",
+        "shortDisplayName": "Senegal",
+        "color": "FFFFFF",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/654/senegal",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/654/senegal",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:654&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/654/senegal",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:654&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/654/senegal",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:654&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:654&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/654/senegal",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:654&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": false
+    }
+  },
+  "760494": {
+    "spread": "USA -1.5",
+    "overUnder": 2.5,
+    "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -270,
+      "spreadOdds": 105.0,
+      "team": {
+        "id": "660",
+        "uid": "s:600~t:660",
+        "location": "United States",
+        "name": "United States",
+        "abbreviation": "USA",
+        "displayName": "United States",
+        "shortDisplayName": "USA",
+        "color": "d42339",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/660/united-states",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/660/united-states",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:660&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/660/united-states",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:660&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/660/united-states",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:660&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:660&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/660/united-states",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:660&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": true
+    },
+    "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 800,
+      "spreadOdds": -135.0,
+      "team": {
+        "id": "452",
+        "uid": "s:600~t:452",
+        "location": "Bosnia-Herzegovina",
+        "name": "Bosnia-Herzegovina",
+        "abbreviation": "BIH",
+        "displayName": "Bosnia-Herzegovina",
+        "shortDisplayName": "Bosnia-Herz",
+        "color": "112855",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/452/bosnia-herzegovina",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/452/bosnia-herzegovina",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:452&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/452/bosnia-herzegovina",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:452&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/452/bosnia-herzegovina",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:452&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:452&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/452/bosnia-herzegovina",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:452&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": false
+    }
+  },
+  "760497": {
+    "spread": "ESP -1.5",
+    "overUnder": 2.5,
+    "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -320,
+      "spreadOdds": -110.0,
+      "team": {
+        "id": "164",
+        "uid": "s:600~t:164",
+        "location": "Spain",
+        "name": "Spain",
+        "abbreviation": "ESP",
+        "displayName": "Spain",
+        "shortDisplayName": "Spain",
+        "color": "c60b1e",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/164/spain",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/164/spain",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:164&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/164/spain",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:164&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/164/spain",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:164&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:164&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/164/spain",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:164&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": true
+    },
+    "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 950,
+      "spreadOdds": -115.0,
+      "team": {
+        "id": "474",
+        "uid": "s:600~t:474",
+        "location": "Austria",
+        "name": "Austria",
+        "abbreviation": "AUT",
+        "displayName": "Austria",
+        "shortDisplayName": "Austria",
+        "color": "d72b2c",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/474/austria",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/474/austria",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:474&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/474/austria",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:474&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/474/austria",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:474&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:474&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/474/austria",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:474&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": false
+    }
+  },
+  "760496": {
+    "spread": "POR -0.5",
+    "overUnder": 2.5,
+    "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -125,
+      "spreadOdds": -135.0,
+      "team": {
+        "id": "482",
+        "uid": "s:600~t:482",
+        "location": "Portugal",
+        "name": "Portugal",
+        "abbreviation": "POR",
+        "displayName": "Portugal",
+        "shortDisplayName": "Portugal",
+        "color": "da291c",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/482/portugal",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/482/portugal",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:482&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/482/portugal",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:482&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/482/portugal",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:482&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:482&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/482/portugal",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:482&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": true
+    },
+    "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 370,
+      "spreadOdds": 105.0,
+      "team": {
+        "id": "477",
+        "uid": "s:600~t:477",
+        "location": "Croatia",
+        "name": "Croatia",
+        "abbreviation": "CRO",
+        "displayName": "Croatia",
+        "shortDisplayName": "Croatia",
+        "color": "ff0000",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/477/croatia",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/477/croatia",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:477&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/477/croatia",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:477&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/477/croatia",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:477&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:477&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/477/croatia",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:477&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": false
+    }
+  },
+  "760498": {
+    "spread": "SUI -0.5",
+    "overUnder": 2.5,
+    "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": 105,
+      "spreadOdds": -105.0,
+      "team": {
+        "id": "475",
+        "uid": "s:600~t:475",
+        "location": "Switzerland",
+        "name": "Switzerland",
+        "abbreviation": "SUI",
+        "displayName": "Switzerland",
+        "shortDisplayName": "Switzerland",
+        "color": "FF0000",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/475/switzerland",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/475/switzerland",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:475&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/475/switzerland",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:475&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/475/switzerland",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:475&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:475&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/475/switzerland",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:475&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": true
+    },
+    "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 300,
+      "spreadOdds": -125.0,
+      "team": {
+        "id": "624",
+        "uid": "s:600~t:624",
+        "location": "Algeria",
+        "name": "Algeria",
+        "abbreviation": "ALG",
+        "displayName": "Algeria",
+        "shortDisplayName": "Algeria",
+        "color": "4F9A44",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/624/algeria",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/624/algeria",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:624&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/624/algeria",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:624&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/624/algeria",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:624&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:624&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/624/algeria",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:624&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": false
+    }
+  },
+  "760499": {
+    "spread": "EGY -0.5",
+    "overUnder": 1.5,
+    "homeTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 230,
+      "spreadOdds": -185.0,
+      "team": {
+        "id": "628",
+        "uid": "s:600~t:628",
+        "location": "Australia",
+        "name": "Australia",
+        "abbreviation": "AUS",
+        "displayName": "Australia",
+        "shortDisplayName": "Australia",
+        "color": "FFCD00",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/628/australia",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/628/australia",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:628&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/628/australia",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:628&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/628/australia",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:628&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:628&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/628/australia",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:628&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": false
+    },
+    "awayTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": 150,
+      "spreadOdds": 145.0,
+      "team": {
+        "id": "2620",
+        "uid": "s:600~t:2620",
+        "location": "Egypt",
+        "name": "Egypt",
+        "abbreviation": "EGY",
+        "displayName": "Egypt",
+        "shortDisplayName": "Egypt",
+        "color": "D20300",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/2620/egypt",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/2620/egypt",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2620&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/2620/egypt",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2620&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/2620/egypt",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2620&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2620&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/2620/egypt",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2620&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": true
+    }
+  },
+  "760500": {
+    "spread": "ARG -2.5",
+    "overUnder": 2.5,
+    "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -600,
+      "spreadOdds": 140.0,
+      "team": {
+        "id": "202",
+        "uid": "s:600~t:202",
+        "location": "Argentina",
+        "name": "Argentina",
+        "abbreviation": "ARG",
+        "displayName": "Argentina",
+        "shortDisplayName": "Argentina",
+        "color": "74acdf",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/202/argentina",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/202/argentina",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:202&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/202/argentina",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:202&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/202/argentina",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:202&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:202&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/202/argentina",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:202&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": true
+    },
+    "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 1700,
+      "spreadOdds": -180.0,
+      "team": {
+        "id": "2597",
+        "uid": "s:600~t:2597",
+        "location": "Cape Verde",
+        "name": "Cape Verde",
+        "abbreviation": "CPV",
+        "displayName": "Cape Verde",
+        "shortDisplayName": "Cape Verde",
+        "color": "000080",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/2597/cape-verde",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/2597/cape-verde",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2597&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/2597/cape-verde",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2597&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/2597/cape-verde",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2597&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2597&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/2597/cape-verde",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:2597&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": false
+    }
+  },
+  "760501": {
+    "spread": "COL -1.5",
+    "overUnder": 2.5,
+    "homeTeamOdds": {
+      "favorite": true,
+      "underdog": false,
+      "moneyLine": -190,
+      "spreadOdds": 150.0,
+      "team": {
+        "id": "208",
+        "uid": "s:600~t:208",
+        "location": "Colombia",
+        "name": "Colombia",
+        "abbreviation": "COL",
+        "displayName": "Colombia",
+        "shortDisplayName": "Colombia",
+        "color": "fbd632",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/208/colombia",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/208/colombia",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:208&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/208/colombia",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:208&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/208/colombia",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:208&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:208&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/208/colombia",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:208&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": true
+    },
+    "awayTeamOdds": {
+      "favorite": false,
+      "underdog": true,
+      "moneyLine": 600,
+      "spreadOdds": -195.0,
+      "team": {
+        "id": "4469",
+        "uid": "s:600~t:4469",
+        "location": "Ghana",
+        "name": "Ghana",
+        "abbreviation": "GHA",
+        "displayName": "Ghana",
+        "shortDisplayName": "Ghana",
+        "color": "fbd632",
+        "isActive": true,
+        "links": [
+          {
+            "language": "en-US",
+            "rel": [
+              "clubhouse",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/_/id/4469/ghana",
+            "text": "Clubhouse",
+            "shortText": "Clubhouse",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/stats/_/id/4469/ghana",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "stats",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:4469&section=stats",
+            "text": "Stats",
+            "shortText": "Stats",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/fixtures/_/id/4469/ghana",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "schedule",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:4469&section=scores",
+            "text": "Fixtures",
+            "shortText": "Fixtures",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/results/_/id/4469/ghana",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "results",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:4469&section=scores",
+            "text": "Results",
+            "shortText": "Results",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/standings/_/league/fifa.world",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "standings",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:4469&section=standings",
+            "text": "Standings",
+            "shortText": "Standings",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "desktop",
+              "team"
+            ],
+            "href": "https://www.espn.com/soccer/team/squad/_/id/4469/ghana",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          },
+          {
+            "language": "en-US",
+            "rel": [
+              "squad",
+              "sportscenter",
+              "app",
+              "team"
+            ],
+            "href": "sportscenter://x-callback-url/showClubhouse?uid=s:600~t:4469&section=squad",
+            "text": "Squad",
+            "shortText": "Squad",
+            "isExternal": false,
+            "isPremium": false
+          }
+        ]
+      },
+      "favoriteAtOpen": false
+    }
+  }
+}

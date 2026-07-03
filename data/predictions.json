@@ -1,631 +1,583 @@
 {
   "matches": [
     {
-      "id": "760480",
-      "name": "Croatia vs Ghana",
-      "date": "2026-06-27T21:00:00Z",
-      "time_bj": "2026-06-28 05:00",
+      "id": "760499",
+      "name": "Egypt at Australia",
+      "date": "2026-07-03T18:00Z",
+      "time_bj": "7/4 02:00",
       "home": {
-        "name": "Croatia",
-        "short": "CRO",
-        "logo": "",
-        "rank": "13",
-        "style": "中场控制"
+        "name": "Australia",
+        "short": "AUS",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
+        "rank": 16
+      },
+      "away": {
+        "name": "Egypt",
+        "short": "EGY",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
+        "rank": 27
+      },
+      "venue": "AT&T Stadium",
+      "city": "Arlington, Texas",
+      "odds": {
+        "spread": "EGY -0.5",
+        "overUnder": "1.5"
+      },
+      "referee": "TBD",
+      "prediction": {
+        "home_win_pct": 33.4,
+        "draw_pct": 24.8,
+        "away_win_pct": 41.8,
+        "predicted_score": "1-2",
+        "confidence_stars": 2,
+        "confidence_pct": 49,
+        "key_factors": [
+          "排名接近(16 vs 27)，实力均衡",
+          "让球盘: EGY -0.5 (市场看好埃及)",
+          "澳大利亚高位逼抢型 vs 埃及防守反击型",
+          "萨拉赫领衔埃及反击线",
+          "中立场无主场优势"
+        ],
+        "home_advantage": [
+          "FIFA排名16",
+          "高位逼抢型风格"
+        ],
+        "away_advantage": [
+          "FIFA排名27",
+          "防守反击型风格"
+        ],
+        "goal_scorers": [
+          "萨拉赫(埃及)",
+          "穆斯塔法·穆罕默德(埃及)",
+          "杜克(澳大利亚)"
+        ],
+        "referee_impact": "裁判TBD，待补充执法风格",
+        "venue_impact": "AT&T Stadium，Arlington, Texas，中立场",
+        "tactical_analysis": "澳大利亚高位逼抢vs埃及防守反击的经典对决。澳大利亚排名更高(16 vs 27)但市场赔率看好埃及(ML 135 vs 265)，说明埃及近期状态更好。萨拉赫的反击速度是关键变量。中立场比赛，预计节奏偏慢，埃及可能以防守为主等待反击机会。",
+        "risk_note": "排名vs赔率方向冲突：澳大利亚排名更好但赔率看好埃及。平局概率24.8%，KO加时赛可能。",
+        "analysis": "排名16 vs 27。势均力敌，Australia 33.4% vs Egypt 41.8%。平局概率24.8%。期望进球: Australia 1.70 vs Egypt 1.56。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。",
+        "xg": {
+          "home": 1.7,
+          "away": 1.56
+        },
+        "num_runs": 200000,
+        "timestamp": "2026-07-03T08:31:23.179595+00:00"
+      }
+    },
+    {
+      "id": "760500",
+      "name": "Cape Verde at Argentina",
+      "date": "2026-07-03T22:00Z",
+      "time_bj": "7/4 06:00",
+      "home": {
+        "name": "Argentina",
+        "short": "ARG",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+        "rank": 1
+      },
+      "away": {
+        "name": "Cape Verde",
+        "short": "CPV",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
+        "rank": 50
+      },
+      "venue": "Hard Rock Stadium",
+      "city": "Miami Gardens, Florida",
+      "odds": {
+        "spread": "ARG -2.5",
+        "overUnder": "2.5"
+      },
+      "referee": "TBD",
+      "prediction": {
+        "home_win_pct": 77.5,
+        "draw_pct": 18.3,
+        "away_win_pct": 4.3,
+        "predicted_score": "3-0",
+        "confidence_stars": 4,
+        "confidence_pct": 85,
+        "key_factors": [
+          "排名差距巨大(1 vs 50)",
+          "让球盘: ARG -2.5 (大热门)",
+          "独赢赔率: 阿根廷-650 (超大热门)",
+          "阿根廷控球型 vs 佛得角防守型",
+          "梅西领衔阿根廷攻击线"
+        ],
+        "home_advantage": [
+          "FIFA排名1",
+          "控球型风格"
+        ],
+        "away_advantage": [
+          "FIFA排名50",
+          "防守型风格"
+        ],
+        "goal_scorers": [
+          "梅西(阿根廷)",
+          "阿尔瓦雷斯(阿根廷)",
+          "劳塔罗·马丁内斯(阿根廷)"
+        ],
+        "referee_impact": "裁判TBD，待补充执法风格",
+        "venue_impact": "Hard Rock Stadium，Miami Gardens, Florida，中立场",
+        "tactical_analysis": "排名差距49位，阿根廷是本届赛事最大热门之一。佛得角防守型风格可能限制阿根廷进攻，但实力差距太大。预计阿根廷控球率70%+，佛得角以防守为主。阿根廷-2.5的让球盘反映市场对大胜的预期。",
+        "risk_note": "佛得角R1逼平西班牙0-0，防守能力不可小觑。但排名差距49位+赔率-650，阿根廷大胜概率高。",
+        "analysis": "排名1 vs 50。Argentina占优，胜率77.5%。平局概率18.3%。期望进球: Argentina 3.50 vs Cape Verde 0.71。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。",
+        "xg": {
+          "home": 3.5,
+          "away": 0.71
+        },
+        "num_runs": 200000,
+        "timestamp": "2026-07-03T08:31:23.252479+00:00"
+      }
+    },
+    {
+      "id": "760501",
+      "name": "Ghana at Colombia",
+      "date": "2026-07-04T01:30Z",
+      "time_bj": "7/4 09:30",
+      "home": {
+        "name": "Colombia",
+        "short": "COL",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+        "rank": 9
       },
       "away": {
         "name": "Ghana",
         "short": "GHA",
-        "logo": "",
-        "rank": "42",
-        "style": "均衡攻防"
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
+        "rank": 45
       },
-      "venue": "Lincoln Financial Field",
-      "city": "Philadelphia",
+      "venue": "GEHA Field at Arrowhead Stadium",
+      "city": "Kansas City, Missouri",
       "odds": {
-        "spread": "CRO -0.5",
-        "overUnder": "2.5",
-        "ml_home": "-115",
-        "ml_away": "400"
+        "spread": "COL -1.5",
+        "overUnder": "2.5"
       },
+      "referee": "TBD",
       "prediction": {
-        "home_win_pct": 50,
-        "draw_pct": 27,
-        "away_win_pct": 23,
-        "predicted_score": "2-1",
-        "confidence_stars": 3,
-        "confidence_pct": 55,
+        "home_win_pct": 69.9,
+        "draw_pct": 18.7,
+        "away_win_pct": 11.4,
+        "predicted_score": "3-0",
+        "confidence_stars": 4,
+        "confidence_pct": 85,
         "key_factors": [
-          "FIFA排名: Croatia #13 vs Ghana #42",
-          "排名差距: 29位",
-          "球队风格: 中场控制 vs 均衡攻防",
-          "赔率: 主胜-115 / 客胜400",
-          "大小球: 2.5",
-          "积分形势: Croatia 2分 vs Ghana 4分"
+          "排名差距36位(9 vs 45)",
+          "让球盘: COL -1.5",
+          "哥伦比亚控球型 vs 加纳防守反击型",
+          "哥伦比亚攻击线实力强劲",
+          "中立场无主场优势"
         ],
-        "xg_home": 2.08,
-        "xg_away": 1.22,
+        "home_advantage": [
+          "FIFA排名9",
+          "控球型风格"
+        ],
+        "away_advantage": [
+          "FIFA排名45",
+          "防守反击型风格"
+        ],
+        "goal_scorers": [
+          "迪亚斯(哥伦比亚)",
+          "J罗(哥伦比亚)",
+          "库杜斯(加纳)"
+        ],
+        "referee_impact": "裁判TBD，待补充执法风格",
+        "venue_impact": "GEHA Field at Arrowhead Stadium，Kansas City, Missouri，中立场",
+        "tactical_analysis": "哥伦比亚排名9，加纳排名45，实力差距明显。哥伦比亚控球型打法vs加纳防守反击，预计哥伦比亚主导控球。COL -1.5的让球盘合理。加纳反击可能有威胁但整体实力差距大。",
+        "risk_note": "加纳防守反击可能制造威胁，但排名差距36位，哥伦比亚大胜概率高。",
+        "analysis": "排名9 vs 45。Colombia占优，胜率69.9%。平局概率18.7%。期望进球: Colombia 2.68 vs Ghana 0.98。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。",
+        "xg": {
+          "home": 2.68,
+          "away": 0.98
+        },
         "num_runs": 200000,
-        "timestamp": "2026-06-27T17:30:46.623236+00:00"
-      },
-      "locked": false,
-      "score": {
-        "predicted": "2-1"
+        "timestamp": "2026-07-03T08:31:23.324211+00:00"
       }
     },
     {
-      "id": "760485",
-      "name": "Panama vs England",
-      "date": "2026-06-27T21:00:00Z",
-      "time_bj": "2026-06-28 05:00",
+      "id": "760502",
+      "name": "Morocco at Canada",
+      "date": "2026-07-04T17:00Z",
+      "time_bj": "7/5 01:00",
       "home": {
-        "name": "Panama",
-        "short": "PAN",
-        "logo": "",
-        "rank": "41",
-        "style": "防守反击"
+        "name": "Canada",
+        "short": "CAN",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+        "rank": 44
       },
       "away": {
-        "name": "England",
-        "short": "ENG",
-        "logo": "",
-        "rank": "4",
-        "style": "高位逼抢+控球"
+        "name": "Morocco",
+        "short": "MAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+        "rank": 11
       },
-      "venue": "MetLife Stadium",
-      "city": "East Rutherford",
+      "venue": "NRG Stadium",
+      "city": "Houston, Texas",
       "odds": {
-        "spread": "ENG -2.5",
-        "overUnder": "3.5",
-        "ml_home": "1600",
-        "ml_away": "-650"
+        "spread": "MAR -0.5",
+        "overUnder": "2.5"
       },
+      "referee": "TBD",
       "prediction": {
-        "home_win_pct": 12,
-        "draw_pct": 18,
-        "away_win_pct": 70,
-        "predicted_score": "0-3",
+        "home_win_pct": 20.6,
+        "draw_pct": 21.0,
+        "away_win_pct": 58.4,
+        "predicted_score": "0-2",
         "confidence_stars": 4,
         "confidence_pct": 80,
         "key_factors": [
-          "FIFA排名: Panama #41 vs England #4",
-          "排名差距: 37位",
-          "球队风格: 防守反击 vs 高位逼抢+控球",
-          "赔率: 主胜1600 / 客胜-650",
-          "大小球: 3.5",
-          "积分形势: Panama 1分 vs England 4分"
+          "排名差距33位(44 vs 11)，摩洛哥排名更高",
+          "让球盘: MAR -0.5 (摩洛哥热门)",
+          "独赢赔率: 加拿大400 / 摩洛哥-125",
+          "摩洛哥防守型 vs 加拿大高位逼抢型",
+          "摩洛哥防守韧性极强"
         ],
-        "xg_home": 1.67,
-        "xg_away": 1.8,
+        "home_advantage": [
+          "FIFA排名44",
+          "高位逼抢型风格"
+        ],
+        "away_advantage": [
+          "FIFA排名11",
+          "防守型风格"
+        ],
+        "goal_scorers": [
+          "哈基米(摩洛哥)",
+          "齐耶赫(摩洛哥)",
+          "阿方索·戴维斯(加拿大)"
+        ],
+        "referee_impact": "裁判TBD，待补充执法风格",
+        "venue_impact": "NRG Stadium，Houston, Texas，中立场",
+        "tactical_analysis": "摩洛哥排名11 vs 加拿大44，排名差距33位。摩洛哥防守型风格(R1逼平强队的能力)vs加拿大高位逼抢。赔率MAR -0.5看好摩洛哥。摩洛哥的防守纪律和反击效率是关键。",
+        "risk_note": "加拿大高位逼抢可能打乱摩洛哥节奏。摩洛哥xG 2.15可能偏高(防守型球队通常进球不多)。平局概率21%。",
+        "analysis": "排名44 vs 11。Morocco占优，胜率58.4%。平局概率21.0%。期望进球: Canada 1.18 vs Morocco 2.15。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。",
+        "xg": {
+          "home": 1.18,
+          "away": 2.15
+        },
         "num_runs": 200000,
-        "timestamp": "2026-06-27T17:30:46.707301+00:00"
-      },
-      "locked": false,
-      "score": {
-        "predicted": "0-3"
+        "timestamp": "2026-07-03T08:31:23.395770+00:00"
       }
     },
     {
-      "id": "760481",
-      "name": "Colombia vs Portugal",
-      "date": "2026-06-27T23:30:00Z",
-      "time_bj": "2026-06-28 07:30",
+      "id": "760503",
+      "name": "France at Paraguay",
+      "date": "2026-07-04T21:00Z",
+      "time_bj": "7/5 05:00",
       "home": {
-        "name": "Colombia",
-        "short": "COL",
-        "logo": "",
-        "rank": "10",
-        "style": "技术流+反击"
+        "name": "Paraguay",
+        "short": "PAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
+        "rank": 42
       },
       "away": {
-        "name": "Portugal",
-        "short": "POR",
-        "logo": "",
-        "rank": "6",
-        "style": "技术流+反击"
+        "name": "France",
+        "short": "FRA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+        "rank": 2
       },
-      "venue": "Hard Rock Stadium",
-      "city": "Miami Gardens",
+      "venue": "Lincoln Financial Field",
+      "city": "Philadelphia, Pennsylvania",
       "odds": {
-        "spread": "POR -0.5",
-        "overUnder": "2.5",
-        "ml_home": "255",
-        "ml_away": "100"
+        "spread": "FRA -1.5",
+        "overUnder": "2.5"
       },
+      "referee": "TBD",
       "prediction": {
-        "home_win_pct": 29.7,
-        "draw_pct": 33.5,
-        "away_win_pct": 36.8,
-        "predicted_score": "0-1",
-        "confidence_stars": 3,
-        "confidence_pct": 36,
-        "key_factors": [
-          "FIFA排名: Colombia #10 vs Portugal #6",
-          "排名差距: 4位",
-          "球队风格: 技术流+反击 vs 技术流+反击",
-          "赔率: 主胜255 / 客胜100",
-          "大小球: 2.5",
-          "积分形势: Colombia 3分 vs Portugal 4分"
-        ],
-        "xg_home": 2.07,
-        "xg_away": 1.81,
-        "num_runs": 200000,
-        "timestamp": "2026-06-27T17:30:46.794645+00:00"
-      },
-      "locked": false,
-      "score": {
-        "predicted": "0-1"
-      }
-    },
-    {
-      "id": "760482",
-      "name": "Congo DR vs Uzbekistan",
-      "date": "2026-06-27T23:30:00Z",
-      "time_bj": "2026-06-28 07:30",
-      "home": {
-        "name": "Congo DR",
-        "short": "CON",
-        "logo": "",
-        "rank": "63",
-        "style": "防守反击"
-      },
-      "away": {
-        "name": "Uzbekistan",
-        "short": "UZB",
-        "logo": "",
-        "rank": "62",
-        "style": "防守反击"
-      },
-      "venue": "Mercedes-Benz Stadium",
-      "city": "Atlanta",
-      "odds": {
-        "spread": "COD -0.5",
-        "overUnder": "2.5",
-        "ml_home": "-145",
-        "ml_away": "400"
-      },
-      "prediction": {
-        "home_win_pct": 36.6,
-        "draw_pct": 46.3,
-        "away_win_pct": 17.1,
-        "predicted_score": "1-1",
-        "confidence_stars": 3,
-        "confidence_pct": 51,
-        "key_factors": [
-          "FIFA排名: Congo DR #63 vs Uzbekistan #62",
-          "排名差距: 1位",
-          "球队风格: 防守反击 vs 防守反击",
-          "赔率: 主胜-145 / 客胜400",
-          "大小球: 2.5",
-          "积分形势: Congo DR 1分 vs Uzbekistan 0分"
-        ],
-        "xg_home": 1.22,
-        "xg_away": 0.82,
-        "num_runs": 200000,
-        "timestamp": "2026-06-27T17:30:46.869520+00:00"
-      },
-      "locked": false,
-      "score": {
-        "predicted": "1-1"
-      }
-    },
-    {
-      "id": "760484",
-      "name": "Algeria vs Austria",
-      "date": "2026-06-28T02:00:00Z",
-      "time_bj": "2026-06-28 10:00",
-      "home": {
-        "name": "Algeria",
-        "short": "ALG",
-        "logo": "",
-        "rank": "50",
-        "style": "防守反击"
-      },
-      "away": {
-        "name": "Austria",
-        "short": "AUS",
-        "logo": "",
-        "rank": "20",
-        "style": "高位逼抢"
-      },
-      "venue": "GEHA Field at Arrowhead Stadium",
-      "city": "Kansas City",
-      "odds": {
-        "spread": "AUT -0.5",
-        "overUnder": "1.5",
-        "ml_home": "285",
-        "ml_away": "255"
-      },
-      "prediction": {
-        "home_win_pct": 28,
-        "draw_pct": 38,
-        "away_win_pct": 34,
-        "predicted_score": "1-1",
-        "confidence_stars": 3,
-        "confidence_pct": 38,
-        "key_factors": [
-          "FIFA排名: Algeria #50 vs Austria #20",
-          "排名差距: 30位",
-          "球队风格: 防守反击 vs 高位逼抢",
-          "赔率: 主胜285 / 客胜255",
-          "大小球: 1.5",
-          "积分形势: Algeria 3分 vs Austria 3分"
-        ],
-        "xg_home": 1.34,
-        "xg_away": 1.96,
-        "num_runs": 200000,
-        "timestamp": "2026-06-27T17:30:46.953392+00:00"
-      },
-      "locked": false,
-      "score": {
-        "predicted": "1-1"
-      }
-    },
-    {
-      "id": "760483",
-      "name": "Jordan vs Argentina",
-      "date": "2026-06-28T02:00:00Z",
-      "time_bj": "2026-06-28 10:00",
-      "home": {
-        "name": "Jordan",
-        "short": "JOR",
-        "logo": "",
-        "rank": "58",
-        "style": "防守反击"
-      },
-      "away": {
-        "name": "Argentina",
-        "short": "ARG",
-        "logo": "",
-        "rank": "1",
-        "style": "技术流+高位逼抢"
-      },
-      "venue": "AT&T Stadium",
-      "city": "Arlington",
-      "odds": {
-        "spread": "ARG -2.5",
-        "overUnder": "3.5",
-        "ml_home": "1700",
-        "ml_away": "-650"
-      },
-      "prediction": {
-        "home_win_pct": 8,
-        "draw_pct": 17,
-        "away_win_pct": 75,
+        "home_win_pct": 7.0,
+        "draw_pct": 18.5,
+        "away_win_pct": 74.4,
         "predicted_score": "0-3",
         "confidence_stars": 4,
         "confidence_pct": 85,
         "key_factors": [
-          "FIFA排名: Jordan #58 vs Argentina #1",
-          "排名差距: 57位",
-          "球队风格: 防守反击 vs 技术流+高位逼抢",
-          "赔率: 主胜1700 / 客胜-650",
-          "大小球: 3.5",
-          "积分形势: Jordan 0分 vs Argentina 6分"
+          "排名差距巨大(42 vs 2)",
+          "让球盘: FRA -1.5",
+          "独赢赔率: 巴拉圭1700 / 法国-550",
+          "法国控球型 vs 巴拉圭防守型",
+          "法国攻击线豪华"
         ],
-        "xg_home": 1.22,
-        "xg_away": 2.3,
+        "home_advantage": [
+          "FIFA排名42",
+          "防守型风格"
+        ],
+        "away_advantage": [
+          "FIFA排名2",
+          "控球型风格"
+        ],
+        "goal_scorers": [
+          "姆巴佩(法国)",
+          "登贝莱(法国)",
+          "格列兹曼(法国)"
+        ],
+        "referee_impact": "裁判TBD，待补充执法风格",
+        "venue_impact": "Lincoln Financial Field，Philadelphia, Pennsylvania，中立场",
+        "tactical_analysis": "排名差距40位，法国是本届赛事夺冠热门。巴拉圭防守型风格可能限制法国进攻，但实力差距太大。FRA -1.5合理。预计法国控球率65%+，巴拉圭以防守为主。",
+        "risk_note": "巴拉圭防守型可能逼出低比分，但排名差距40位+赔率-550，法国大胜概率高。",
+        "analysis": "排名42 vs 2。France占优，胜率74.4%。平局概率18.5%。期望进球: Paraguay 0.98 vs France 2.73。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。",
+        "xg": {
+          "home": 0.98,
+          "away": 2.73
+        },
         "num_runs": 200000,
-        "timestamp": "2026-06-27T17:30:47.039183+00:00"
-      },
-      "locked": false,
-      "score": {
-        "predicted": "0-3"
+        "timestamp": "2026-07-03T08:31:23.468200+00:00"
       }
     },
     {
-      "id": "760486",
-      "name": "South Africa vs Canada",
-      "date": "2026-06-28T19:00:00Z",
-      "time_bj": "2026-06-29 03:00",
-      "home": {
-        "name": "South Africa",
-        "short": "SOU",
-        "logo": "",
-        "rank": "47",
-        "style": "控球进攻"
-      },
-      "away": {
-        "name": "Canada",
-        "short": "CAN",
-        "logo": "",
-        "rank": "40",
-        "style": "高位逼抢+反击"
-      },
-      "venue": "SoFi Stadium",
-      "city": "Inglewood",
-      "odds": {
-        "spread": "CAN -0.5",
-        "overUnder": "2.5",
-        "ml_home": "425",
-        "ml_away": "-135"
-      },
-      "prediction": {
-        "home_win_pct": 21.6,
-        "draw_pct": 33.5,
-        "away_win_pct": 44.9,
-        "predicted_score": "1-2",
-        "confidence_stars": 3,
-        "confidence_pct": 44,
-        "key_factors": [
-          "FIFA排名: South Africa #47 vs Canada #40",
-          "排名差距: 7位",
-          "球队风格: 控球进攻 vs 高位逼抢+反击",
-          "赔率: 主胜425 / 客胜-135",
-          "大小球: 2.5",
-          "积分形势: South Africa 4分 vs Canada 4分"
-        ],
-        "xg_home": 1.6,
-        "xg_away": 2.09,
-        "num_runs": 200000,
-        "timestamp": "2026-06-27T17:30:47.126776+00:00"
-      },
-      "locked": false,
-      "score": {
-        "predicted": "1-2"
-      }
-    },
-    {
-      "id": "760487",
-      "name": "Brazil vs Japan",
-      "date": "2026-06-29T17:00:00Z",
-      "time_bj": "2026-06-30 01:00",
+      "id": "760504",
+      "name": "Norway at Brazil",
+      "date": "2026-07-05T20:00Z",
+      "time_bj": "7/6 04:00",
       "home": {
         "name": "Brazil",
         "short": "BRA",
-        "logo": "",
-        "rank": "5",
-        "style": "技术流进攻"
-      },
-      "away": {
-        "name": "Japan",
-        "short": "JAP",
-        "logo": "",
-        "rank": "14",
-        "style": "高位逼抢+技术流"
-      },
-      "venue": "NRG Stadium",
-      "city": "Houston",
-      "odds": {
-        "spread": "BRA -0.5",
-        "overUnder": "2.5",
-        "ml_home": "-140",
-        "ml_away": "400"
-      },
-      "prediction": {
-        "home_win_pct": 52,
-        "draw_pct": 28,
-        "away_win_pct": 20,
-        "predicted_score": "2-0",
-        "confidence_stars": 3,
-        "confidence_pct": 57,
-        "key_factors": [
-          "FIFA排名: Brazil #5 vs Japan #14",
-          "排名差距: 9位",
-          "球队风格: 技术流进攻 vs 高位逼抢+技术流",
-          "赔率: 主胜-140 / 客胜400",
-          "大小球: 2.5",
-          "积分形势: Brazil 4分 vs Japan 1分"
-        ],
-        "xg_home": 1.85,
-        "xg_away": 1.01,
-        "num_runs": 200000,
-        "timestamp": "2026-06-27T17:30:47.207284+00:00"
-      },
-      "locked": false,
-      "score": {
-        "predicted": "2-0"
-      }
-    },
-    {
-      "id": "760489",
-      "name": "Germany vs Paraguay",
-      "date": "2026-06-29T20:30:00Z",
-      "time_bj": "2026-06-30 04:30",
-      "home": {
-        "name": "Germany",
-        "short": "GER",
-        "logo": "",
-        "rank": "9",
-        "style": "高位逼抢+控球"
-      },
-      "away": {
-        "name": "Paraguay",
-        "short": "PAR",
-        "logo": "",
-        "rank": "45",
-        "style": "防守反击"
-      },
-      "venue": "Gillette Stadium",
-      "city": "Foxborough",
-      "odds": {
-        "spread": "GER -1.5",
-        "overUnder": "2.5",
-        "ml_home": "-265",
-        "ml_away": "750"
-      },
-      "prediction": {
-        "home_win_pct": 58,
-        "draw_pct": 27,
-        "away_win_pct": 15,
-        "predicted_score": "3-0",
-        "confidence_stars": 3,
-        "confidence_pct": 63,
-        "key_factors": [
-          "FIFA排名: Germany #9 vs Paraguay #45",
-          "排名差距: 36位",
-          "球队风格: 高位逼抢+控球 vs 防守反击",
-          "赔率: 主胜-265 / 客胜750",
-          "大小球: 2.5",
-          "积分形势: Germany 6分 vs Paraguay 4分"
-        ],
-        "xg_home": 2.23,
-        "xg_away": 0.85,
-        "num_runs": 200000,
-        "timestamp": "2026-06-27T17:30:47.288985+00:00"
-      },
-      "locked": false,
-      "score": {
-        "predicted": "3-0"
-      }
-    },
-    {
-      "id": "760488",
-      "name": "Netherlands vs Morocco",
-      "date": "2026-06-30T01:00:00Z",
-      "time_bj": "2026-06-30 09:00",
-      "home": {
-        "name": "Netherlands",
-        "short": "NET",
-        "logo": "",
-        "rank": "7",
-        "style": "高位逼抢+控球"
-      },
-      "away": {
-        "name": "Morocco",
-        "short": "MOR",
-        "logo": "",
-        "rank": "15",
-        "style": "防守反击+高位逼抢"
-      },
-      "venue": "Estadio BBVA",
-      "city": "Guadalupe",
-      "odds": {
-        "spread": "NED -0.5",
-        "overUnder": "2.5",
-        "ml_home": "110",
-        "ml_away": "280"
-      },
-      "prediction": {
-        "home_win_pct": 42,
-        "draw_pct": 33,
-        "away_win_pct": 25,
-        "predicted_score": "2-1",
-        "confidence_stars": 3,
-        "confidence_pct": 42,
-        "key_factors": [
-          "FIFA排名: Netherlands #7 vs Morocco #15",
-          "排名差距: 8位",
-          "球队风格: 高位逼抢+控球 vs 防守反击+高位逼抢",
-          "赔率: 主胜110 / 客胜280",
-          "大小球: 2.5",
-          "积分形势: Netherlands 4分 vs Morocco 6分"
-        ],
-        "xg_home": 1.64,
-        "xg_away": 0.99,
-        "num_runs": 200000,
-        "timestamp": "2026-06-27T17:30:47.368438+00:00"
-      },
-      "locked": false,
-      "score": {
-        "predicted": "2-1"
-      }
-    },
-    {
-      "id": "760490",
-      "name": "Ivory Coast vs Norway",
-      "date": "2026-06-30T17:00:00Z",
-      "time_bj": "2026-07-01 01:00",
-      "home": {
-        "name": "Ivory Coast",
-        "short": "IVO",
-        "logo": "",
-        "rank": "35",
-        "style": "均衡攻防"
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+        "rank": 5
       },
       "away": {
         "name": "Norway",
         "short": "NOR",
-        "logo": "",
-        "rank": "30",
-        "style": "高空+反击"
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+        "rank": 36
       },
-      "venue": "AT&T Stadium",
-      "city": "Arlington",
+      "venue": "MetLife Stadium",
+      "city": "East Rutherford, New Jersey",
       "odds": {
-        "spread": "NOR -0.5",
-        "overUnder": "2.5",
-        "ml_home": "265",
-        "ml_away": "105"
+        "spread": "BRA -0.5",
+        "overUnder": "2.5"
       },
+      "referee": "TBD",
       "prediction": {
-        "home_win_pct": 25.7,
-        "draw_pct": 33.9,
-        "away_win_pct": 40.4,
-        "predicted_score": "1-2",
-        "confidence_stars": 3,
-        "confidence_pct": 40,
+        "home_win_pct": 59.0,
+        "draw_pct": 20.6,
+        "away_win_pct": 20.5,
+        "predicted_score": "2-0",
+        "confidence_stars": 4,
+        "confidence_pct": 80,
         "key_factors": [
-          "FIFA排名: Ivory Coast #35 vs Norway #30",
-          "排名差距: 5位",
-          "球队风格: 均衡攻防 vs 高空+反击",
-          "赔率: 主胜265 / 客胜105",
-          "大小球: 2.5",
-          "积分形势: Ivory Coast 6分 vs Norway 3分"
+          "排名差距31位(5 vs 36)",
+          "让球盘: BRA -0.5 (巴西小幅热门)",
+          "独赢赔率: 巴西-115 / 挪威310",
+          "巴西控球型 vs 挪威防守反击型",
+          "巴西主场氛围(南美洲)"
         ],
-        "xg_home": 1.48,
-        "xg_away": 1.88,
+        "home_advantage": [
+          "FIFA排名5",
+          "控球型风格"
+        ],
+        "away_advantage": [
+          "FIFA排名36",
+          "防守反击型风格"
+        ],
+        "goal_scorers": [
+          "维尼修斯(巴西)",
+          "罗德里戈(巴西)",
+          "哈兰德(挪威)"
+        ],
+        "referee_impact": "裁判TBD，待补充执法风格",
+        "venue_impact": "MetLife Stadium，East Rutherford, New Jersey，中立场",
+        "tactical_analysis": "巴西排名5 vs 挪威36，排名差距31位但让球盘仅-0.5，说明市场认为比赛较接近。巴西控球型vs挪威防守反击，哈兰德的反击是挪威最大威胁。巴西-115的赔率说明小幅热门但不是大热。",
+        "risk_note": "哈兰德的个人能力可能改变比赛。让球盘仅-0.5说明比赛可能接近。平局概率20.6%。",
+        "analysis": "排名5 vs 36。Brazil占优，胜率59.0%。平局概率20.6%。期望进球: Brazil 2.56 vs Norway 1.05。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。",
+        "xg": {
+          "home": 2.56,
+          "away": 1.05
+        },
         "num_runs": 200000,
-        "timestamp": "2026-06-27T17:30:47.453434+00:00"
-      },
-      "locked": false,
-      "score": {
-        "predicted": "1-2"
+        "timestamp": "2026-07-03T08:31:23.540040+00:00"
       }
     },
     {
-      "id": "760492",
-      "name": "France vs Sweden",
-      "date": "2026-06-30T21:00:00Z",
-      "time_bj": "2026-07-01 05:00",
+      "id": "760505",
+      "name": "England at Mexico",
+      "date": "2026-07-06T00:00Z",
+      "time_bj": "7/6 08:00",
       "home": {
-        "name": "France",
-        "short": "FRA",
-        "logo": "",
-        "rank": "2",
-        "style": "均衡攻防"
+        "name": "Mexico",
+        "short": "MEX",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+        "rank": 14
       },
       "away": {
-        "name": "Sweden",
-        "short": "SWE",
-        "logo": "",
-        "rank": "23",
-        "style": "防守反击+高空"
+        "name": "England",
+        "short": "ENG",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+        "rank": 4
       },
-      "venue": "MetLife Stadium",
-      "city": "East Rutherford",
+      "venue": "Estadio Banorte",
+      "city": "Mexico City",
       "odds": {
-        "spread": "FRA -1.5",
-        "overUnder": "2.5",
-        "ml_home": "-330",
-        "ml_away": "900"
+        "spread": "ENG -0.5",
+        "overUnder": "2.5"
       },
+      "referee": "TBD",
       "prediction": {
-        "home_win_pct": 58,
-        "draw_pct": 27,
-        "away_win_pct": 15,
-        "predicted_score": "2-1",
-        "confidence_stars": 3,
-        "confidence_pct": 63,
+        "home_win_pct": 32.7,
+        "draw_pct": 25.4,
+        "away_win_pct": 41.9,
+        "predicted_score": "1-2",
+        "confidence_stars": 2,
+        "confidence_pct": 50,
         "key_factors": [
-          "FIFA排名: France #2 vs Sweden #23",
-          "排名差距: 21位",
-          "球队风格: 均衡攻防 vs 防守反击+高空",
-          "赔率: 主胜-330 / 客胜900",
-          "大小球: 2.5",
-          "积分形势: France 6分 vs Sweden 4分"
+          "排名差距10位(14 vs 4)，英格兰排名更高",
+          "让球盘: ENG -0.5",
+          "独赢赔率: 墨西哥220 / 英格兰140",
+          "墨西哥防守反击型 vs 英格兰控球型",
+          "两队实力接近"
         ],
-        "xg_home": 2.0,
-        "xg_away": 1.12,
+        "home_advantage": [
+          "FIFA排名14",
+          "防守反击型风格"
+        ],
+        "away_advantage": [
+          "FIFA排名4",
+          "控球型风格"
+        ],
+        "goal_scorers": [
+          "凯恩(英格兰)",
+          "萨卡(英格兰)",
+          "洛萨诺(墨西哥)"
+        ],
+        "referee_impact": "裁判TBD，待补充执法风格",
+        "venue_impact": "Estadio Banorte，Mexico City，中立场",
+        "tactical_analysis": "排名接近(14 vs 4)，英格兰排名更高但让球盘仅-0.5。墨西哥防守反击型vs英格兰控球型，预计英格兰主导控球但墨西哥反击有威胁。赔率220/140说明英格兰小幅热门。",
+        "risk_note": "两队实力接近，平局概率25.4%较高。墨西哥防守反击可能限制英格兰进攻。KO加时赛概率不低。",
+        "analysis": "排名14 vs 4。势均力敌，Mexico 32.7% vs England 41.9%。平局概率25.4%。期望进球: Mexico 1.52 vs England 1.70。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。",
+        "xg": {
+          "home": 1.52,
+          "away": 1.7
+        },
         "num_runs": 200000,
-        "timestamp": "2026-06-27T17:30:47.536782+00:00"
+        "timestamp": "2026-07-03T08:31:23.611353+00:00"
+      }
+    },
+    {
+      "id": "760506",
+      "name": "Spain at Portugal",
+      "date": "2026-07-06T19:00Z",
+      "time_bj": "7/7 03:00",
+      "home": {
+        "name": "Portugal",
+        "short": "POR",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+        "rank": 8
       },
-      "locked": false,
-      "score": {
-        "predicted": "2-1"
+      "away": {
+        "name": "Spain",
+        "short": "ESP",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+        "rank": 3
+      },
+      "venue": "AT&T Stadium",
+      "city": "Arlington, Texas",
+      "odds": {
+        "spread": "ESP -0.5",
+        "overUnder": "2.5"
+      },
+      "referee": "TBD",
+      "prediction": {
+        "home_win_pct": 29.1,
+        "draw_pct": 22.7,
+        "away_win_pct": 48.1,
+        "predicted_score": "2-3",
+        "confidence_stars": 3,
+        "confidence_pct": 65,
+        "key_factors": [
+          "排名接近(8 vs 3)，西班牙排名更高",
+          "让球盘: ESP -0.5",
+          "独赢赔率: 葡萄牙300 / 西班牙-105",
+          "两队均为控球型，技术对决",
+          "伊比利亚德比"
+        ],
+        "home_advantage": [
+          "FIFA排名8",
+          "控球型风格"
+        ],
+        "away_advantage": [
+          "FIFA排名3",
+          "控球型风格"
+        ],
+        "goal_scorers": [
+          "莫拉塔(西班牙)",
+          "佩德里(西班牙)",
+          "B费(葡萄牙)"
+        ],
+        "referee_impact": "裁判TBD，待补充执法风格",
+        "venue_impact": "AT&T Stadium，Arlington, Texas，中立场",
+        "tactical_analysis": "伊比利亚德比！排名接近(8 vs 3)，西班牙小幅热门(ESP -0.5)。两队均为控球型打法，预计控球率接近50-50。技术流对决，中场控制是关键。西班牙近期状态更好。",
+        "risk_note": "两队实力非常接近，平局概率22.7%。技术流对决可能出现低比分僵局。KO加时赛概率高。",
+        "analysis": "排名8 vs 3。Spain占优，胜率48.1%。平局概率22.7%。期望进球: Portugal 1.75 vs Spain 1.87。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。",
+        "xg": {
+          "home": 1.75,
+          "away": 1.87
+        },
+        "num_runs": 200000,
+        "timestamp": "2026-07-03T08:31:23.684546+00:00"
+      }
+    },
+    {
+      "id": "760507",
+      "name": "Belgium at United States",
+      "date": "2026-07-07T00:00Z",
+      "time_bj": "7/7 08:00",
+      "home": {
+        "name": "United States",
+        "short": "USA",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+        "rank": 12
+      },
+      "away": {
+        "name": "Belgium",
+        "short": "BEL",
+        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+        "rank": 6
+      },
+      "venue": "Lumen Field",
+      "city": "Seattle, Washington",
+      "odds": {
+        "spread": "USA -0.5",
+        "overUnder": "2.5"
+      },
+      "referee": "TBD",
+      "prediction": {
+        "home_win_pct": 40.3,
+        "draw_pct": 26.0,
+        "away_win_pct": 33.7,
+        "predicted_score": "2-1",
+        "confidence_stars": 2,
+        "confidence_pct": 48,
+        "key_factors": [
+          "排名接近(12 vs 6)，比利时排名更高",
+          "让球盘: USA -0.5 (美国被看好)",
+          "独赢赔率: 美国155 / 比利时180",
+          "美国高位逼抢型 vs 比利时控球型",
+          "美国主场氛围(本土世界杯)"
+        ],
+        "home_advantage": [
+          "FIFA排名12",
+          "高位逼抢型风格"
+        ],
+        "away_advantage": [
+          "FIFA排名6",
+          "控球型风格"
+        ],
+        "goal_scorers": [
+          "普利西奇(美国)",
+          "雷纳(美国)",
+          "德布劳内(比利时)"
+        ],
+        "referee_impact": "裁判TBD，待补充执法风格",
+        "venue_impact": "Lumen Field，Seattle, Washington，中立场",
+        "tactical_analysis": "美国排名12 vs 比利时6，但让球盘USA -0.5说明市场看好美国(本土世界杯优势)。美国高位逼抢vs比利时控球型，预计比赛节奏快。赔率155/180非常接近，说明比赛结果高度不确定。",
+        "risk_note": "两队实力非常接近，平局概率26.0%最高。美国主场优势可能影响裁判判罚。KO加时赛概率高。",
+        "analysis": "排名12 vs 6。势均力敌，United States 40.3% vs Belgium 33.7%。平局概率26.0%。期望进球: United States 1.87 vs Belgium 1.56。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。",
+        "xg": {
+          "home": 1.87,
+          "away": 1.56
+        },
+        "num_runs": 200000,
+        "timestamp": "2026-07-03T08:31:23.756901+00:00"
       }
     }
   ],
-  "updated": "2026-06-27T17:30:47.538368+00:00",
+  "updated": "2026-07-03T08:31:23.756906+00:00",
   "model": "mimo-v2.5-pro",
   "runs": 200000
 }

@@ -1,0 +1,15 @@
+{
+  "760437": {
+    "home": "England",
+    "away": "Croatia",
+    "score": "3-2",
+    "clock": "84'",
+    "goals": [
+      {"player": "Harry Kane", "minute": "12'", "team": "ENG", "type": "Penalty"},
+      {"player": "Martin Baturina", "minute": "36'", "team": "CRO", "type": "Goal"},
+      {"player": "Harry Kane", "minute": "42'", "team": "ENG", "type": "Header"},
+      {"player": "Petar Musa", "minute": "45'+5'", "team": "CRO", "type": "Goal"},
+      {"player": "Jude Bellingham", "minute": "47'", "team": "ENG", "type": "Goal"}
+    ]
+  }
+}

@@ -88,7 +88,7 @@
     "motivation": 1,
     "notes": "欧洲劲旅，防守出色",
     "rank": 16,
-    "motivation_factor": 1.1
+    "motivation_factor": 1.12
   },
   "Brazil": {
     "style": "技术流进攻",
@@ -204,7 +204,7 @@
     "motivation": 1,
     "notes": "卫冕冠军，梅西领衔",
     "rank": 1,
-    "motivation_factor": 1.12
+    "motivation_factor": 1.1400000000000001
   },
   "Algeria": {
     "style": "防守反击",
@@ -250,7 +250,7 @@
     "motivation": 1,
     "notes": "世界冠军级别，阵容豪华",
     "rank": 4,
-    "motivation_factor": 1.12
+    "motivation_factor": 1.1400000000000001
   },
   "Senegal": {
     "style": "高位逼抢+反击",
@@ -296,7 +296,7 @@
     "motivation": 1,
     "notes": "三狮军团，青年才俊",
     "rank": 5,
-    "motivation_factor": 1.12
+    "motivation_factor": 1.1400000000000001
   },
   "Croatia": {
     "style": "中场控制",
@@ -759,7 +759,7 @@
     "motivation": 0.95,
     "notes": "欧洲劲旅，逼抢出色",
     "rank": 25,
-    "motivation_factor": 1.1400000000000001
+    "motivation_factor": 1.1600000000000001
   },
   "Jordan": {
     "style": "防守反击",
@@ -805,7 +805,7 @@
     "motivation": 0.9,
     "notes": "非洲劲旅，身体素质出色",
     "rank": 44,
-    "motivation_factor": 1.12
+    "motivation_factor": 1.1400000000000001
   },
   "Panama": {
     "style": "防守反击",
@@ -965,7 +965,7 @@
     "motivation": 0.9,
     "notes": "北美新锐，速度型打法",
     "rank": 43,
-    "motivation_factor": 1.06
+    "motivation_factor": 1.08
   },
   "Mexico": {
     "style": "技术流+逼抢",
