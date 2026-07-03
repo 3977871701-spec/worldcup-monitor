@@ -296,6 +296,29 @@ body{background:var(--bg);color:var(--text);font-family:'PingFang SC','Noto Sans
   .accuracy-stat{min-width:60px}
   .accuracy-stat .num{font-size:20px}
 }
+
+/* === SCROLL TO TOP === */
+.scroll-top{position:fixed;bottom:24px;right:24px;width:44px;height:44px;border-radius:50%;background:var(--accent);color:#fff;border:none;font-size:20px;cursor:pointer;z-index:99;opacity:0;transform:translateY(20px);transition:.3s;box-shadow:0 4px 16px rgba(16,185,129,.4);display:flex;align-items:center;justify-content:center}
+.scroll-top.visible{opacity:1;transform:translateY(0)}
+.scroll-top:hover{background:#059669;transform:translateY(-2px)}
+
+/* === STICKY STATS BAR === */
+.stats-bar.sticky{position:sticky;top:52px;z-index:50;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--border)}
+
+/* === SETTLEMENT ON CARD === */
+.mcard.settlement-correct{border-left:3px solid #10b981}
+.mcard.settlement-wrong{border-left:3px solid #ef4444}
+.settlement-row{display:flex;gap:6px;flex-wrap:wrap;padding:4px 14px 8px;align-items:center}
+.settlement-badge{display:inline-flex;align-items:center;gap:3px;padding:2px 8px;border-radius:8px;font-size:10px;font-weight:700}
+.settlement-badge.dir-correct{background:rgba(16,185,129,.2);color:#6ee7b7;border:1px solid rgba(16,185,129,.4)}
+.settlement-badge.dir-wrong{background:rgba(239,68,68,.15);color:#fca5a5;border:1px solid rgba(239,68,68,.3)}
+.settlement-badge.score-correct{background:rgba(16,185,129,.2);color:#6ee7b7;border:1px solid rgba(16,185,129,.4)}
+.settlement-badge.score-wrong{background:rgba(245,158,11,.2);color:#fbbf24;border:1px solid rgba(245,158,11,.4)}
+.settlement-detail{font-size:10px;color:var(--muted);padding:0 14px 6px}
+
+/* === COLLAPSE FINISHED === */
+.expand-btn{display:block;width:100%;padding:10px;background:var(--bg2);border:1px solid var(--border);border-radius:10px;color:var(--accent2);font-size:13px;font-weight:600;cursor:pointer;transition:.2s;text-align:center;margin-bottom:10px}
+.expand-btn:hover{background:var(--bg3);border-color:var(--accent2)}
 </style>
 </head>
 <body>
@@ -324,12 +347,7 @@ body{background:var(--bg);color:var(--text);font-family:'PingFang SC','Noto Sans
 
 <!-- WC BANNER -->
 <div class="wc-banner">
-  <span>⚽ 淘汰赛进行中</span>
-  <span>🏆 32支参赛队</span>
-  <span>📊 AI蒙特卡洛预测</span>
-  <span>✅ 30场已验证 方向60% 比分17%</span>
-  <span>🔥 爆冷6场</span>
-  <span>🔄 每30秒自动刷新</span>
+  <span>⚽ 淘汰赛 | 30场验证 方向60% 比分17% | 🔥爆冷6场</span>
 </div>
 
 <!-- TABS -->
@@ -338,9 +356,7 @@ body{background:var(--bg);color:var(--text);font-family:'PingFang SC','Noto Sans
   <div class="tab" data-tab="predict">🔮 AI预测</div>
   <div class="tab" data-tab="realtime">⚡ 实时预测</div>
   <div class="tab" data-tab="standings">📊 积分榜</div>
-  <div class="tab" data-tab="watch">📺 直播转播</div>
   <div class="tab" data-tab="schedule">📅 赛程</div>
-  <div class="tab" data-tab="odds">💰 体彩赔率</div>
   <div class="tab" data-tab="champion">🏆 冠军预测</div>
 </div>
 
@@ -380,6 +396,8 @@ body{background:var(--bg);color:var(--text);font-family:'PingFang SC','Noto Sans
       <div class="stat-item"><div class="stat-num" id="predAvgConf">-</div><div class="stat-label">平均置信度</div></div>
     </div>
     <div id="pred-area"></div>
+    <div class="sec-title" style="margin-top:20px">💰 体彩赔率 & AI预测</div>
+    <div id="odds-area"></div>
   </div>
 
   <!-- REALTIME TAB -->
@@ -394,38 +412,12 @@ body{background:var(--bg);color:var(--text);font-family:'PingFang SC','Noto Sans
   <!-- STANDINGS TAB -->
   <div class="tab-content" id="tab-standings"><div id="std-area"></div></div>
 
-  <!-- WATCH TAB -->
-  <div class="tab-content" id="tab-watch">
-    <div class="sec-title">📺 世界杯转播平台（中国大陆）</div>
-    <div class="bcast-grid">
-      <a class="bcard" href="https://tv.cctv.com/live/cctv5/" target="_blank"><div class="ic">🇨🇳</div><div class="nm">CCTV5 体育频道</div><div class="ds">央视免费直播全部场次</div></a>
-      <a class="bcard" href="https://www.migu.cn/" target="_blank"><div class="ic">📱</div><div class="nm">咪咕视频</div><div class="ds">中国移动 免费高清</div></a>
-      <a class="bcard" href="https://www.dongqiudi.com" target="_blank"><div class="ic">⚽</div><div class="nm">懂球帝</div><div class="ds">文字直播+社区讨论</div></a>
-      <a class="bcard" href="https://www.zhibo8.cc" target="_blank"><div class="ic">📺</div><div class="nm">直播吧</div><div class="ds">多源聚合直播</div></a>
-      <a class="bcard" href="https://live.qq.com" target="_blank"><div class="ic">🐧</div><div class="nm">腾讯体育</div><div class="ds">部分场次直播</div></a>
-      <a class="bcard" href="https://www.88kanqiu.cx" target="_blank"><div class="ic">🏀</div><div class="nm">88看球</div><div class="ds">免费体育直播</div></a>
-      <a class="bcard" href="https://www.foxsports.com/world-cup" target="_blank"><div class="ic">🦊</div><div class="nm">FOX Sports</div><div class="ds">英文解说</div></a>
-      <a class="bcard" href="https://www.peacocktv.com" target="_blank"><div class="ic">🦚</div><div class="nm">Peacock</div><div class="ds">西班牙语直播</div></a>
-    </div>
-    <div class="sec-title">💡 收看建议</div>
-    <div style="font-size:13px;color:var(--muted);line-height:2;padding:0 4px">
-      <p>🇨🇳 <b>中国大陆</b>：CCTV5 + 咪咕视频 免费直播全部64场比赛</p>
-      <p>📱 <b>手机端</b>：下载咪咕视频App 或 央视影音App</p>
-      <p>💻 <b>电脑端</b>：tv.cctv.com/live/cctv5/ 直接观看</p>
-      <p>⏰ <b>比赛时间</b>：早场 凌晨02:00-05:00 / 晚场 20:00-次日11:00</p>
-    </div>
-  </div>
 
-  <!-- SCHEDULE TAB -->
+
+  <!-- SCHEDULE TAB (含结算) -->
   <div class="tab-content" id="tab-schedule">
     <div id="settlement-stats-area"></div>
     <div id="sch-area"></div>
-  </div>
-
-  <!-- 体彩赔率 TAB -->
-  <div class="tab-content" id="tab-odds">
-    <div class="sec-title">💰 体彩赔率 & AI预测</div>
-    <div id="odds-area"></div>
   </div>
 
   <!-- 冠军预测 TAB -->
@@ -436,7 +428,12 @@ body{background:var(--bg);color:var(--text);font-family:'PingFang SC','Noto Sans
 </div>
 
 <div class="footer">
-  ⚽ 2026 FIFA 世界杯 · 每30秒自动刷新 · ESPN API · 蒙特卡洛AI预测 · 进球即时通知<br>
+  ⚽ 2026 FIFA 世界杯 · ESPN API · 蒙特卡洛AI预测 · 进球即时通知<br>
+  📺 直播: <a href="https://tv.cctv.com/live/cctv5/" target="_blank">CCTV5</a> ·
+  <a href="https://www.migu.cn/" target="_blank">咪咕</a> ·
+  <a href="https://www.dongqiudi.com" target="_blank">懂球帝</a> ·
+  <a href="https://www.zhibo8.cc" target="_blank">直播吧</a> ·
+  <a href="https://www.foxsports.com/world-cup" target="_blank">FOX</a><br>
   <a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/canadamexicousa2026" target="_blank">FIFA官网</a> ·
   <a href="https://www.88kanqiu.cx" target="_blank">88看球</a>
 </div>
@@ -572,7 +569,7 @@ document.querySelectorAll('.tab').forEach(t=>{
     const tabId = 'tab-'+t.dataset.tab;
     const tabEl = document.getElementById(tabId);
     if(tabEl) tabEl.classList.add('active');
-    if(t.dataset.tab === 'odds') renderOdds();
+    if(t.dataset.tab === 'predict') renderOdds();
     if(t.dataset.tab === 'champion') renderChampion();
     if(t.dataset.tab === 'standings') fetchStandings();
   });
@@ -590,6 +587,10 @@ function renderMatch(e){
   const cs=c.competitors||[];
   const h=cs.find(x=>x.homeAway==='home')||cs[0];
   const a=cs.find(x=>x.homeAway==='away')||cs[1];
+  // Hide placeholder/future matches (task 2)
+  const hName=h.team?.shortDisplayName||'?';
+  const aName=a.team?.shortDisplayName||'?';
+  if(hName.includes('#?')||aName.includes('#?')||hName.match(/^#\d+$/)||aName.match(/^#\d+$/)) return'';
   const st=e.status?.type||{};
   const state=st.state||'';
   const isLiveM=isLive(state);
@@ -609,18 +610,40 @@ function renderMatch(e){
   }
   const hScore=h.score||'0';const aScore=a.score||'0';
   const statusClass=isLiveM?'live':'';
-  const statusText=isLiveM?(e.status?.displayClock||'直播中'):(state==='post'?'全场结束':bjTime(e.date));
+  // Remove date from status text - keep only state indicator (task 1)
+  const statusText=isLiveM?(e.status?.displayClock||'直播中'):(state==='post'?'全场结束':'');
   const statusBadge=isLiveM?'live':(state==='post'?'post':'pre');
   const homeRank=window.__preds?.[e.id]?.home?.rank||window.__teamRanks?.[h.team?.displayName]||h.curatedRank?.currentNumber||'?';
   const awayRank=window.__preds?.[e.id]?.away?.rank||window.__teamRanks?.[a.team?.displayName]||a.curatedRank?.currentNumber||'?';
-  return`<div class="mcard ${statusClass}" data-name="${cn(h.team?.shortDisplayName||'')} ${cn(a.team?.shortDisplayName||'')} ${h.team?.shortDisplayName||''} ${a.team?.shortDisplayName||''}" data-match-id="${e.id}">
-    <div class="mtop"><span class="mleague">🏆 世界杯</span><span class="mtime">${bjTime(e.date)}</span><span class="mstatus ${statusBadge}">${statusText}</span></div>
+  // Check settlement for border color (task 6)
+  const settlement=window.__settlementsMap?.[e.id];
+  let settlementClass='';
+  if(state==='post'&&settlement){
+    settlementClass=settlement.result?.directionCorrect?'settlement-correct':'settlement-wrong';
+  }
+  let settlementHtml='';
+  if(state==='post'&&settlement){
+    const s=settlement;
+    const predScore=s.prediction?.score?.predicted||'?';
+    const actualScore=s.result?.actualScore||'?';
+    const dirOk=s.result?.directionCorrect;
+    const scoreOk=s.result?.scoreCorrect;
+    const acc=s.result?.accuracy||0;
+    settlementHtml=`<div class="settlement-row">
+      <span class="settlement-badge ${dirOk?'dir-correct':'dir-wrong'}">${dirOk?'✅ 方向正确':'❌ 方向错误'}</span>
+      <span class="settlement-badge ${scoreOk?'score-correct':'score-wrong'}">${scoreOk?'🎯 比分命中':'⚠️ 比分偏差'}</span>
+      <span style="font-size:10px;color:var(--muted)">预测:${predScore} 实际:${actualScore} 精度${acc}%</span>
+    </div>`;
+  }
+  return`<div class="mcard ${statusClass} ${settlementClass}" data-name="${cn(h.team?.shortDisplayName||'')} ${cn(a.team?.shortDisplayName||'')} ${h.team?.shortDisplayName||''} ${a.team?.shortDisplayName||''}" data-match-id="${e.id}">
+    <div class="mtop"><span class="mleague">🏆 世界杯</span><span class="mtime">${bjTime(e.date)}</span>${statusText?`<span class="mstatus ${statusBadge}">${statusText}</span>`:''}</div>
     <div class="mbody">
       <div class="team home">${logo(h.team?.logo)}<div><div class="tname">${cn(h.team?.shortDisplayName||'?')} <span style="font-size:10px;color:var(--muted)">#${homeRank}</span></div></div></div>
       <div class="scenter"><div class="scores"><span>${hScore}</span><span class="div">-</span><span>${aScore}</span></div></div>
       <div class="team away">${logo(a.team?.logo)}<div><div class="tname">${cn(a.team?.shortDisplayName||'?')} <span style="font-size:10px;color:var(--muted)">#${awayRank}</span></div></div></div>
     </div>
     ${evHtml}
+    ${settlementHtml}
     <div class="mfooter"><span>🏟️ ${cn(c.venue?.fullName||'')}</span></div>
   </div>`;
 }
@@ -913,40 +936,17 @@ function renderSchedule(events){
     html+=`<div class="sec-title">📅 ${d}</div>`;
     html+=ms.map(e => {
       let cardHtml = renderMatch(e);
-      const state = e.status?.type?.state;
       const pred = window.__preds?.[e.id];
       if (pred) {
         const predScore = pred.prediction?.score?.predicted || pred.prediction?.predicted_score || '?';
-        const conf = pred.prediction?.confidence_pct || 0;
         const upsetProb = pred.prediction?.upset_analysis?.upset_prob || 0;
-        const dirConf = pred.prediction?.direction_confidence || pred.prediction?.home_win_pct || 0;
         let predMark = `<div style="display:flex;gap:6px;flex-wrap:wrap;padding:0 14px 10px;justify-content:flex-end">`;
         predMark += `<span style="background:rgba(16,185,129,.15);color:#6ee7b7;padding:2px 8px;border-radius:10px;font-size:11px;font-weight:700">📊 赛前预测: ${predScore}</span>`;
-        if (dirConf > 0) predMark += `<span style="background:rgba(59,130,246,.1);color:#93c5fd;padding:2px 6px;border-radius:8px;font-size:10px">方向${dirConf}%</span>`;
         if (upsetProb > 25) predMark += `<span style="background:rgba(239,68,68,.1);color:#fca5a5;padding:2px 6px;border-radius:8px;font-size:10px">🔥冷门${upsetProb}%</span>`;
         predMark += '</div>';
         cardHtml = cardHtml.replace('</div>', predMark + '</div>');
       }
-      // Settlement for finished matches
-      if (state === 'post' && pred) {
-        const comp = e.competitions?.[0];
-        const cs = comp?.competitors || [];
-        const hm = cs.find(x => x.homeAway === 'home') || cs[0];
-        const am = cs.find(x => x.homeAway === 'away') || cs[1];
-        const actualH = parseInt(hm?.score || '0');
-        const actualA = parseInt(am?.score || '0');
-        const predParts = (pred.prediction?.predicted_score || '0-0').split('-');
-        const pH = parseInt(predParts[0]); const pA = parseInt(predParts[1]);
-        const actualResult = actualH > actualA ? 'home' : actualH < actualA ? 'away' : 'draw';
-        const predResult = pH > pA ? 'home' : pH < pA ? 'away' : 'draw';
-        const dirCorrect = actualResult === predResult;
-        const scoreCorrect = actualH === pH && actualA === pA;
-        let marks = '<div style="display:flex;gap:6px;flex-wrap:wrap;padding:0 14px 10px">';
-        marks += dirCorrect ? '<span class="pred-result pred-correct">✅ 方向正确</span>' : '<span class="pred-result pred-wrong">❌ 方向错误</span>';
-        marks += scoreCorrect ? '<span class="pred-result" style="background:rgba(16,185,129,.2);color:#6ee7b7;border:1px solid rgba(16,185,129,.4)">🎯 比分命中</span>' : '<span class="pred-result" style="background:rgba(245,158,11,.2);color:#fbbf24;border:1px solid rgba(245,158,11,.4)">⚠️ 比分偏差</span>';
-        marks += '</div>';
-        cardHtml = cardHtml.replace('</div>', marks + '</div>');
-      }
+      // Settlement is now rendered directly in renderMatch via SETTLEMENTS data
       return cardHtml;
     }).join('');
   }
@@ -997,7 +997,18 @@ async function refresh(){
     let h='';
     if(live.length){h+='<div class="sec-title">🔴 正在进行</div>'+live.map(renderMatch).join('');}
     if(pre.length){h+='<div class="sec-title">📋 即将开始</div>'+pre.map(renderMatch).join('');}
-    if(post.length){h+='<div class="sec-title">✅ 已结束</div>'+post.map(renderMatch).join('');}
+    if(post.length){
+      // Collapse finished matches - show last 10 by default (task 5)
+      const allPostHtml=post.map(renderMatch).join('');
+      const last10=post.slice(-10);
+      const last10Html=last10.map(renderMatch).join('');
+      h+=`<div class="sec-title">✅ 已结束 (${post.length}场)</div>`;
+      h+=`<div id="finished-limited">${last10Html}</div>`;
+      h+=`<div id="finished-all" style="display:none">${allPostHtml}</div>`;
+      if(post.length>10){
+        h+=`<button class="expand-btn" id="expandFinished" onclick="toggleFinished()">展开全部${post.length}场 ▼</button>`;
+      }
+    }
     if(!events.length)h='<div class="empty"><div class="icon">📅</div><p>今日暂无比赛</p></div>';
     document.getElementById('loading').style.display='none';
     document.getElementById('live-m').innerHTML=h;
@@ -1028,6 +1039,8 @@ async function refresh(){
       predHtml += '<div class="empty"><div class="icon">🔮</div><p>暂无待预测比赛</p></div>';
       document.getElementById('pred-area').innerHTML = predHtml;
     }
+    // Also render odds in predict tab (merged from odds tab)
+    renderOdds();
     // Schedule
     document.getElementById('sch-area').innerHTML=renderSchedule(events);
     renderSettlementStats();
@@ -1677,6 +1690,61 @@ document.addEventListener('keydown',e=>{
     searchInput.select();
   }
 });
+
+// === Toggle Finished Matches (task 5) ===
+function toggleFinished(){
+  const limited=document.getElementById('finished-limited');
+  const all=document.getElementById('finished-all');
+  const btn=document.getElementById('expandFinished');
+  if(!limited||!all||!btn)return;
+  if(all.style.display==='none'){
+    limited.style.display='none';
+    all.style.display='block';
+    btn.textContent='收起 ▲';
+  }else{
+    limited.style.display='block';
+    all.style.display='none';
+    btn.textContent=`展开全部 ${all.querySelectorAll('.mcard').length}场 ▼`;
+  }
+}
+
+// === Scroll to Top (task 9) ===
+(function(){
+  const btn=document.createElement('button');
+  btn.className='scroll-top';
+  btn.innerHTML='↑';
+  btn.title='回到顶部';
+  btn.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
+  document.body.appendChild(btn);
+  window.addEventListener('scroll',()=>{
+    btn.classList.toggle('visible',window.scrollY>300);
+  },{passive:true});
+})();
+
+// === Sticky Stats Bar on Scroll (task 10) ===
+(function(){
+  const header=document.querySelector('.header');
+  const tabs=document.querySelector('.tabs');
+  function updateSticky(){
+    const statsBar=document.getElementById('statsBar');
+    if(!statsBar)return;
+    const headerH=header?.offsetHeight||0;
+    const tabsH=tabs?.offsetHeight||0;
+    // Only make sticky in live tab
+    const liveTab=document.getElementById('tab-live');
+    if(liveTab&&liveTab.classList.contains('active')){
+      statsBar.style.top=(headerH+tabsH)+'px';
+      statsBar.classList.add('sticky');
+    }else{
+      statsBar.classList.remove('sticky');
+    }
+  }
+  window.addEventListener('scroll',updateSticky,{passive:true});
+  // Re-evaluate when tabs change
+  document.querySelectorAll('.tab').forEach(t=>{
+    t.addEventListener('click',()=>setTimeout(updateSticky,50));
+  });
+})();
 
 // === Initialization ===
 async function init() {
