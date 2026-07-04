@@ -1711,34 +1711,15 @@ function toggleFinished(){
 
 // === Knockout Bracket (FIFA 2026 Official) ===
 function buildBracketData() {
-  const TEAM_FLAGS={
-    'Australia':'🇦🇺','Egypt':'🇪🇬','Argentina':'🇦🇷','Cape Verde':'🇨🇻','Colombia':'🇨🇴','Ghana':'🇬🇭',
-    'Canada':'🇨🇦','Morocco':'🇲🇦','Paraguay':'🇵🇾','France':'🇫🇷','Brazil':'🇧🇷','Norway':'🇳🇴',
-    'Mexico':'🇲🇽','England':'🏴󠁧󠁢󠁥󠁮󠁧󠁿','Portugal':'🇵🇹','Spain':'🇪🇸','United States':'🇺🇸','USA':'🇺🇸',
-    'Belgium':'🇧🇪','Germany':'🇩🇪','Croatia':'🇭🇷','Sweden':'🇸🇪','South Africa':'🇿🇦','Netherlands':'🇳🇱',
-    'Senegal':'🇸🇳','Bosnia-Herzegovina':'🇧🇦','Bosnia':'🇧🇦','Austria':'🇦🇹','Switzerland':'🇨🇭',
-    'Japan':'🇯🇵','Denmark':'🇩🇰','Uruguay':'🇺🇾','Poland':'🇵🇱','Serbia':'🇷🇸','Korea':'🇰🇷',
-    'South Korea':'🇰🇷','Ivory Coast':'🇨🇮','Cameroon':'🇨🇲','Tunisia':'🇹🇳','Iran':'🇮🇷',
-    'Saudi Arabia':'🇸🇦','Ecuador':'🇪🇨','Turkey':'🇹🇷','Qatar':'🇶🇦','Peru':'🇵🇪','Chile':'🇨🇱',
-    'Jamaica':'🇯🇲','Panama':'🇵🇦','Honduras':'🇭🇳','Costa Rica':'🇨🇷','Haiti':'🇭🇹','Curaçao':'🇨🇼',
-    'New Zealand':'🇳🇿','Scotland':'🏴󠁧󠁢󠁳󠁣󠁴󠁿','Wales':'🏴󠁧󠁢󠁷󠁬󠁳󠁿','Ireland':'🇮🇪','Czechia':'🇨🇿'
-  };
-  function flag(n){return TEAM_FLAGS[n]||'';}
-  function code3(n){
-    const m={'United States':'USA','South Korea':'KOR','Bosnia-Herzegovina':'BIH','New Zealand':'NZL',
-      'Saudi Arabia':'KSA','South Africa':'RSA','Cape Verde':'CPV','Costa Rica':'CRC',
-      'Ivory Coast':'CIV','DR Congo':'COD','Congo DR':'COD'};
-    return m[n]||(n.length<=3?n.toUpperCase():n.slice(0,3).toUpperCase());
-  }
   function getMatch(eid){
     const ev=(allEvents||[]).find(e=>e.id===eid);
     const pred=window.__preds?.[eid];
-    const settlement=window.__settlementsMap?.[eid];
+    const settlement=(window.__settlements||[]).find(s=>s.matchId===eid);
     if(!ev){
       if(pred)return{id:eid,state:'pre',
         home:{name:pred.home.name,logo:pred.home.logo,rank:pred.home.rank,score:0},
         away:{name:pred.away.name,logo:pred.away.logo,rank:pred.away.rank,score:0},
-        predScore:pred.prediction?.predicted_score||'?',date:pred.date,time_bj:pred.time_bj,venue:pred.venue||''};
+        predScore:pred.prediction?.score?.predicted||pred.prediction?.predicted_score||'?',date:pred.date,time_bj:pred.time_bj,venue:pred.venue||''};
       return null;
     }
     const comp=ev.competitions?.[0];const cs=comp?.competitors||[];
@@ -1750,50 +1731,67 @@ function buildBracketData() {
     let hScore=parseInt(h?.score||'0'),aScore=parseInt(a?.score||'0');
     let winner='',penH=0,penA=0;
     if(settlement&&state==='post'){
-      winner=settlement.result?.actualWinner||'';
-      const as=settlement.result?.actualScore||'';
-      if(as.includes('(')){
-        const m=as.match(/(\d+)\((\d+)\)-(\d+)\((\d+)\)/);
-        if(m){hScore=parseInt(m[1]);aScore=parseInt(m[3]);penH=parseInt(m[2]);penA=parseInt(m[4]);}
-      } else {
-        hScore=settlement.homeScore||hScore;aScore=settlement.awayScore||aScore;
-      }
+      hScore=settlement.homeScore||hScore;aScore=settlement.awayScore||aScore;
+      if(hScore>aScore)winner='home';else if(aScore>hScore)winner='away';
     } else if(state==='post'){
       if(hScore>aScore)winner='home';else if(aScore>hScore)winner='away';
     }
     return{id:eid,state,date:ev.date,
       home:{name:hName,logo:h?.team?.logo||'',rank:window.__teamRanks?.[hName]||pred?.home?.rank||'?',score:hScore,pen:penH},
       away:{name:aName,logo:a?.team?.logo||'',rank:window.__teamRanks?.[aName]||pred?.away?.rank||'?',score:aScore,pen:penA},
-      predScore:pred?.prediction?.predicted_score||'',winner,venue:comp?.venue?.fullName||pred?.venue||''};
+      predScore:pred?.prediction?.score?.predicted||pred?.prediction?.predicted_score||'',winner,venue:comp?.venue?.fullName||pred?.venue||''};
   }
-
-  // FIFA Match IDs mapping (scraped from fifa.com bracket)
-  // Left half R32: M74=GER-PAR, M77=FRA-SWE, M73=RSA-CAN, M75=NED-MAR
-  const leftR32=[getMatch('760497'),getMatch('760495'),getMatch('760496'),getMatch('760498')];
-  // Right half R32: M83=POR-ESP, M84=BEL-SEN, M81=USA-BIH, M82=AUT-COL(placeholder)
-  // Note: ESPN ID 760506 = POR vs ESP, 760493 = BEL vs SEN, 760494 = USA vs BIH
-  const rightR32=[getMatch('760506'),getMatch('760493'),getMatch('760494'),futureMatch('M82','2026-07-07','7/7')];
-
-  // All 15 R32 matches in order (ESPN IDs)
-  const allR32=['760493','760494','760495','760496','760497','760498','760499','760500',
-                '760501','760502','760503','760504','760505','760506','760507'].map(getMatch);
-
-  // Build future match placeholder
   function futureMatch(fifaId,date,timeBj){
     return{id:fifaId,state:'future',home:{name:'待定',logo:'',rank:'?',score:0},
       away:{name:'待定',logo:'',rank:'?',score:0},predScore:'',date,time_bj:timeBj,winner:''};
   }
+  function winnerOf(m){return m?(m.winner==='home'?m.home:m.winner==='away'?m.away:null):null;}
+  function makeSlot(team,fifaId,date,timeBj){
+    if(!team)return futureMatch(fifaId,date,timeBj);
+    return{id:fifaId,state:'slot',home:team,away:{name:'待定',logo:'',rank:'?',score:0},predScore:'',date,time_bj:timeBj,winner:''};
+  }
+
+  // ESPN event IDs for R32 matches (from ESPN API + VISUAL_AUDIT)
+  // Left half: 760497=ESP-AUT, 760495=ENG-COD, 760496=POR-CRO, 760498=SUI-ALG
+  // Right half: 760493=BEL-SEN, 760494=USA-BIH, 760499=AUS-EGY, 760500=ARG-CPV
+  const leftR32=[getMatch('760497'),getMatch('760495'),getMatch('760496'),getMatch('760498')];
+  const rightR32=[getMatch('760493'),getMatch('760494'),getMatch('760499'),getMatch('760500')];
+
+  // Propagate winners: R32 → R16
+  const wL1=winnerOf(leftR32[0]),wL2=winnerOf(leftR32[1]),wL3=winnerOf(leftR32[2]),wL4=winnerOf(leftR32[3]);
+  const wR1=winnerOf(rightR32[0]),wR2=winnerOf(rightR32[1]),wR3=winnerOf(rightR32[2]),wR4=winnerOf(rightR32[3]);
+
+  // R16: pair winners (1v2, 3v4)
+  const r16L0=getMatch('760503')||makeSlotPair(wL1,wL2,'M89','2026-07-05','7/5');
+  const r16L1=getMatch('760502')||makeSlotPair(wL3,wL4,'M90','2026-07-05','7/5');
+  const r16R0=getMatch('760506')||makeSlotPair(wR1,wR2,'M93','2026-07-07','7/7');
+  const r16R1=getMatch('760507')||makeSlotPair(wR3,wR4,'M94','2026-07-07','7/7');
+  function makeSlotPair(t1,t2,fifaId,date,timeBj){
+    if(!t1&&!t2)return futureMatch(fifaId,date,timeBj);
+    return{id:fifaId,state:'slot',home:t1||{name:'待定',logo:'',rank:'?',score:0},
+      away:t2||{name:'待定',logo:'',rank:'?',score:0},predScore:'',date,time_bj:timeBj,winner:''};
+  }
+
+  // Propagate winners: R16 → QF
+  const wR16L0=winnerOf(r16L0),wR16L1=winnerOf(r16L1),wR16R0=winnerOf(r16R0),wR16R1=winnerOf(r16R1);
+  const qfL0=makeSlotPair(wR16L0,wR16L1,'M97','2026-07-10','7/10');
+  const qfR0=makeSlotPair(wR16R0,wR16R1,'M98','2026-07-11','7/11');
+
+  // Propagate: QF → SF
+  const wQfL=winnerOf(qfL0),wQfR=winnerOf(qfR0);
+  const sf0=makeSlot(wQfL,'M101','2026-07-14','7/14');
+  const sf1=makeSlot(wQfR,'M102','2026-07-15','7/15');
+
+  // SF → Final
+  const wSf0=winnerOf(sf0),wSf1=winnerOf(sf1);
+  const fin=makeSlotPair(wSf0,wSf1,'M104','2026-07-19','7/19');
 
   return{
-    leftR32,
-    rightR32,
-    allR32,
-    r16Left:[futureMatch('M89','2026-07-05','7/5'),futureMatch('M90','2026-07-05','7/5')],
-    r16Right:[futureMatch('M93','2026-07-07','7/7'),futureMatch('M94','2026-07-07','7/7')],
-    qfLeft:[futureMatch('M97','2026-07-10','7/10')],
-    qfRight:[futureMatch('M98','2026-07-11','7/11')],
-    sf:[futureMatch('M101','2026-07-14','7/14'),futureMatch('M102','2026-07-15','7/15')],
-    finalMatch:futureMatch('M104','2026-07-19','7/19')
+    leftR32,rightR32,
+    r16Left:[r16L0,r16L1],r16Right:[r16R0,r16R1],
+    qfLeft:[qfL0],qfRight:[qfR0],
+    sf:[sf0,sf1],
+    finalMatch:fin
   };
 }
 
@@ -1813,7 +1811,7 @@ function renderBracket(){
   function code3(n){
     const m={'United States':'USA','South Korea':'KOR','Bosnia-Herzegovina':'BIH','New Zealand':'NZL',
       'Saudi Arabia':'KSA','South Africa':'RSA','Cape Verde':'CPV','Costa Rica':'CRC',
-      'Ivory Coast':'CIV','DR Congo':'COD','Congo DR':'COD'};
+      'Ivory Coast':'CIV','DR Congo':'COD','Congo DR':'COD','Austria':'AUT','Algeria':'ALG','Norway':'NOR','Sweden':'SWE','Morocco':'MAR','Egypt':'EGY','Ghana':'GHA','Paraguay':'PAR'};
     return m[n]||(n.length<=3?n.toUpperCase():n.slice(0,3).toUpperCase());
   }
 
