@@ -227,53 +227,99 @@ body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSy
 /* ODDS SECTION */
 .odds-section{background:var(--inner-bg);border-radius:14px;padding:12px;margin-bottom:10px;border:1px solid var(--inner-border)}
 
-/* BRACKET / 淘汰赛对阵图 (FIFA 2026 Official) */
+/* BRACKET / 淘汰赛对阵图 (FIFA 2026 Official) — Redesigned */
 .bracket-full-width{max-width:none!important;padding-left:0!important;padding-right:0!important}
-.bracket-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:0 0 16px;scroll-snap-type:x mandatory}
-.bracket-grid{display:grid;grid-template-columns:repeat(9,minmax(135px,1fr));gap:0;align-items:start;width:100%;min-width:1200px}
-.bracket-col{display:flex;flex-direction:column;position:relative}
-.bracket-col-title{text-align:center;font-size:13px;font-weight:800;color:var(--accent);padding:10px 8px;background:linear-gradient(135deg,rgba(0,122,255,.08),rgba(88,86,214,.08));border-radius:10px;margin:0 4px 8px;white-space:nowrap;letter-spacing:.01em}
+.bracket-scroll{width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:0 0 20px;scroll-snap-type:x mandatory;scroll-padding:0 16px}
+.bracket-scroll::-webkit-scrollbar{height:6px}
+.bracket-scroll::-webkit-scrollbar-track{background:var(--inner-bg);border-radius:3px}
+.bracket-scroll::-webkit-scrollbar-thumb{background:var(--accent);border-radius:3px;opacity:.5}
+.bracket-grid{display:grid;grid-template-columns:repeat(9,minmax(155px,1fr));gap:0;align-items:start;width:100%;min-width:1400px;padding:0 8px}
+
+/* Column layout */
+.bracket-col{display:flex;flex-direction:column;position:relative;padding:0 6px}
+.bracket-col-title{text-align:center;font-size:11px;font-weight:800;color:var(--accent);padding:10px 8px;background:linear-gradient(135deg,rgba(0,122,255,.1),rgba(88,86,214,.1));border-radius:10px;margin:0 4px 12px;white-space:nowrap;letter-spacing:.04em;text-transform:uppercase;backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);border:1px solid rgba(0,122,255,.12)}
 .bracket-col-matches{display:flex;flex-direction:column;justify-content:space-around;height:100%;padding:0 4px;gap:4px}
 .bracket-center-match{display:flex;align-items:center;justify-content:center;padding:4px 0}
-.bracket-champion{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px 4px}
-.champion-card{background:linear-gradient(135deg,rgba(255,215,0,.12),rgba(255,165,0,.08));border-radius:18px;padding:20px;text-align:center;box-shadow:0 4px 30px rgba(255,215,0,.15);border:2px solid #FFD700;backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);min-width:100px}
-.champion-trophy{font-size:44px;margin-bottom:8px;animation:trophyBounce 3s ease-in-out infinite}
-@keyframes trophyBounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
-.champion-label{font-size:12px;font-weight:800;color:#FFD700;margin-bottom:4px;text-transform:uppercase;letter-spacing:.05em}
-.champion-team{font-size:14px;font-weight:800;color:var(--text)}
-.bmatch{background:var(--card);border-radius:10px;padding:8px 10px;box-shadow:var(--shadow);border:1px solid var(--border);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);transition:.2s;position:relative;font-size:12px;min-height:56px}
-.bmatch:hover{transform:translateY(-1px);box-shadow:0 4px 16px rgba(0,0,0,.1)}
-.bmatch.settled-w{border-left:3px solid var(--green)}
+
+/* Champion card */
+.bracket-champion{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 4px}
+.champion-card{background:linear-gradient(135deg,rgba(255,215,0,.15),rgba(255,165,0,.1));border-radius:20px;padding:24px 20px;text-align:center;box-shadow:0 8px 40px rgba(255,215,0,.2);border:2px solid rgba(255,215,0,.5);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);min-width:110px;position:relative;overflow:hidden}
+.champion-card::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:conic-gradient(from 0deg,transparent,rgba(255,215,0,.1),transparent,rgba(255,215,0,.1),transparent);animation:championGlow 6s linear infinite}
+@keyframes championGlow{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.champion-trophy{font-size:48px;margin-bottom:10px;animation:trophyBounce 3s ease-in-out infinite;position:relative;z-index:1;filter:drop-shadow(0 4px 8px rgba(255,215,0,.3))}
+@keyframes trophyBounce{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-6px) scale(1.05)}}
+.champion-label{font-size:11px;font-weight:800;color:#FFD700;margin-bottom:6px;text-transform:uppercase;letter-spacing:.08em;position:relative;z-index:1}
+.champion-team{font-size:15px;font-weight:800;color:var(--text);position:relative;z-index:1}
+
+/* Match card — FIFA-style frosted glass */
+.bmatch{background:var(--card);border-radius:12px;padding:10px 12px;box-shadow:var(--shadow);border:1px solid var(--border);backdrop-filter:var(--glass-blur);-webkit-backdrop-filter:var(--glass-blur);transition:all .25s cubic-bezier(.22,1,.36,1);position:relative;font-size:12px;min-height:60px;overflow:hidden}
+.bmatch:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.12);border-color:var(--accent)}
+.bmatch.settled-w{border-left:3px solid var(--green);background:linear-gradient(135deg,rgba(52,199,89,.04),var(--card))}
 .bmatch.settled-l{border-left:3px solid var(--secondary)}
 .bmatch.live-match{border:2px solid var(--green);animation:bracketLivePulse 2s infinite}
-@keyframes bracketLivePulse{0%,100%{box-shadow:0 0 0 0 rgba(52,199,89,.3)}50%{box-shadow:0 0 8px 3px rgba(52,199,89,.15)}}
-.bmatch-id{font-size:9px;color:var(--secondary);font-weight:700;text-align:left;margin-bottom:4px;letter-spacing:.03em}
-.bteam{display:flex;align-items:center;gap:4px;padding:2px 0;font-size:11px;transition:.2s}
-.bteam.loser{opacity:.4}
-.bteam .flag{font-size:12px;flex-shrink:0}
-.bteam .code{font-weight:700;min-width:28px;letter-spacing:.02em;font-size:11px}
-.bteam .score{font-weight:800;min-width:20px;text-align:center;font-variant-numeric:tabular-nums;font-size:12px;margin-left:auto}
+@keyframes bracketLivePulse{0%,100%{box-shadow:0 0 0 0 rgba(52,199,89,.3)}50%{box-shadow:0 0 12px 4px rgba(52,199,89,.15)}}
+
+/* Match card inner elements */
+.bmatch-id{font-size:9px;color:var(--secondary);font-weight:700;text-align:left;margin-bottom:5px;letter-spacing:.04em;opacity:.7}
+.bteam{display:flex;align-items:center;gap:5px;padding:3px 0;font-size:11px;transition:all .3s;border-radius:6px;padding:3px 4px}
+.bteam:hover{background:rgba(0,122,255,.04)}
+.bteam.loser{opacity:.35}
+.bteam .flag{font-size:13px;flex-shrink:0;width:18px;text-align:center}
+.bteam .code{font-weight:700;min-width:30px;letter-spacing:.03em;font-size:11px;font-variant:all-small-caps}
+.bteam .score{font-weight:800;min-width:22px;text-align:center;font-variant-numeric:tabular-nums;font-size:13px;margin-left:auto;background:rgba(0,0,0,.04);border-radius:4px;padding:0 4px;min-height:18px;line-height:18px}
 .bteam .pen{font-size:9px;color:var(--secondary);font-weight:600;margin-left:1px}
-.bteam.winner .code{color:var(--green)}
-.bteam.winner .score{color:var(--green)}
+.bteam.winner .code{color:var(--green);font-weight:800}
+.bteam.winner .score{color:var(--green);background:rgba(52,199,89,.1)}
 .bteam.loser .code{color:var(--secondary)}
-.bteam.loser .score{color:var(--secondary)}
-.bmatch-status{font-size:9px;color:var(--secondary);text-align:center;margin-top:3px;font-weight:500}
+.bteam.loser .score{color:var(--secondary);background:transparent}
+.bmatch-status{font-size:9px;color:var(--secondary);text-align:center;margin-top:4px;font-weight:500}
 .bmatch-status.finished{color:var(--accent);font-weight:600}
+
 /* Bracket connector lines (CSS pseudo-elements) */
-.bracket-col:not(:first-child) .bmatch::before{content:'';position:absolute;left:-16px;top:50%;width:16px;height:2px;background:linear-gradient(90deg,var(--accent),var(--border));opacity:.5}
-.bracket-col:not(:last-child) .bmatch::after{content:'';position:absolute;right:-16px;top:50%;width:16px;height:2px;background:linear-gradient(90deg,var(--border),var(--accent));opacity:.5}
-.bracket-col:not(:first-child):not(:last-child) .bmatch:first-child::before{border-bottom:2px solid var(--accent);border-bottom-left-radius:6px;height:calc(50% + 8px);top:0;width:16px;border-left:2px solid var(--accent);background:none;opacity:.3}
-.bracket-col:not(:first-child):not(:last-child) .bmatch:nth-child(2)::before{border-top:2px solid var(--accent);border-top-left-radius:6px;height:calc(50% + 8px);bottom:auto;width:16px;border-left:2px solid var(--accent);background:none;opacity:.3}
+.bracket-col:not(:first-child) .bmatch::before{content:'';position:absolute;left:-18px;top:50%;width:18px;height:2px;background:linear-gradient(90deg,rgba(0,122,255,.3),var(--border));opacity:.6}
+.bracket-col:not(:last-child) .bmatch::after{content:'';position:absolute;right:-18px;top:50%;width:18px;height:2px;background:linear-gradient(90deg,var(--border),rgba(0,122,255,.3));opacity:.6}
+.bracket-col:not(:first-child):not(:last-child) .bmatch:first-child::before{border-bottom:2px solid rgba(0,122,255,.25);border-bottom-left-radius:8px;height:calc(50% + 10px);top:0;width:18px;border-left:2px solid rgba(0,122,255,.25);background:none;opacity:.5}
+.bracket-col:not(:first-child):not(:last-child) .bmatch:nth-child(2)::before{border-top:2px solid rgba(0,122,255,.25);border-top-left-radius:8px;height:calc(50% + 10px);bottom:auto;width:18px;border-left:2px solid rgba(0,122,255,.25);background:none;opacity:.5}
+
+/* Stagger fade-in animation for bracket cards */
+@keyframes bracketFadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.bracket-grid .bmatch{animation:bracketFadeIn .5s cubic-bezier(.22,1,.36,1) both}
+.bracket-col:nth-child(1) .bmatch:nth-child(1){animation-delay:.05s}
+.bracket-col:nth-child(1) .bmatch:nth-child(2){animation-delay:.1s}
+.bracket-col:nth-child(1) .bmatch:nth-child(3){animation-delay:.15s}
+.bracket-col:nth-child(1) .bmatch:nth-child(4){animation-delay:.2s}
+.bracket-col:nth-child(2) .bmatch:nth-child(1){animation-delay:.3s}
+.bracket-col:nth-child(2) .bmatch:nth-child(2){animation-delay:.35s}
+.bracket-col:nth-child(3) .bmatch:nth-child(1){animation-delay:.5s}
+.bracket-col:nth-child(4) .bmatch:nth-child(1){animation-delay:.65s}
+.bracket-col:nth-child(5) .bmatch{animation-delay:.8s}
+.bracket-col:nth-child(6) .bmatch:nth-child(1){animation-delay:.65s}
+.bracket-col:nth-child(7) .bmatch:nth-child(1){animation-delay:.5s}
+.bracket-col:nth-child(8) .bmatch:nth-child(1){animation-delay:.3s}
+.bracket-col:nth-child(8) .bmatch:nth-child(2){animation-delay:.35s}
+.bracket-col:nth-child(9) .bmatch:nth-child(1){animation-delay:.05s}
+.bracket-col:nth-child(9) .bmatch:nth-child(2){animation-delay:.1s}
+.bracket-col:nth-child(9) .bmatch:nth-child(3){animation-delay:.15s}
+.bracket-col:nth-child(9) .bmatch:nth-child(4){animation-delay:.2s}
+.champion-card{animation:bracketFadeIn .8s cubic-bezier(.22,1,.36,1) 1s both}
+
+/* Predicted score tag inside bracket cards */
+.bmatch-pred{font-size:9px;color:var(--accent);text-align:center;margin-top:2px;font-weight:500;opacity:.7}
+
+/* Round label badges for bracket columns */
+.bracket-round-label{display:inline-block;font-size:10px;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--accent),#5856D6);padding:4px 10px;border-radius:14px;margin:0 auto 8px;letter-spacing:.03em;white-space:nowrap}
+
+/* Responsive */
 @media(max-width:640px){
-  .bracket-grid{grid-template-columns:repeat(9,minmax(100px,1fr));min-width:900px}
-  .bracket-col-title{font-size:11px;padding:8px 4px}
-  .bmatch{padding:6px 8px;font-size:10px;min-height:48px}
-  .bteam .code{font-size:10px;min-width:22px}
+  .bracket-grid{grid-template-columns:repeat(9,minmax(110px,1fr));min-width:1000px}
+  .bracket-col-title{font-size:10px;padding:8px 4px;margin-bottom:8px}
+  .bmatch{padding:7px 9px;font-size:10px;min-height:50px}
+  .bteam .code{font-size:10px;min-width:24px}
   .bteam .score{font-size:11px}
-  .bteam .flag{font-size:10px}
+  .bteam .flag{font-size:11px;width:14px}
   .bmatch-id{font-size:8px}
   .champion-trophy{font-size:36px}
+  .champion-card{padding:16px 12px}
 }
 
 /* RESPONSIVE */
@@ -402,12 +448,14 @@ const PREDICTIONS=[
   {"id":"760499","name":"Egypt at Australia","date":"2026-07-03T18:00Z","time_bj":"7/4 02:00","home":{"name":"Australia","short":"AUS","logo":"https://a.espncdn.com/i/teamlogos/countries/500/aus.png","rank":16},"away":{"name":"Egypt","short":"EGY","logo":"https://a.espncdn.com/i/teamlogos/countries/500/egy.png","rank":27},"venue":"AT&T Stadium","city":"Arlington, Texas","odds":{"spread":"EGY -0.5","overUnder":"1.5"},"referee":"TBD","prediction":{"home_win_pct":33.4,"draw_pct":24.8,"away_win_pct":41.8,"predicted_score":"1-2","confidence_stars":2,"confidence_pct":49,"key_factors":["排名接近(16 vs 27)，实力均衡","让球盘: EGY -0.5 (市场看好埃及)","澳大利亚高位逼抢型 vs 埃及防守反击型","萨拉赫领衔埃及反击线","中立场无主场优势"],"home_advantage":["FIFA排名16","高位逼抢型风格"],"away_advantage":["FIFA排名27","防守反击型风格"],"goal_scorers":["萨拉赫(埃及)","穆斯塔法·穆罕默德(埃及)","杜克(澳大利亚)"],"referee_impact":"裁判TBD，待补充执法风格","venue_impact":"AT&T Stadium，Arlington, Texas，中立场","tactical_analysis":"澳大利亚高位逼抢vs埃及防守反击的经典对决。澳大利亚排名更高(16 vs 27)但市场赔率看好埃及(ML 135 vs 265)，说明埃及近期状态更好。萨拉赫的反击速度是关键变量。中立场比赛，预计节奏偏慢，埃及可能以防守为主等待反击机会。","risk_note":"排名vs赔率方向冲突：澳大利亚排名更好但赔率看好埃及。平局概率24.8%，KO加时赛可能。","analysis":"排名16 vs 27。势均力敌，Australia 33.4% vs Egypt 41.8%。平局概率24.8%。期望进球: Australia 1.70 vs Egypt 1.56。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。","xg":{"home":1.7,"away":1.56},"num_runs":200000,"timestamp":"2026-07-03T08:31:23.179595+00:00"}},
   {"id":"760500","name":"Cape Verde at Argentina","date":"2026-07-03T22:00Z","time_bj":"7/4 06:00","home":{"name":"Argentina","short":"ARG","logo":"https://a.espncdn.com/i/teamlogos/countries/500/arg.png","rank":1},"away":{"name":"Cape Verde","short":"CPV","logo":"https://a.espncdn.com/i/teamlogos/countries/500/cpv.png","rank":50},"venue":"Hard Rock Stadium","city":"Miami Gardens, Florida","odds":{"spread":"ARG -2.5","overUnder":"2.5"},"referee":"TBD","prediction":{"home_win_pct":77.5,"draw_pct":18.3,"away_win_pct":4.3,"predicted_score":"3-0","confidence_stars":4,"confidence_pct":85,"key_factors":["排名差距巨大(1 vs 50)","让球盘: ARG -2.5 (大热门)","独赢赔率: 阿根廷-650 (超大热门)","阿根廷控球型 vs 佛得角防守型","梅西领衔阿根廷攻击线"],"home_advantage":["FIFA排名1","控球型风格"],"away_advantage":["FIFA排名50","防守型风格"],"goal_scorers":["梅西(阿根廷)","阿尔瓦雷斯(阿根廷)","劳塔罗·马丁内斯(阿根廷)"],"referee_impact":"裁判TBD，待补充执法风格","venue_impact":"Hard Rock Stadium，Miami Gardens, Florida，中立场","tactical_analysis":"排名差距49位，阿根廷是本届赛事最大热门之一。佛得角防守型风格可能限制阿根廷进攻，但实力差距太大。预计阿根廷控球率70%+，佛得角以防守为主。阿根廷-2.5的让球盘反映市场对大胜的预期。","risk_note":"佛得角R1逼平西班牙0-0，防守能力不可小觑。但排名差距49位+赔率-650，阿根廷大胜概率高。","analysis":"排名1 vs 50。Argentina占优，胜率77.5%。平局概率18.3%。期望进球: Argentina 3.50 vs Cape Verde 0.71。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。","xg":{"home":3.5,"away":0.71},"num_runs":200000,"timestamp":"2026-07-03T08:31:23.252479+00:00"}},
   {"id":"760501","name":"Ghana at Colombia","date":"2026-07-04T01:30Z","time_bj":"7/4 09:30","home":{"name":"Colombia","short":"COL","logo":"https://a.espncdn.com/i/teamlogos/countries/500/col.png","rank":9},"away":{"name":"Ghana","short":"GHA","logo":"https://a.espncdn.com/i/teamlogos/countries/500/gha.png","rank":45},"venue":"GEHA Field at Arrowhead Stadium","city":"Kansas City, Missouri","odds":{"spread":"COL -1.5","overUnder":"2.5"},"referee":"TBD","prediction":{"home_win_pct":69.9,"draw_pct":18.7,"away_win_pct":11.4,"predicted_score":"3-0","confidence_stars":4,"confidence_pct":85,"key_factors":["排名差距36位(9 vs 45)","让球盘: COL -1.5","哥伦比亚控球型 vs 加纳防守反击型","哥伦比亚攻击线实力强劲","中立场无主场优势"],"home_advantage":["FIFA排名9","控球型风格"],"away_advantage":["FIFA排名45","防守反击型风格"],"goal_scorers":["迪亚斯(哥伦比亚)","J罗(哥伦比亚)","库杜斯(加纳)"],"referee_impact":"裁判TBD，待补充执法风格","venue_impact":"GEHA Field at Arrowhead Stadium，Kansas City, Missouri，中立场","tactical_analysis":"哥伦比亚排名9，加纳排名45，实力差距明显。哥伦比亚控球型打法vs加纳防守反击，预计哥伦比亚主导控球。COL -1.5的让球盘合理。加纳反击可能有威胁但整体实力差距大。","risk_note":"加纳防守反击可能制造威胁，但排名差距36位，哥伦比亚大胜概率高。","analysis":"排名9 vs 45。Colombia占优，胜率69.9%。平局概率18.7%。期望进球: Colombia 2.68 vs Ghana 0.98。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。","xg":{"home":2.68,"away":0.98},"num_runs":200000,"timestamp":"2026-07-03T08:31:23.324211+00:00"}},
-  {"id":"760502","name":"Morocco at Canada","date":"2026-07-04T17:00Z","time_bj":"7/5 01:00","home":{"name":"Canada","short":"CAN","logo":"https://a.espncdn.com/i/teamlogos/countries/500/can.png","rank":44},"away":{"name":"Morocco","short":"MAR","logo":"https://a.espncdn.com/i/teamlogos/countries/500/mar.png","rank":11},"venue":"NRG Stadium","city":"Houston, Texas","odds":{"spread":"MAR -0.5","overUnder":"2.5"},"referee":"TBD","prediction":{"home_win_pct":20.6,"draw_pct":21.0,"away_win_pct":58.4,"predicted_score":"0-2","confidence_stars":4,"confidence_pct":80,"key_factors":["排名差距33位(44 vs 11)，摩洛哥排名更高","让球盘: MAR -0.5 (摩洛哥热门)","独赢赔率: 加拿大400 / 摩洛哥-125","摩洛哥防守型 vs 加拿大高位逼抢型","摩洛哥防守韧性极强"],"home_advantage":["FIFA排名44","高位逼抢型风格"],"away_advantage":["FIFA排名11","防守型风格"],"goal_scorers":["哈基米(摩洛哥)","齐耶赫(摩洛哥)","阿方索·戴维斯(加拿大)"],"referee_impact":"裁判TBD，待补充执法风格","venue_impact":"NRG Stadium，Houston, Texas，中立场","tactical_analysis":"摩洛哥排名11 vs 加拿大44，排名差距33位。摩洛哥防守型风格(R1逼平强队的能力)vs加拿大高位逼抢。赔率MAR -0.5看好摩洛哥。摩洛哥的防守纪律和反击效率是关键。","risk_note":"加拿大高位逼抢可能打乱摩洛哥节奏。摩洛哥xG 2.15可能偏高(防守型球队通常进球不多)。平局概率21%。","analysis":"排名44 vs 11。Morocco占优，胜率58.4%。平局概率21.0%。期望进球: Canada 1.18 vs Morocco 2.15。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。","xg":{"home":1.18,"away":2.15},"num_runs":200000,"timestamp":"2026-07-03T08:31:23.395770+00:00"}},
-  {"id":"760503","name":"France at Paraguay","date":"2026-07-04T21:00Z","time_bj":"7/5 05:00","home":{"name":"Paraguay","short":"PAR","logo":"https://a.espncdn.com/i/teamlogos/countries/500/par.png","rank":42},"away":{"name":"France","short":"FRA","logo":"https://a.espncdn.com/i/teamlogos/countries/500/fra.png","rank":2},"venue":"Lincoln Financial Field","city":"Philadelphia, Pennsylvania","odds":{"spread":"FRA -1.5","overUnder":"2.5"},"referee":"TBD","prediction":{"home_win_pct":7.0,"draw_pct":18.5,"away_win_pct":74.4,"predicted_score":"0-3","confidence_stars":4,"confidence_pct":85,"key_factors":["排名差距巨大(42 vs 2)","让球盘: FRA -1.5","独赢赔率: 巴拉圭1700 / 法国-550","法国控球型 vs 巴拉圭防守型","法国攻击线豪华"],"home_advantage":["FIFA排名42","防守型风格"],"away_advantage":["FIFA排名2","控球型风格"],"goal_scorers":["姆巴佩(法国)","登贝莱(法国)","格列兹曼(法国)"],"referee_impact":"裁判TBD，待补充执法风格","venue_impact":"Lincoln Financial Field，Philadelphia, Pennsylvania，中立场","tactical_analysis":"排名差距40位，法国是本届赛事夺冠热门。巴拉圭防守型风格可能限制法国进攻，但实力差距太大。FRA -1.5合理。预计法国控球率65%+，巴拉圭以防守为主。","risk_note":"巴拉圭防守型可能逼出低比分，但排名差距40位+赔率-550，法国大胜概率高。","analysis":"排名42 vs 2。France占优，胜率74.4%。平局概率18.5%。期望进球: Paraguay 0.98 vs France 2.73。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。","xg":{"home":0.98,"away":2.73},"num_runs":200000,"timestamp":"2026-07-03T08:31:23.468200+00:00"}},
-  {"id":"760504","name":"Norway at Brazil","date":"2026-07-05T20:00Z","time_bj":"7/6 04:00","home":{"name":"Brazil","short":"BRA","logo":"https://a.espncdn.com/i/teamlogos/countries/500/bra.png","rank":5},"away":{"name":"Norway","short":"NOR","logo":"https://a.espncdn.com/i/teamlogos/countries/500/nor.png","rank":36},"venue":"MetLife Stadium","city":"East Rutherford, New Jersey","odds":{"spread":"BRA -0.5","overUnder":"2.5"},"referee":"TBD","prediction":{"home_win_pct":59.0,"draw_pct":20.6,"away_win_pct":20.5,"predicted_score":"2-0","confidence_stars":4,"confidence_pct":80,"key_factors":["排名差距31位(5 vs 36)","让球盘: BRA -0.5 (巴西小幅热门)","独赢赔率: 巴西-115 / 挪威310","巴西控球型 vs 挪威防守反击型","巴西主场氛围(南美洲)"],"home_advantage":["FIFA排名5","控球型风格"],"away_advantage":["FIFA排名36","防守反击型风格"],"goal_scorers":["维尼修斯(巴西)","罗德里戈(巴西)","哈兰德(挪威)"],"referee_impact":"裁判TBD，待补充执法风格","venue_impact":"MetLife Stadium，East Rutherford, New Jersey，中立场","tactical_analysis":"巴西排名5 vs 挪威36，排名差距31位但让球盘仅-0.5，说明市场认为比赛较接近。巴西控球型vs挪威防守反击，哈兰德的反击是挪威最大威胁。巴西-115的赔率说明小幅热门但不是大热。","risk_note":"哈兰德的个人能力可能改变比赛。让球盘仅-0.5说明比赛可能接近。平局概率20.6%。","analysis":"排名5 vs 36。Brazil占优，胜率59.0%。平局概率20.6%。期望进球: Brazil 2.56 vs Norway 1.05。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。","xg":{"home":2.56,"away":1.05},"num_runs":200000,"timestamp":"2026-07-03T08:31:23.540040+00:00"}},
-  {"id":"760505","name":"England at Mexico","date":"2026-07-06T00:00Z","time_bj":"7/6 08:00","home":{"name":"Mexico","short":"MEX","logo":"https://a.espncdn.com/i/teamlogos/countries/500/mex.png","rank":14},"away":{"name":"England","short":"ENG","logo":"https://a.espncdn.com/i/teamlogos/countries/500/eng.png","rank":4},"venue":"Estadio Banorte","city":"Mexico City","odds":{"spread":"ENG -0.5","overUnder":"2.5"},"referee":"TBD","prediction":{"home_win_pct":32.7,"draw_pct":25.4,"away_win_pct":41.9,"predicted_score":"1-2","confidence_stars":2,"confidence_pct":50,"key_factors":["排名差距10位(14 vs 4)，英格兰排名更高","让球盘: ENG -0.5","独赢赔率: 墨西哥220 / 英格兰140","墨西哥防守反击型 vs 英格兰控球型","两队实力接近"],"home_advantage":["FIFA排名14","防守反击型风格"],"away_advantage":["FIFA排名4","控球型风格"],"goal_scorers":["凯恩(英格兰)","萨卡(英格兰)","洛萨诺(墨西哥)"],"referee_impact":"裁判TBD，待补充执法风格","venue_impact":"Estadio Banorte，Mexico City，中立场","tactical_analysis":"排名接近(14 vs 4)，英格兰排名更高但让球盘仅-0.5。墨西哥防守反击型vs英格兰控球型，预计英格兰主导控球但墨西哥反击有威胁。赔率220/140说明英格兰小幅热门。","risk_note":"两队实力接近，平局概率25.4%较高。墨西哥防守反击可能限制英格兰进攻。KO加时赛概率不低。","analysis":"排名14 vs 4。势均力敌，Mexico 32.7% vs England 41.9%。平局概率25.4%。期望进球: Mexico 1.52 vs England 1.70。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。","xg":{"home":1.52,"away":1.7},"num_runs":200000,"timestamp":"2026-07-03T08:31:23.611353+00:00"}},
-  {"id":"760506","name":"Spain at Portugal","date":"2026-07-06T19:00Z","time_bj":"7/7 03:00","home":{"name":"Portugal","short":"POR","logo":"https://a.espncdn.com/i/teamlogos/countries/500/por.png","rank":8},"away":{"name":"Spain","short":"ESP","logo":"https://a.espncdn.com/i/teamlogos/countries/500/esp.png","rank":3},"venue":"AT&T Stadium","city":"Arlington, Texas","odds":{"spread":"ESP -0.5","overUnder":"2.5"},"referee":"TBD","prediction":{"home_win_pct":29.1,"draw_pct":22.7,"away_win_pct":48.1,"predicted_score":"2-3","confidence_stars":3,"confidence_pct":65,"key_factors":["排名接近(8 vs 3)，西班牙排名更高","让球盘: ESP -0.5","独赢赔率: 葡萄牙300 / 西班牙-105","两队均为控球型，技术对决","伊比利亚德比"],"home_advantage":["FIFA排名8","控球型风格"],"away_advantage":["FIFA排名3","控球型风格"],"goal_scorers":["莫拉塔(西班牙)","佩德里(西班牙)","B费(葡萄牙)"],"referee_impact":"裁判TBD，待补充执法风格","venue_impact":"AT&T Stadium，Arlington, Texas，中立场","tactical_analysis":"伊比利亚德比！排名接近(8 vs 3)，西班牙小幅热门(ESP -0.5)。两队均为控球型打法，预计控球率接近50-50。技术流对决，中场控制是关键。西班牙近期状态更好。","risk_note":"两队实力非常接近，平局概率22.7%。技术流对决可能出现低比分僵局。KO加时赛概率高。","analysis":"排名8 vs 3。Spain占优，胜率48.1%。平局概率22.7%。期望进球: Portugal 1.75 vs Spain 1.87。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。","xg":{"home":1.75,"away":1.87},"num_runs":200000,"timestamp":"2026-07-03T08:31:23.684546+00:00"}},
-  {"id":"760507","name":"Belgium at United States","date":"2026-07-07T00:00Z","time_bj":"7/7 08:00","home":{"name":"United States","short":"USA","logo":"https://a.espncdn.com/i/teamlogos/countries/500/usa.png","rank":12},"away":{"name":"Belgium","short":"BEL","logo":"https://a.espncdn.com/i/teamlogos/countries/500/bel.png","rank":6},"venue":"Lumen Field","city":"Seattle, Washington","odds":{"spread":"USA -0.5","overUnder":"2.5"},"referee":"TBD","prediction":{"home_win_pct":40.3,"draw_pct":26.0,"away_win_pct":33.7,"predicted_score":"2-1","confidence_stars":2,"confidence_pct":48,"key_factors":["排名接近(12 vs 6)，比利时排名更高","让球盘: USA -0.5 (美国被看好)","独赢赔率: 美国155 / 比利时180","美国高位逼抢型 vs 比利时控球型","美国主场氛围(本土世界杯)"],"home_advantage":["FIFA排名12","高位逼抢型风格"],"away_advantage":["FIFA排名6","控球型风格"],"goal_scorers":["普利西奇(美国)","雷纳(美国)","德布劳内(比利时)"],"referee_impact":"裁判TBD，待补充执法风格","venue_impact":"Lumen Field，Seattle, Washington，中立场","tactical_analysis":"美国排名12 vs 比利时6，但让球盘USA -0.5说明市场看好美国(本土世界杯优势)。美国高位逼抢vs比利时控球型，预计比赛节奏快。赔率155/180非常接近，说明比赛结果高度不确定。","risk_note":"两队实力非常接近，平局概率26.0%最高。美国主场优势可能影响裁判判罚。KO加时赛概率高。","analysis":"排名12 vs 6。势均力敌，United States 40.3% vs Belgium 33.7%。平局概率26.0%。期望进球: United States 1.87 vs Belgium 1.56。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。","xg":{"home":1.87,"away":1.56},"num_runs":200000,"timestamp":"2026-07-03T08:31:23.756901+00:00"}}
+  {"id": "760502", "name": "Canada vs Morocco", "date": "2026-07-04T17:00Z", "time_bj": "7/5 01:00", "home": {"name": "Canada", "short": "CAN", "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png", "rank": 44}, "away": {"name": "Morocco", "short": "MAR", "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png", "rank": 11}, "venue": "NRG Stadium", "city": "Houston, Texas", "odds": {"spread": "MAR -0.5", "overUnder": 2.5}, "referee": "TBD", "prediction": {"home_win_pct": 24.0, "draw_pct": 28.5, "away_win_pct": 47.5, "predicted_score": "0-1", "confidence_stars": 3, "confidence_pct": 47, "key_factors": ["排名差距33位，Morocco明显占优", "淘汰赛阶段，防守纪律至关重要"], "home_advantage": ["FIFA排名44"], "away_advantage": ["FIFA排名11", "大赛经验丰富"], "goal_scorers": [], "referee_impact": "裁判数据暂缺", "venue_impact": "NRG Stadium, Houston, Texas", "tactical_analysis": "Canada(排名44) vs Morocco(排名11)。排名差距33位，Morocco实力明显占优。预计Morocco将主导控球，Canada以防守反击为主。期望进球: Canada 0.84 vs Morocco 1.31。泊松MC 200000次模拟。", "risk_note": "平局概率28.5%较高，KO加时赛可能；Morocco大热，但淘汰赛冷门频出", "analysis": "排名44 vs 11。Morocco占优，Canada 24.0% vs Morocco 47.5%。平局概率28.5%。期望进球: Canada 0.84 vs Morocco 1.31。泊松MC 200000次模拟。KO round参数。", "upset_analysis": {"upset_prob": 52.5, "score_upset_prob": 61.0, "risk_level": "HIGH", "scenarios": [{"type": "draw", "prob": 28.5, "bet": "平局 @ 28.5%"}, {"type": "upset", "prob": 24.0, "bet": "Canada胜 @ 24.0%"}], "recommended_bet": "Canada爆冷概率52.5%，平局28.5%"}, "top_5_scores": [["0-1", 15.2], ["1-1", 12.9], ["0-0", 11.6], ["0-2", 9.9], ["1-0", 9.8]], "xg": {"home": 0.84, "away": 1.31}, "num_runs": 200000, "timestamp": "2026-07-04T09:26:37.984468+00:00", "home_ml": 400, "away_ml": -130}},
+  {"id": "760503", "name": "Paraguay vs France", "date": "2026-07-04T21:00Z", "time_bj": "7/5 05:00", "home": {"name": "Paraguay", "short": "PAR", "logo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png", "rank": 42}, "away": {"name": "France", "short": "FRA", "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png", "rank": 2}, "venue": "Lincoln Financial Field", "city": "Philadelphia, Pennsylvania", "odds": {"spread": "FRA -1.5", "overUnder": 2.5}, "referee": "TBD", "prediction": {"home_win_pct": 16.7, "draw_pct": 22.0, "away_win_pct": 61.3, "predicted_score": "0-1", "confidence_stars": 4, "confidence_pct": 61, "key_factors": ["排名差距40位，France明显占优", "France进攻端预期更强(xG 1.88 vs 0.86)", "淘汰赛阶段，防守纪律至关重要"], "home_advantage": ["FIFA排名42"], "away_advantage": ["FIFA排名2", "世界级球队底蕴", "大赛经验丰富"], "goal_scorers": [], "referee_impact": "裁判数据暂缺", "venue_impact": "Lincoln Financial Field, Philadelphia, Pennsylvania", "tactical_analysis": "Paraguay(排名42) vs France(排名2)。排名差距40位，France实力明显占优。预计France将主导控球，Paraguay以防守反击为主。期望进球: Paraguay 0.86 vs France 1.88。泊松MC 200000次模拟。", "risk_note": "France大热，但淘汰赛冷门频出", "analysis": "排名42 vs 2。France占优，Paraguay 16.7% vs France 61.3%。平局概率22.0%。期望进球: Paraguay 0.86 vs France 1.88。泊松MC 200000次模拟。KO round参数。", "upset_analysis": {"upset_prob": 38.7, "score_upset_prob": 45.3, "risk_level": "MEDIUM", "scenarios": [{"type": "draw", "prob": 22.0, "bet": "平局 @ 22.0%"}, {"type": "upset", "prob": 16.7, "bet": "Paraguay胜 @ 16.7%"}], "recommended_bet": "Paraguay爆冷概率38.7%，平局22.0%"}, "top_5_scores": [["0-1", 12.1], ["0-2", 11.3], ["1-1", 10.5], ["1-2", 9.9], ["0-3", 7.3]], "xg": {"home": 0.86, "away": 1.88}, "num_runs": 200000, "timestamp": "2026-07-04T09:26:38.077606+00:00", "home_ml": 1800, "away_ml": -575}},
+  {"id": "760504", "name": "Brazil vs Norway", "date": "2026-07-05T20:00Z", "time_bj": "7/6 04:00", "home": {"name": "Brazil", "short": "BRA", "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png", "rank": 5}, "away": {"name": "Norway", "short": "NOR", "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png", "rank": 36}, "venue": "MetLife Stadium", "city": "East Rutherford, New Jersey", "odds": {"spread": "BRA -0.5", "overUnder": 2.5}, "referee": "TBD", "prediction": {"home_win_pct": 52.9, "draw_pct": 25.3, "away_win_pct": 21.8, "predicted_score": "1-0", "confidence_stars": 3, "confidence_pct": 52, "key_factors": ["排名差距31位，Brazil明显占优", "Brazil进攻端预期更强(xG 1.57 vs 0.91)", "淘汰赛阶段，防守纪律至关重要"], "home_advantage": ["FIFA排名5", "世界级球队底蕴", "大赛经验丰富"], "away_advantage": ["FIFA排名36"], "goal_scorers": [], "referee_impact": "裁判数据暂缺", "venue_impact": "MetLife Stadium, East Rutherford, New Jersey", "tactical_analysis": "Brazil(排名5) vs Norway(排名36)。排名差距31位，Brazil实力明显占优。预计Brazil将主导控球，Norway以防守反击为主。期望进球: Brazil 1.57 vs Norway 0.91。泊松MC 200000次模拟。", "risk_note": "平局概率25.3%较高，KO加时赛可能；Brazil大热，但淘汰赛冷门频出", "analysis": "排名5 vs 36。Brazil，Brazil 52.9% vs Norway 21.8%。平局概率25.3%。期望进球: Brazil 1.57 vs Norway 0.91。泊松MC 200000次模拟。KO round参数。", "upset_analysis": {"upset_prob": 47.1, "score_upset_prob": 54.7, "risk_level": "HIGH", "scenarios": [{"type": "draw", "prob": 25.3, "bet": "平局 @ 25.3%"}, {"type": "upset", "prob": 21.8, "bet": "Norway胜 @ 21.8%"}], "recommended_bet": "Norway爆冷概率47.1%，平局25.3%"}, "top_5_scores": [["1-0", 13.3], ["1-1", 11.9], ["2-0", 10.3], ["2-1", 9.4], ["0-0", 8.4]], "xg": {"home": 1.57, "away": 0.91}, "num_runs": 200000, "timestamp": "2026-07-04T09:26:38.166474+00:00", "home_ml": -125, "away_ml": 320}},
+  {"id": "760505", "name": "Mexico vs England", "date": "2026-07-06T00:00Z", "time_bj": "7/6 08:00", "home": {"name": "Mexico", "short": "MEX", "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png", "rank": 14}, "away": {"name": "England", "short": "ENG", "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png", "rank": 4}, "venue": "Estadio Banorte", "city": "Mexico City", "odds": {"spread": "ENG -0.5", "overUnder": 2.5}, "referee": "TBD", "prediction": {"home_win_pct": 28.4, "draw_pct": 24.3, "away_win_pct": 47.3, "predicted_score": "1-1", "confidence_stars": 3, "confidence_pct": 47, "key_factors": ["排名接近(14 vs 4)，实力均衡", "淘汰赛阶段，防守纪律至关重要"], "home_advantage": ["FIFA排名14", "大赛经验丰富"], "away_advantage": ["FIFA排名4", "世界级球队底蕴", "大赛经验丰富"], "goal_scorers": [], "referee_impact": "裁判数据暂缺", "venue_impact": "Estadio Banorte, Mexico City", "tactical_analysis": "Mexico(排名14) vs England(排名4)。两队排名接近，实力均衡。预计比赛胶着，中场争夺激烈。期望进球: Mexico 1.23 vs England 1.65。泊松MC 200000次模拟。", "risk_note": "比赛结果相对可预测", "analysis": "排名14 vs 4。England占优，Mexico 28.4% vs England 47.3%。平局概率24.3%。期望进球: Mexico 1.23 vs England 1.65。泊松MC 200000次模拟。KO round参数。", "upset_analysis": {"upset_prob": 52.7, "score_upset_prob": 60.0, "risk_level": "HIGH", "scenarios": [{"type": "draw", "prob": 24.3, "bet": "平局 @ 24.3%"}, {"type": "upset", "prob": 28.4, "bet": "Mexico胜 @ 28.4%"}], "recommended_bet": "Mexico爆冷概率52.7%，平局24.3%"}, "top_5_scores": [["1-1", 11.5], ["1-2", 9.5], ["0-1", 9.2], ["0-2", 7.8], ["1-0", 7.0]], "xg": {"home": 1.23, "away": 1.65}, "num_runs": 200000, "timestamp": "2026-07-04T09:26:38.259434+00:00", "home_ml": 205, "away_ml": 140}},
+  {"id": "760506", "name": "Portugal vs Spain", "date": "2026-07-06T19:00Z", "time_bj": "7/7 03:00", "home": {"name": "Portugal", "short": "POR", "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png", "rank": 8}, "away": {"name": "Spain", "short": "ESP", "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png", "rank": 3}, "venue": "AT&T Stadium", "city": "Arlington, Texas", "odds": {"spread": "ESP -0.5", "overUnder": 2.5}, "referee": "TBD", "prediction": {"home_win_pct": 31.3, "draw_pct": 23.2, "away_win_pct": 45.5, "predicted_score": "1-1", "confidence_stars": 3, "confidence_pct": 45, "key_factors": ["排名接近(8 vs 3)，实力均衡", "淘汰赛阶段，防守纪律至关重要"], "home_advantage": ["FIFA排名8", "世界级球队底蕴", "大赛经验丰富"], "away_advantage": ["FIFA排名3", "世界级球队底蕴", "大赛经验丰富"], "goal_scorers": [], "referee_impact": "裁判数据暂缺", "venue_impact": "AT&T Stadium, Arlington, Texas", "tactical_analysis": "Portugal(排名8) vs Spain(排名3)。两队排名接近，实力均衡。预计比赛胶着，中场争夺激烈。期望进球: Portugal 1.41 vs Spain 1.74。泊松MC 200000次模拟。", "risk_note": "比赛结果相对可预测", "analysis": "排名8 vs 3。Spain占优，Portugal 31.3% vs Spain 45.5%。平局概率23.2%。期望进球: Portugal 1.41 vs Spain 1.74。泊松MC 200000次模拟。KO round参数。", "upset_analysis": {"upset_prob": 54.5, "score_upset_prob": 61.5, "risk_level": "HIGH", "scenarios": [{"type": "draw", "prob": 23.2, "bet": "平局 @ 23.2%"}, {"type": "upset", "prob": 31.3, "bet": "Portugal胜 @ 31.3%"}], "recommended_bet": "Portugal爆冷概率54.5%，平局23.2%"}, "top_5_scores": [["1-1", 10.5], ["1-2", 9.1], ["0-1", 7.5], ["2-1", 7.4], ["0-2", 6.5]], "xg": {"home": 1.41, "away": 1.74}, "num_runs": 200000, "timestamp": "2026-07-04T09:26:38.350323+00:00", "home_ml": 295, "away_ml": -110}},
+  {"id": "760507", "name": "United States vs Belgium", "date": "2026-07-07T00:00Z", "time_bj": "7/7 08:00", "home": {"name": "United States", "short": "USA", "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png", "rank": 12}, "away": {"name": "Belgium", "short": "BEL", "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png", "rank": 6}, "venue": "Lumen Field", "city": "Seattle, Washington", "odds": {"spread": "USA -0.5", "overUnder": 2.5}, "referee": "TBD", "prediction": {"home_win_pct": 32.1, "draw_pct": 25.1, "away_win_pct": 42.9, "predicted_score": "1-1", "confidence_stars": 3, "confidence_pct": 42, "key_factors": ["排名接近(12 vs 6)，实力均衡", "淘汰赛阶段，防守纪律至关重要"], "home_advantage": ["FIFA排名12", "大赛经验丰富"], "away_advantage": ["FIFA排名6", "世界级球队底蕴", "大赛经验丰富"], "goal_scorers": [], "referee_impact": "裁判数据暂缺", "venue_impact": "Lumen Field, Seattle, Washington", "tactical_analysis": "United States(排名12) vs Belgium(排名6)。两队排名接近，实力均衡。预计比赛胶着，中场争夺激烈。期望进球: United States 1.28 vs Belgium 1.51。泊松MC 200000次模拟。", "risk_note": "平局概率25.1%较高，KO加时赛可能", "analysis": "排名12 vs 6。Belgium占优，United States 32.1% vs Belgium 42.9%。平局概率25.1%。期望进球: United States 1.28 vs Belgium 1.51。泊松MC 200000次模拟。KO round参数。", "upset_analysis": {"upset_prob": 57.1, "score_upset_prob": 64.6, "risk_level": "HIGH", "scenarios": [{"type": "draw", "prob": 25.1, "bet": "平局 @ 25.1%"}, {"type": "upset", "prob": 32.1, "bet": "United States胜 @ 32.1%"}], "recommended_bet": "United States爆冷概率57.1%，平局25.1%"}, "top_5_scores": [["1-1", 11.8], ["0-1", 9.2], ["1-2", 9.1], ["1-0", 7.7], ["2-1", 7.5]], "xg": {"home": 1.28, "away": 1.51}, "num_runs": 200000, "timestamp": "2026-07-04T09:26:38.439839+00:00", "home_ml": 160, "away_ml": 165}},
+  {"id": "760509", "name": "Argentina vs Cape Verde", "date": "2026-07-07T16:00Z", "time_bj": "7/8 00:00", "home": {"name": "Argentina", "short": "ARG", "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png", "rank": 1}, "away": {"name": "Cape Verde", "short": "CPV", "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png", "rank": 50}, "venue": "Mercedes-Benz Stadium", "city": "Atlanta, Georgia", "odds": {"spread": "ARG -1.5", "overUnder": 2.5}, "referee": "TBD", "prediction": {"home_win_pct": 67.5, "draw_pct": 19.5, "away_win_pct": 13.0, "predicted_score": "2-0", "confidence_stars": 4, "confidence_pct": 67, "key_factors": ["排名差距49位，Argentina明显占优", "Argentina进攻端预期更强(xG 2.11 vs 0.8)", "淘汰赛阶段，防守纪律至关重要"], "home_advantage": ["FIFA排名1", "世界级球队底蕴", "大赛经验丰富"], "away_advantage": ["FIFA排名50"], "goal_scorers": [], "referee_impact": "裁判数据暂缺", "venue_impact": "Mercedes-Benz Stadium, Atlanta, Georgia", "tactical_analysis": "Argentina(排名1) vs Cape Verde(排名50)。排名差距49位，Argentina实力明显占优。预计Argentina将主导控球，Cape Verde以防守反击为主。期望进球: Argentina 2.11 vs Cape Verde 0.8。泊松MC 200000次模拟。", "risk_note": "Argentina大热，但淘汰赛冷门频出", "analysis": "排名1 vs 50。Argentina，Argentina 67.5% vs Cape Verde 13.0%。平局概率19.5%。期望进球: Argentina 2.11 vs Cape Verde 0.8。泊松MC 200000次模拟。KO round参数。", "upset_analysis": {"upset_prob": 32.5, "score_upset_prob": 38.4, "risk_level": "MEDIUM", "scenarios": [{"type": "draw", "prob": 19.5, "bet": "平局 @ 19.5%"}, {"type": "upset", "prob": 13.0, "bet": "Cape Verde胜 @ 13.0%"}], "recommended_bet": "Cape Verde爆冷概率32.5%，平局19.5%"}, "top_5_scores": [["2-0", 12.2], ["1-0", 11.3], ["2-1", 9.8], ["1-1", 9.2], ["3-0", 8.6]], "xg": {"home": 2.11, "away": 0.8}, "num_runs": 200000, "timestamp": "2026-07-04T09:26:38.531850+00:00", "home_ml": -285, "away_ml": 850}},
+  {"id": "760508", "name": "Switzerland vs Colombia", "date": "2026-07-07T20:00Z", "time_bj": "7/8 04:00", "home": {"name": "Switzerland", "short": "SUI", "logo": "https://a.espncdn.com/i/teamlogos/countries/500/sui.png", "rank": 15}, "away": {"name": "Colombia", "short": "COL", "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png", "rank": 9}, "venue": "BC Place", "city": "Vancouver", "odds": {"spread": "COL -0.5", "overUnder": 2.5}, "referee": "TBD", "prediction": {"home_win_pct": 32.9, "draw_pct": 26.5, "away_win_pct": 40.6, "predicted_score": "1-1", "confidence_stars": 3, "confidence_pct": 40, "key_factors": ["排名接近(15 vs 9)，实力均衡", "淘汰赛阶段，防守纪律至关重要", "势均力敌，比赛结果高度不确定"], "home_advantage": ["FIFA排名15", "大赛经验丰富"], "away_advantage": ["FIFA排名9", "世界级球队底蕴", "大赛经验丰富"], "goal_scorers": [], "referee_impact": "裁判数据暂缺", "venue_impact": "BC Place, Vancouver", "tactical_analysis": "Switzerland(排名15) vs Colombia(排名9)。两队排名接近，实力均衡。预计比赛胶着，中场争夺激烈。期望进球: Switzerland 1.2 vs Colombia 1.37。泊松MC 200000次模拟。", "risk_note": "平局概率26.5%较高，KO加时赛可能；比赛结果高度不确定，任何结果都有可能", "analysis": "排名15 vs 9。势均力敌，Switzerland 32.9% vs Colombia 40.6%。平局概率26.5%。期望进球: Switzerland 1.2 vs Colombia 1.37。泊松MC 200000次模拟。KO round参数。", "upset_analysis": {"upset_prob": 59.4, "score_upset_prob": 67.3, "risk_level": "HIGH", "scenarios": [{"type": "draw", "prob": 26.5, "bet": "平局 @ 26.5%"}, {"type": "upset", "prob": 32.9, "bet": "Switzerland胜 @ 32.9%"}], "recommended_bet": "Switzerland爆冷概率59.4%，平局26.5%"}, "top_5_scores": [["1-1", 12.6], ["0-1", 10.4], ["1-0", 9.3], ["1-2", 8.6], ["2-1", 7.7]], "xg": {"home": 1.2, "away": 1.37}, "num_runs": 200000, "timestamp": "2026-07-04T09:26:38.620822+00:00", "home_ml": 235, "away_ml": 125}}
 ];
 
 // === Embedded Settlements (Historical Results) ===
@@ -1714,7 +1762,7 @@ function buildBracketData() {
   function getMatch(eid){
     const ev=(allEvents||[]).find(e=>e.id===eid);
     const pred=window.__preds?.[eid];
-    const settlement=(window.__settlements||[]).find(s=>s.matchId===eid);
+    const settlement=window.__settlementsMap?.[eid];
     if(!ev){
       if(pred)return{id:eid,state:'pre',
         home:{name:pred.home.name,logo:pred.home.logo,rank:pred.home.rank,score:0},
@@ -1805,14 +1853,26 @@ function renderBracket(){
     'Canada':'🇨🇦','Morocco':'🇲🇦','Paraguay':'🇵🇾','France':'🇫🇷','Brazil':'🇧🇷','Norway':'🇳🇴',
     'Mexico':'🇲🇽','England':'🏴󠁧󠁢󠁥󠁮󠁧󠁿','Portugal':'🇵🇹','Spain':'🇪🇸','United States':'🇺🇸','USA':'🇺🇸',
     'Belgium':'🇧🇪','Germany':'🇩🇪','Croatia':'🇭🇷','Sweden':'🇸🇪','South Africa':'🇿🇦','Netherlands':'🇳🇱',
-    'Senegal':'🇸🇳','Bosnia-Herzegovina':'🇧🇦','Bosnia':'🇧🇦','Austria':'🇦🇹'
+    'Senegal':'🇸🇳','Bosnia-Herzegovina':'🇧🇦','Bosnia':'🇧🇦','Austria':'🇦🇹','Algeria':'🇩🇿',
+    'Congo DR':'🇨🇩','DR Congo':'🇨🇩','Haiti':'🇭🇹','Scotland':'🏴󠁧󠁢󠁳󠁣󠁴󠁿','Panama':'🇵🇦','Ecuador':'🇪🇨',
+    'Ivory Coast':'🇨🇮','Saudia Arabia':'🇸🇦','Uruguay':'🇺🇾','Japan':'🇯🇵','Iran':'🇮🇷','Korea':'🇰🇷',
+    'Tunisia':'🇹🇳','Denmark':'🇩🇰','Switzerland':'🇨🇭','Poland':'🇵🇱','Serbia':'🇷🇸','Cameroon':'🇨🇲',
+    'Ukraine':'🇺🇦','Turkey':'🇹🇷','Wales':'🏴󠁧󠁢󠁷󠁬󠁳󠁿','Iran':'🇮🇷','Peru':'🇵🇪'
   };
-  function flag(n){return TEAM_FLAGS[n]||'';}
+  function flag(n){return TEAM_FLAGS[n]||'🏳️';}
   function code3(n){
     const m={'United States':'USA','South Korea':'KOR','Bosnia-Herzegovina':'BIH','New Zealand':'NZL',
       'Saudi Arabia':'KSA','South Africa':'RSA','Cape Verde':'CPV','Costa Rica':'CRC',
-      'Ivory Coast':'CIV','DR Congo':'COD','Congo DR':'COD','Austria':'AUT','Algeria':'ALG','Norway':'NOR','Sweden':'SWE','Morocco':'MAR','Egypt':'EGY','Ghana':'GHA','Paraguay':'PAR'};
+      'Ivory Coast':'CIV','DR Congo':'COD','Congo DR':'COD','Austria':'AUT','Algeria':'ALG','Norway':'NOR','Sweden':'SWE','Morocco':'MAR','Egypt':'EGY','Ghana':'GHA','Paraguay':'PAR','Haiti':'HAI','Scotland':'SCO','Panama':'PAN','Ecuador':'ECU','Uruguay':'URU','Cameroon':'CMR','Senegal':'SEN','Ukraine':'UKR','Turkey':'TUR','Wales':'WAL','Peru':'PER'};
     return m[n]||(n.length<=3?n.toUpperCase():n.slice(0,3).toUpperCase());
+  }
+
+  // Get predicted score for upcoming matches from PREDICTIONS data
+  function getPredScore(m){
+    if(!m||m.state==='post'||m.state==='future')return'';
+    const pred=window.__preds?.[m.id];
+    if(pred)return pred.prediction?.score?.predicted||pred.prediction?.predicted_score||'';
+    return m.predScore||'';
   }
 
   function matchCard(m,fifaId){
@@ -1824,15 +1884,17 @@ function renderBracket(){
     const liveClass=live?'live-match':'';
     const hPen=m.home.pen?`<span class="pen">(${m.home.pen})</span>`:'';
     const aPen=m.away.pen?`<span class="pen">(${m.away.pen})</span>`:'';
-    const hScore=settled?m.home.score:(m.state==='pre'?'-':m.home.score);
-    const aScore=settled?m.away.score:(m.state==='pre'?'-':m.away.score);
+    const hScore=settled?m.home.score:(m.state==='pre'||m.state==='future'?'-':m.home.score);
+    const aScore=settled?m.away.score:(m.state==='pre'||m.state==='future'?'-':m.away.score);
     const hLoserClass=isAwayW?'loser':'';
     const aLoserClass=isHomeW?'loser':'';
     const hWinnerClass=isHomeW?'winner':'';
     const aWinnerClass=isAwayW?'winner':'';
-    const statusHtml=m.state==='post'?'全场结束':m.time_bj?`⏰ ${m.time_bj}`:'待赛';
+    const statusHtml=m.state==='post'?'✓ 完成':live?'🔴 直播':m.time_bj?`⏰ ${m.time_bj}`:'待赛';
     const statusClass=m.state==='post'?'finished':'';
     const matchId=fifaId||m.id||'';
+    const predScore=getPredScore(m);
+    const predHtml=predScore?`<div class="bmatch-pred">🔮 ${predScore}</div>`:'';
 
     return `<div class="bmatch ${settledClass} ${liveClass}">
       <div class="bmatch-id">${matchId}</div>
@@ -1847,6 +1909,7 @@ function renderBracket(){
         <span class="score">${aScore}</span>${aPen}
       </div>
       <div class="bmatch-status ${statusClass}">${statusHtml}</div>
+      ${predHtml}
     </div>`;
   }
 
@@ -1866,26 +1929,35 @@ function renderBracket(){
   const sf=bracket.sf;
   const fin=bracket.finalMatch;
 
+  // Determine champion name
+  let championName='待定';
+  if(fin&&fin.state==='post'){
+    const w=fin.winner==='home'?fin.home.name:fin.winner==='away'?fin.away.name:null;
+    if(w&&w!=='待定')championName=w;
+  }
+
   const html=`<div class="bracket-scroll">
   <div class="bracket-grid">
-    ${col('32强',leftR32,['M74','M77','M73','M75'])}
-    ${col('16强',r16L,['M89','M90'])}
-    ${col('8强',qfL,['M97'])}
-    ${col('4强',[sf[0]],['M101'])}
+    ${col('32强 R32',leftR32,['M74','M77','M73','M75'])}
+    ${col('16强 R16',r16L,['M89','M90'])}
+    ${col('8强 QF',qfL,['M97'])}
+    ${col('半决赛 SF',[sf[0]],['M101'])}
     <div class="bracket-col">
-      <div class="bracket-col-title">🏆 决赛</div>
+      <div class="bracket-col-title">🏆 决赛 FINAL</div>
       <div class="bracket-center-match">${matchCard(fin,'M104')}</div>
-      <div class="bracket-champion"><div class="champion-card"><div class="champion-trophy">🏆</div><div class="champion-label">冠军</div><div class="champion-team">待定</div></div></div>
+      <div class="bracket-champion"><div class="champion-card"><div class="champion-trophy">🏆</div><div class="champion-label">CHAMPION</div><div class="champion-team">${cn(championName)}</div></div></div>
     </div>
-    ${col('4强',[sf[1]],['M102'])}
-    ${col('8强',qfR,['M98'])}
-    ${col('16强',r16R,['M93','M94'])}
-    ${col('32强',rightR32,['M83','M84','M81','M82'])}
+    ${col('半决赛 SF',[sf[1]],['M102'])}
+    ${col('8强 QF',qfR,['M98'])}
+    ${col('16强 R16',r16R,['M93','M94'])}
+    ${col('32强 R32',rightR32,['M83','M84','M81','M82'])}
   </div>
 </div>
-<div style="text-align:center;margin-top:12px;font-size:11px;color:var(--secondary)">
-  📊 淘汰赛对阵图 · FIFA 2026 Official Bracket · 横向滑动查看
-  <br>✅ 已完成 | ⏰ 北京时间 | 🏆 淘汰赛阶段
+<div style="text-align:center;margin-top:16px;font-size:12px;color:var(--secondary);line-height:1.8">
+  <span style="background:rgba(52,199,89,.1);color:var(--green);padding:2px 8px;border-radius:10px;font-size:10px;margin-right:4px">✓ 已完成</span>
+  <span style="background:rgba(0,122,255,.08);color:var(--accent);padding:2px 8px;border-radius:10px;font-size:10px;margin-right:4px">🔮 AI预测</span>
+  <span style="background:var(--search-bg);color:var(--secondary);padding:2px 8px;border-radius:10px;font-size:10px">⏰ 北京时间</span>
+  <br>📊 FIFA 2026 Official Bracket · 横向滑动查看完整对阵图
 </div>`;
 
   area.innerHTML=html;

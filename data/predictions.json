@@ -1,583 +1,807 @@
 {
   "matches": [
     {
-      "id": "760499",
-      "name": "Egypt at Australia",
-      "date": "2026-07-03T18:00Z",
-      "time_bj": "7/4 02:00",
-      "home": {
-        "name": "Australia",
-        "short": "AUS",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/aus.png",
-        "rank": 16
-      },
-      "away": {
-        "name": "Egypt",
-        "short": "EGY",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/egy.png",
-        "rank": 27
-      },
-      "venue": "AT&T Stadium",
-      "city": "Arlington, Texas",
-      "odds": {
-        "spread": "EGY -0.5",
-        "overUnder": "1.5"
-      },
-      "referee": "TBD",
-      "prediction": {
-        "home_win_pct": 33.4,
-        "draw_pct": 24.8,
-        "away_win_pct": 41.8,
-        "predicted_score": "1-2",
-        "confidence_stars": 2,
-        "confidence_pct": 49,
-        "key_factors": [
-          "排名接近(16 vs 27)，实力均衡",
-          "让球盘: EGY -0.5 (市场看好埃及)",
-          "澳大利亚高位逼抢型 vs 埃及防守反击型",
-          "萨拉赫领衔埃及反击线",
-          "中立场无主场优势"
-        ],
-        "home_advantage": [
-          "FIFA排名16",
-          "高位逼抢型风格"
-        ],
-        "away_advantage": [
-          "FIFA排名27",
-          "防守反击型风格"
-        ],
-        "goal_scorers": [
-          "萨拉赫(埃及)",
-          "穆斯塔法·穆罕默德(埃及)",
-          "杜克(澳大利亚)"
-        ],
-        "referee_impact": "裁判TBD，待补充执法风格",
-        "venue_impact": "AT&T Stadium，Arlington, Texas，中立场",
-        "tactical_analysis": "澳大利亚高位逼抢vs埃及防守反击的经典对决。澳大利亚排名更高(16 vs 27)但市场赔率看好埃及(ML 135 vs 265)，说明埃及近期状态更好。萨拉赫的反击速度是关键变量。中立场比赛，预计节奏偏慢，埃及可能以防守为主等待反击机会。",
-        "risk_note": "排名vs赔率方向冲突：澳大利亚排名更好但赔率看好埃及。平局概率24.8%，KO加时赛可能。",
-        "analysis": "排名16 vs 27。势均力敌，Australia 33.4% vs Egypt 41.8%。平局概率24.8%。期望进球: Australia 1.70 vs Egypt 1.56。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。",
-        "xg": {
-          "home": 1.7,
-          "away": 1.56
-        },
-        "num_runs": 200000,
-        "timestamp": "2026-07-03T08:31:23.179595+00:00"
-      }
-    },
-    {
-      "id": "760500",
-      "name": "Cape Verde at Argentina",
-      "date": "2026-07-03T22:00Z",
-      "time_bj": "7/4 06:00",
-      "home": {
-        "name": "Argentina",
-        "short": "ARG",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
-        "rank": 1
-      },
-      "away": {
-        "name": "Cape Verde",
-        "short": "CPV",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/cpv.png",
-        "rank": 50
-      },
-      "venue": "Hard Rock Stadium",
-      "city": "Miami Gardens, Florida",
-      "odds": {
-        "spread": "ARG -2.5",
-        "overUnder": "2.5"
-      },
-      "referee": "TBD",
-      "prediction": {
-        "home_win_pct": 77.5,
-        "draw_pct": 18.3,
-        "away_win_pct": 4.3,
-        "predicted_score": "3-0",
-        "confidence_stars": 4,
-        "confidence_pct": 85,
-        "key_factors": [
-          "排名差距巨大(1 vs 50)",
-          "让球盘: ARG -2.5 (大热门)",
-          "独赢赔率: 阿根廷-650 (超大热门)",
-          "阿根廷控球型 vs 佛得角防守型",
-          "梅西领衔阿根廷攻击线"
-        ],
-        "home_advantage": [
-          "FIFA排名1",
-          "控球型风格"
-        ],
-        "away_advantage": [
-          "FIFA排名50",
-          "防守型风格"
-        ],
-        "goal_scorers": [
-          "梅西(阿根廷)",
-          "阿尔瓦雷斯(阿根廷)",
-          "劳塔罗·马丁内斯(阿根廷)"
-        ],
-        "referee_impact": "裁判TBD，待补充执法风格",
-        "venue_impact": "Hard Rock Stadium，Miami Gardens, Florida，中立场",
-        "tactical_analysis": "排名差距49位，阿根廷是本届赛事最大热门之一。佛得角防守型风格可能限制阿根廷进攻，但实力差距太大。预计阿根廷控球率70%+，佛得角以防守为主。阿根廷-2.5的让球盘反映市场对大胜的预期。",
-        "risk_note": "佛得角R1逼平西班牙0-0，防守能力不可小觑。但排名差距49位+赔率-650，阿根廷大胜概率高。",
-        "analysis": "排名1 vs 50。Argentina占优，胜率77.5%。平局概率18.3%。期望进球: Argentina 3.50 vs Cape Verde 0.71。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。",
-        "xg": {
-          "home": 3.5,
-          "away": 0.71
-        },
-        "num_runs": 200000,
-        "timestamp": "2026-07-03T08:31:23.252479+00:00"
-      }
-    },
-    {
-      "id": "760501",
-      "name": "Ghana at Colombia",
-      "date": "2026-07-04T01:30Z",
-      "time_bj": "7/4 09:30",
-      "home": {
-        "name": "Colombia",
-        "short": "COL",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
-        "rank": 9
-      },
-      "away": {
-        "name": "Ghana",
-        "short": "GHA",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/gha.png",
-        "rank": 45
-      },
-      "venue": "GEHA Field at Arrowhead Stadium",
-      "city": "Kansas City, Missouri",
-      "odds": {
-        "spread": "COL -1.5",
-        "overUnder": "2.5"
-      },
-      "referee": "TBD",
-      "prediction": {
-        "home_win_pct": 69.9,
-        "draw_pct": 18.7,
-        "away_win_pct": 11.4,
-        "predicted_score": "3-0",
-        "confidence_stars": 4,
-        "confidence_pct": 85,
-        "key_factors": [
-          "排名差距36位(9 vs 45)",
-          "让球盘: COL -1.5",
-          "哥伦比亚控球型 vs 加纳防守反击型",
-          "哥伦比亚攻击线实力强劲",
-          "中立场无主场优势"
-        ],
-        "home_advantage": [
-          "FIFA排名9",
-          "控球型风格"
-        ],
-        "away_advantage": [
-          "FIFA排名45",
-          "防守反击型风格"
-        ],
-        "goal_scorers": [
-          "迪亚斯(哥伦比亚)",
-          "J罗(哥伦比亚)",
-          "库杜斯(加纳)"
-        ],
-        "referee_impact": "裁判TBD，待补充执法风格",
-        "venue_impact": "GEHA Field at Arrowhead Stadium，Kansas City, Missouri，中立场",
-        "tactical_analysis": "哥伦比亚排名9，加纳排名45，实力差距明显。哥伦比亚控球型打法vs加纳防守反击，预计哥伦比亚主导控球。COL -1.5的让球盘合理。加纳反击可能有威胁但整体实力差距大。",
-        "risk_note": "加纳防守反击可能制造威胁，但排名差距36位，哥伦比亚大胜概率高。",
-        "analysis": "排名9 vs 45。Colombia占优，胜率69.9%。平局概率18.7%。期望进球: Colombia 2.68 vs Ghana 0.98。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。",
-        "xg": {
-          "home": 2.68,
-          "away": 0.98
-        },
-        "num_runs": 200000,
-        "timestamp": "2026-07-03T08:31:23.324211+00:00"
-      }
-    },
-    {
       "id": "760502",
-      "name": "Morocco at Canada",
+      "name": "Canada vs Morocco",
       "date": "2026-07-04T17:00Z",
       "time_bj": "7/5 01:00",
       "home": {
         "name": "Canada",
         "short": "CAN",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/can.png",
+        "logo": "",
         "rank": 44
       },
       "away": {
         "name": "Morocco",
         "short": "MAR",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mar.png",
+        "logo": "",
         "rank": 11
       },
       "venue": "NRG Stadium",
       "city": "Houston, Texas",
       "odds": {
         "spread": "MAR -0.5",
-        "overUnder": "2.5"
+        "overUnder": 2.5
       },
-      "referee": "TBD",
+      "referee": "?",
       "prediction": {
-        "home_win_pct": 20.6,
-        "draw_pct": 21.0,
-        "away_win_pct": 58.4,
-        "predicted_score": "0-2",
-        "confidence_stars": 4,
-        "confidence_pct": 80,
+        "home_win_pct": 24.0,
+        "draw_pct": 28.5,
+        "away_win_pct": 47.5,
+        "predicted_score": "0-1",
+        "confidence_stars": 3,
+        "confidence_pct": 47,
         "key_factors": [
-          "排名差距33位(44 vs 11)，摩洛哥排名更高",
-          "让球盘: MAR -0.5 (摩洛哥热门)",
-          "独赢赔率: 加拿大400 / 摩洛哥-125",
-          "摩洛哥防守型 vs 加拿大高位逼抢型",
-          "摩洛哥防守韧性极强"
+          "排名差距33位，Morocco明显占优",
+          "淘汰赛阶段，防守纪律至关重要"
         ],
         "home_advantage": [
-          "FIFA排名44",
-          "高位逼抢型风格"
+          "FIFA排名44"
         ],
         "away_advantage": [
           "FIFA排名11",
-          "防守型风格"
+          "大赛经验丰富"
         ],
-        "goal_scorers": [
-          "哈基米(摩洛哥)",
-          "齐耶赫(摩洛哥)",
-          "阿方索·戴维斯(加拿大)"
+        "goal_scorers": [],
+        "referee_impact": "裁判数据暂缺",
+        "venue_impact": "NRG Stadium, Houston, Texas",
+        "tactical_analysis": "Canada(排名44) vs Morocco(排名11)。排名差距33位，Morocco实力明显占优。预计Morocco将主导控球，Canada以防守反击为主。期望进球: Canada 0.84 vs Morocco 1.31。泊松MC 200000次模拟。",
+        "risk_note": "平局概率28.5%较高，KO加时赛可能；Morocco大热，但淘汰赛冷门频出",
+        "analysis": "排名44 vs 11。Morocco占优，Canada 24.0% vs Morocco 47.5%。平局概率28.5%。期望进球: Canada 0.84 vs Morocco 1.31。泊松MC 200000次模拟。KO round参数。",
+        "upset_analysis": {
+          "upset_prob": 52.5,
+          "score_upset_prob": 61.0,
+          "risk_level": "HIGH",
+          "scenarios": [
+            {
+              "type": "draw",
+              "prob": 28.5,
+              "bet": "平局 @ 28.5%"
+            },
+            {
+              "type": "upset",
+              "prob": 24.0,
+              "bet": "Canada胜 @ 24.0%"
+            }
+          ],
+          "recommended_bet": "Canada爆冷概率52.5%，平局28.5%"
+        },
+        "top_5_scores": [
+          [
+            "0-1",
+            15.2
+          ],
+          [
+            "1-1",
+            12.9
+          ],
+          [
+            "0-0",
+            11.6
+          ],
+          [
+            "0-2",
+            9.9
+          ],
+          [
+            "1-0",
+            9.8
+          ]
         ],
-        "referee_impact": "裁判TBD，待补充执法风格",
-        "venue_impact": "NRG Stadium，Houston, Texas，中立场",
-        "tactical_analysis": "摩洛哥排名11 vs 加拿大44，排名差距33位。摩洛哥防守型风格(R1逼平强队的能力)vs加拿大高位逼抢。赔率MAR -0.5看好摩洛哥。摩洛哥的防守纪律和反击效率是关键。",
-        "risk_note": "加拿大高位逼抢可能打乱摩洛哥节奏。摩洛哥xG 2.15可能偏高(防守型球队通常进球不多)。平局概率21%。",
-        "analysis": "排名44 vs 11。Morocco占优，胜率58.4%。平局概率21.0%。期望进球: Canada 1.18 vs Morocco 2.15。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。",
         "xg": {
-          "home": 1.18,
-          "away": 2.15
+          "home": 0.84,
+          "away": 1.31
         },
         "num_runs": 200000,
-        "timestamp": "2026-07-03T08:31:23.395770+00:00"
+        "timestamp": "2026-07-04T09:26:37.984468+00:00",
+        "home_ml": 400,
+        "away_ml": -130
       }
     },
     {
       "id": "760503",
-      "name": "France at Paraguay",
+      "name": "Paraguay vs France",
       "date": "2026-07-04T21:00Z",
       "time_bj": "7/5 05:00",
       "home": {
         "name": "Paraguay",
         "short": "PAR",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/par.png",
+        "logo": "",
         "rank": 42
       },
       "away": {
         "name": "France",
         "short": "FRA",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+        "logo": "",
         "rank": 2
       },
       "venue": "Lincoln Financial Field",
       "city": "Philadelphia, Pennsylvania",
       "odds": {
         "spread": "FRA -1.5",
-        "overUnder": "2.5"
+        "overUnder": 2.5
       },
-      "referee": "TBD",
+      "referee": "?",
       "prediction": {
-        "home_win_pct": 7.0,
-        "draw_pct": 18.5,
-        "away_win_pct": 74.4,
-        "predicted_score": "0-3",
+        "home_win_pct": 16.7,
+        "draw_pct": 22.0,
+        "away_win_pct": 61.3,
+        "predicted_score": "0-1",
         "confidence_stars": 4,
-        "confidence_pct": 85,
+        "confidence_pct": 61,
         "key_factors": [
-          "排名差距巨大(42 vs 2)",
-          "让球盘: FRA -1.5",
-          "独赢赔率: 巴拉圭1700 / 法国-550",
-          "法国控球型 vs 巴拉圭防守型",
-          "法国攻击线豪华"
+          "排名差距40位，France明显占优",
+          "France进攻端预期更强(xG 1.88 vs 0.86)",
+          "淘汰赛阶段，防守纪律至关重要"
         ],
         "home_advantage": [
-          "FIFA排名42",
-          "防守型风格"
+          "FIFA排名42"
         ],
         "away_advantage": [
           "FIFA排名2",
-          "控球型风格"
+          "世界级球队底蕴",
+          "大赛经验丰富"
         ],
-        "goal_scorers": [
-          "姆巴佩(法国)",
-          "登贝莱(法国)",
-          "格列兹曼(法国)"
+        "goal_scorers": [],
+        "referee_impact": "裁判数据暂缺",
+        "venue_impact": "Lincoln Financial Field, Philadelphia, Pennsylvania",
+        "tactical_analysis": "Paraguay(排名42) vs France(排名2)。排名差距40位，France实力明显占优。预计France将主导控球，Paraguay以防守反击为主。期望进球: Paraguay 0.86 vs France 1.88。泊松MC 200000次模拟。",
+        "risk_note": "France大热，但淘汰赛冷门频出",
+        "analysis": "排名42 vs 2。France占优，Paraguay 16.7% vs France 61.3%。平局概率22.0%。期望进球: Paraguay 0.86 vs France 1.88。泊松MC 200000次模拟。KO round参数。",
+        "upset_analysis": {
+          "upset_prob": 38.7,
+          "score_upset_prob": 45.3,
+          "risk_level": "MEDIUM",
+          "scenarios": [
+            {
+              "type": "draw",
+              "prob": 22.0,
+              "bet": "平局 @ 22.0%"
+            },
+            {
+              "type": "upset",
+              "prob": 16.7,
+              "bet": "Paraguay胜 @ 16.7%"
+            }
+          ],
+          "recommended_bet": "Paraguay爆冷概率38.7%，平局22.0%"
+        },
+        "top_5_scores": [
+          [
+            "0-1",
+            12.1
+          ],
+          [
+            "0-2",
+            11.3
+          ],
+          [
+            "1-1",
+            10.5
+          ],
+          [
+            "1-2",
+            9.9
+          ],
+          [
+            "0-3",
+            7.3
+          ]
         ],
-        "referee_impact": "裁判TBD，待补充执法风格",
-        "venue_impact": "Lincoln Financial Field，Philadelphia, Pennsylvania，中立场",
-        "tactical_analysis": "排名差距40位，法国是本届赛事夺冠热门。巴拉圭防守型风格可能限制法国进攻，但实力差距太大。FRA -1.5合理。预计法国控球率65%+，巴拉圭以防守为主。",
-        "risk_note": "巴拉圭防守型可能逼出低比分，但排名差距40位+赔率-550，法国大胜概率高。",
-        "analysis": "排名42 vs 2。France占优，胜率74.4%。平局概率18.5%。期望进球: Paraguay 0.98 vs France 2.73。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。",
         "xg": {
-          "home": 0.98,
-          "away": 2.73
+          "home": 0.86,
+          "away": 1.88
         },
         "num_runs": 200000,
-        "timestamp": "2026-07-03T08:31:23.468200+00:00"
+        "timestamp": "2026-07-04T09:26:38.077606+00:00",
+        "home_ml": 1800,
+        "away_ml": -575
       }
     },
     {
       "id": "760504",
-      "name": "Norway at Brazil",
+      "name": "Brazil vs Norway",
       "date": "2026-07-05T20:00Z",
       "time_bj": "7/6 04:00",
       "home": {
         "name": "Brazil",
         "short": "BRA",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bra.png",
+        "logo": "",
         "rank": 5
       },
       "away": {
         "name": "Norway",
         "short": "NOR",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/nor.png",
+        "logo": "",
         "rank": 36
       },
       "venue": "MetLife Stadium",
       "city": "East Rutherford, New Jersey",
       "odds": {
         "spread": "BRA -0.5",
-        "overUnder": "2.5"
+        "overUnder": 2.5
       },
-      "referee": "TBD",
+      "referee": "?",
       "prediction": {
-        "home_win_pct": 59.0,
-        "draw_pct": 20.6,
-        "away_win_pct": 20.5,
-        "predicted_score": "2-0",
-        "confidence_stars": 4,
-        "confidence_pct": 80,
+        "home_win_pct": 52.9,
+        "draw_pct": 25.3,
+        "away_win_pct": 21.8,
+        "predicted_score": "1-0",
+        "confidence_stars": 3,
+        "confidence_pct": 52,
         "key_factors": [
-          "排名差距31位(5 vs 36)",
-          "让球盘: BRA -0.5 (巴西小幅热门)",
-          "独赢赔率: 巴西-115 / 挪威310",
-          "巴西控球型 vs 挪威防守反击型",
-          "巴西主场氛围(南美洲)"
+          "排名差距31位，Brazil明显占优",
+          "Brazil进攻端预期更强(xG 1.57 vs 0.91)",
+          "淘汰赛阶段，防守纪律至关重要"
         ],
         "home_advantage": [
           "FIFA排名5",
-          "控球型风格"
+          "世界级球队底蕴",
+          "大赛经验丰富"
         ],
         "away_advantage": [
-          "FIFA排名36",
-          "防守反击型风格"
+          "FIFA排名36"
         ],
-        "goal_scorers": [
-          "维尼修斯(巴西)",
-          "罗德里戈(巴西)",
-          "哈兰德(挪威)"
+        "goal_scorers": [],
+        "referee_impact": "裁判数据暂缺",
+        "venue_impact": "MetLife Stadium, East Rutherford, New Jersey",
+        "tactical_analysis": "Brazil(排名5) vs Norway(排名36)。排名差距31位，Brazil实力明显占优。预计Brazil将主导控球，Norway以防守反击为主。期望进球: Brazil 1.57 vs Norway 0.91。泊松MC 200000次模拟。",
+        "risk_note": "平局概率25.3%较高，KO加时赛可能；Brazil大热，但淘汰赛冷门频出",
+        "analysis": "排名5 vs 36。Brazil，Brazil 52.9% vs Norway 21.8%。平局概率25.3%。期望进球: Brazil 1.57 vs Norway 0.91。泊松MC 200000次模拟。KO round参数。",
+        "upset_analysis": {
+          "upset_prob": 47.1,
+          "score_upset_prob": 54.7,
+          "risk_level": "HIGH",
+          "scenarios": [
+            {
+              "type": "draw",
+              "prob": 25.3,
+              "bet": "平局 @ 25.3%"
+            },
+            {
+              "type": "upset",
+              "prob": 21.8,
+              "bet": "Norway胜 @ 21.8%"
+            }
+          ],
+          "recommended_bet": "Norway爆冷概率47.1%，平局25.3%"
+        },
+        "top_5_scores": [
+          [
+            "1-0",
+            13.3
+          ],
+          [
+            "1-1",
+            11.9
+          ],
+          [
+            "2-0",
+            10.3
+          ],
+          [
+            "2-1",
+            9.4
+          ],
+          [
+            "0-0",
+            8.4
+          ]
         ],
-        "referee_impact": "裁判TBD，待补充执法风格",
-        "venue_impact": "MetLife Stadium，East Rutherford, New Jersey，中立场",
-        "tactical_analysis": "巴西排名5 vs 挪威36，排名差距31位但让球盘仅-0.5，说明市场认为比赛较接近。巴西控球型vs挪威防守反击，哈兰德的反击是挪威最大威胁。巴西-115的赔率说明小幅热门但不是大热。",
-        "risk_note": "哈兰德的个人能力可能改变比赛。让球盘仅-0.5说明比赛可能接近。平局概率20.6%。",
-        "analysis": "排名5 vs 36。Brazil占优，胜率59.0%。平局概率20.6%。期望进球: Brazil 2.56 vs Norway 1.05。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。",
         "xg": {
-          "home": 2.56,
-          "away": 1.05
+          "home": 1.57,
+          "away": 0.91
         },
         "num_runs": 200000,
-        "timestamp": "2026-07-03T08:31:23.540040+00:00"
+        "timestamp": "2026-07-04T09:26:38.166474+00:00",
+        "home_ml": -125,
+        "away_ml": 320
       }
     },
     {
       "id": "760505",
-      "name": "England at Mexico",
+      "name": "Mexico vs England",
       "date": "2026-07-06T00:00Z",
       "time_bj": "7/6 08:00",
       "home": {
         "name": "Mexico",
         "short": "MEX",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/mex.png",
+        "logo": "",
         "rank": 14
       },
       "away": {
         "name": "England",
         "short": "ENG",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/eng.png",
+        "logo": "",
         "rank": 4
       },
       "venue": "Estadio Banorte",
       "city": "Mexico City",
       "odds": {
         "spread": "ENG -0.5",
-        "overUnder": "2.5"
+        "overUnder": 2.5
       },
-      "referee": "TBD",
+      "referee": "?",
       "prediction": {
-        "home_win_pct": 32.7,
-        "draw_pct": 25.4,
-        "away_win_pct": 41.9,
-        "predicted_score": "1-2",
-        "confidence_stars": 2,
-        "confidence_pct": 50,
+        "home_win_pct": 28.4,
+        "draw_pct": 24.3,
+        "away_win_pct": 47.3,
+        "predicted_score": "1-1",
+        "confidence_stars": 3,
+        "confidence_pct": 47,
         "key_factors": [
-          "排名差距10位(14 vs 4)，英格兰排名更高",
-          "让球盘: ENG -0.5",
-          "独赢赔率: 墨西哥220 / 英格兰140",
-          "墨西哥防守反击型 vs 英格兰控球型",
-          "两队实力接近"
+          "排名接近(14 vs 4)，实力均衡",
+          "淘汰赛阶段，防守纪律至关重要"
         ],
         "home_advantage": [
           "FIFA排名14",
-          "防守反击型风格"
+          "大赛经验丰富"
         ],
         "away_advantage": [
           "FIFA排名4",
-          "控球型风格"
+          "世界级球队底蕴",
+          "大赛经验丰富"
         ],
-        "goal_scorers": [
-          "凯恩(英格兰)",
-          "萨卡(英格兰)",
-          "洛萨诺(墨西哥)"
+        "goal_scorers": [],
+        "referee_impact": "裁判数据暂缺",
+        "venue_impact": "Estadio Banorte, Mexico City",
+        "tactical_analysis": "Mexico(排名14) vs England(排名4)。两队排名接近，实力均衡。预计比赛胶着，中场争夺激烈。期望进球: Mexico 1.23 vs England 1.65。泊松MC 200000次模拟。",
+        "risk_note": "比赛结果相对可预测",
+        "analysis": "排名14 vs 4。England占优，Mexico 28.4% vs England 47.3%。平局概率24.3%。期望进球: Mexico 1.23 vs England 1.65。泊松MC 200000次模拟。KO round参数。",
+        "upset_analysis": {
+          "upset_prob": 52.7,
+          "score_upset_prob": 60.0,
+          "risk_level": "HIGH",
+          "scenarios": [
+            {
+              "type": "draw",
+              "prob": 24.3,
+              "bet": "平局 @ 24.3%"
+            },
+            {
+              "type": "upset",
+              "prob": 28.4,
+              "bet": "Mexico胜 @ 28.4%"
+            }
+          ],
+          "recommended_bet": "Mexico爆冷概率52.7%，平局24.3%"
+        },
+        "top_5_scores": [
+          [
+            "1-1",
+            11.5
+          ],
+          [
+            "1-2",
+            9.5
+          ],
+          [
+            "0-1",
+            9.2
+          ],
+          [
+            "0-2",
+            7.8
+          ],
+          [
+            "1-0",
+            7.0
+          ]
         ],
-        "referee_impact": "裁判TBD，待补充执法风格",
-        "venue_impact": "Estadio Banorte，Mexico City，中立场",
-        "tactical_analysis": "排名接近(14 vs 4)，英格兰排名更高但让球盘仅-0.5。墨西哥防守反击型vs英格兰控球型，预计英格兰主导控球但墨西哥反击有威胁。赔率220/140说明英格兰小幅热门。",
-        "risk_note": "两队实力接近，平局概率25.4%较高。墨西哥防守反击可能限制英格兰进攻。KO加时赛概率不低。",
-        "analysis": "排名14 vs 4。势均力敌，Mexico 32.7% vs England 41.9%。平局概率25.4%。期望进球: Mexico 1.52 vs England 1.70。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。",
         "xg": {
-          "home": 1.52,
-          "away": 1.7
+          "home": 1.23,
+          "away": 1.65
         },
         "num_runs": 200000,
-        "timestamp": "2026-07-03T08:31:23.611353+00:00"
+        "timestamp": "2026-07-04T09:26:38.259434+00:00",
+        "home_ml": 205,
+        "away_ml": 140
       }
     },
     {
       "id": "760506",
-      "name": "Spain at Portugal",
+      "name": "Portugal vs Spain",
       "date": "2026-07-06T19:00Z",
       "time_bj": "7/7 03:00",
       "home": {
         "name": "Portugal",
         "short": "POR",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/por.png",
+        "logo": "",
         "rank": 8
       },
       "away": {
         "name": "Spain",
         "short": "ESP",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+        "logo": "",
         "rank": 3
       },
       "venue": "AT&T Stadium",
       "city": "Arlington, Texas",
       "odds": {
         "spread": "ESP -0.5",
-        "overUnder": "2.5"
+        "overUnder": 2.5
       },
-      "referee": "TBD",
+      "referee": "?",
       "prediction": {
-        "home_win_pct": 29.1,
-        "draw_pct": 22.7,
-        "away_win_pct": 48.1,
-        "predicted_score": "2-3",
+        "home_win_pct": 31.3,
+        "draw_pct": 23.2,
+        "away_win_pct": 45.5,
+        "predicted_score": "1-1",
         "confidence_stars": 3,
-        "confidence_pct": 65,
+        "confidence_pct": 45,
         "key_factors": [
-          "排名接近(8 vs 3)，西班牙排名更高",
-          "让球盘: ESP -0.5",
-          "独赢赔率: 葡萄牙300 / 西班牙-105",
-          "两队均为控球型，技术对决",
-          "伊比利亚德比"
+          "排名接近(8 vs 3)，实力均衡",
+          "淘汰赛阶段，防守纪律至关重要"
         ],
         "home_advantage": [
           "FIFA排名8",
-          "控球型风格"
+          "世界级球队底蕴",
+          "大赛经验丰富"
         ],
         "away_advantage": [
           "FIFA排名3",
-          "控球型风格"
+          "世界级球队底蕴",
+          "大赛经验丰富"
         ],
-        "goal_scorers": [
-          "莫拉塔(西班牙)",
-          "佩德里(西班牙)",
-          "B费(葡萄牙)"
+        "goal_scorers": [],
+        "referee_impact": "裁判数据暂缺",
+        "venue_impact": "AT&T Stadium, Arlington, Texas",
+        "tactical_analysis": "Portugal(排名8) vs Spain(排名3)。两队排名接近，实力均衡。预计比赛胶着，中场争夺激烈。期望进球: Portugal 1.41 vs Spain 1.74。泊松MC 200000次模拟。",
+        "risk_note": "比赛结果相对可预测",
+        "analysis": "排名8 vs 3。Spain占优，Portugal 31.3% vs Spain 45.5%。平局概率23.2%。期望进球: Portugal 1.41 vs Spain 1.74。泊松MC 200000次模拟。KO round参数。",
+        "upset_analysis": {
+          "upset_prob": 54.5,
+          "score_upset_prob": 61.5,
+          "risk_level": "HIGH",
+          "scenarios": [
+            {
+              "type": "draw",
+              "prob": 23.2,
+              "bet": "平局 @ 23.2%"
+            },
+            {
+              "type": "upset",
+              "prob": 31.3,
+              "bet": "Portugal胜 @ 31.3%"
+            }
+          ],
+          "recommended_bet": "Portugal爆冷概率54.5%，平局23.2%"
+        },
+        "top_5_scores": [
+          [
+            "1-1",
+            10.5
+          ],
+          [
+            "1-2",
+            9.1
+          ],
+          [
+            "0-1",
+            7.5
+          ],
+          [
+            "2-1",
+            7.4
+          ],
+          [
+            "0-2",
+            6.5
+          ]
         ],
-        "referee_impact": "裁判TBD，待补充执法风格",
-        "venue_impact": "AT&T Stadium，Arlington, Texas，中立场",
-        "tactical_analysis": "伊比利亚德比！排名接近(8 vs 3)，西班牙小幅热门(ESP -0.5)。两队均为控球型打法，预计控球率接近50-50。技术流对决，中场控制是关键。西班牙近期状态更好。",
-        "risk_note": "两队实力非常接近，平局概率22.7%。技术流对决可能出现低比分僵局。KO加时赛概率高。",
-        "analysis": "排名8 vs 3。Spain占优，胜率48.1%。平局概率22.7%。期望进球: Portugal 1.75 vs Spain 1.87。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。",
         "xg": {
-          "home": 1.75,
-          "away": 1.87
+          "home": 1.41,
+          "away": 1.74
         },
         "num_runs": 200000,
-        "timestamp": "2026-07-03T08:31:23.684546+00:00"
+        "timestamp": "2026-07-04T09:26:38.350323+00:00",
+        "home_ml": 295,
+        "away_ml": -110
       }
     },
     {
       "id": "760507",
-      "name": "Belgium at United States",
+      "name": "United States vs Belgium",
       "date": "2026-07-07T00:00Z",
       "time_bj": "7/7 08:00",
       "home": {
         "name": "United States",
         "short": "USA",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/usa.png",
+        "logo": "",
         "rank": 12
       },
       "away": {
         "name": "Belgium",
         "short": "BEL",
-        "logo": "https://a.espncdn.com/i/teamlogos/countries/500/bel.png",
+        "logo": "",
         "rank": 6
       },
       "venue": "Lumen Field",
       "city": "Seattle, Washington",
       "odds": {
         "spread": "USA -0.5",
-        "overUnder": "2.5"
+        "overUnder": 2.5
       },
-      "referee": "TBD",
+      "referee": "?",
       "prediction": {
-        "home_win_pct": 40.3,
-        "draw_pct": 26.0,
-        "away_win_pct": 33.7,
-        "predicted_score": "2-1",
-        "confidence_stars": 2,
-        "confidence_pct": 48,
+        "home_win_pct": 32.1,
+        "draw_pct": 25.1,
+        "away_win_pct": 42.9,
+        "predicted_score": "1-1",
+        "confidence_stars": 3,
+        "confidence_pct": 42,
         "key_factors": [
-          "排名接近(12 vs 6)，比利时排名更高",
-          "让球盘: USA -0.5 (美国被看好)",
-          "独赢赔率: 美国155 / 比利时180",
-          "美国高位逼抢型 vs 比利时控球型",
-          "美国主场氛围(本土世界杯)"
+          "排名接近(12 vs 6)，实力均衡",
+          "淘汰赛阶段，防守纪律至关重要"
         ],
         "home_advantage": [
           "FIFA排名12",
-          "高位逼抢型风格"
+          "大赛经验丰富"
         ],
         "away_advantage": [
           "FIFA排名6",
-          "控球型风格"
+          "世界级球队底蕴",
+          "大赛经验丰富"
         ],
-        "goal_scorers": [
-          "普利西奇(美国)",
-          "雷纳(美国)",
-          "德布劳内(比利时)"
+        "goal_scorers": [],
+        "referee_impact": "裁判数据暂缺",
+        "venue_impact": "Lumen Field, Seattle, Washington",
+        "tactical_analysis": "United States(排名12) vs Belgium(排名6)。两队排名接近，实力均衡。预计比赛胶着，中场争夺激烈。期望进球: United States 1.28 vs Belgium 1.51。泊松MC 200000次模拟。",
+        "risk_note": "平局概率25.1%较高，KO加时赛可能",
+        "analysis": "排名12 vs 6。Belgium占优，United States 32.1% vs Belgium 42.9%。平局概率25.1%。期望进球: United States 1.28 vs Belgium 1.51。泊松MC 200000次模拟。KO round参数。",
+        "upset_analysis": {
+          "upset_prob": 57.1,
+          "score_upset_prob": 64.6,
+          "risk_level": "HIGH",
+          "scenarios": [
+            {
+              "type": "draw",
+              "prob": 25.1,
+              "bet": "平局 @ 25.1%"
+            },
+            {
+              "type": "upset",
+              "prob": 32.1,
+              "bet": "United States胜 @ 32.1%"
+            }
+          ],
+          "recommended_bet": "United States爆冷概率57.1%，平局25.1%"
+        },
+        "top_5_scores": [
+          [
+            "1-1",
+            11.8
+          ],
+          [
+            "0-1",
+            9.2
+          ],
+          [
+            "1-2",
+            9.1
+          ],
+          [
+            "1-0",
+            7.7
+          ],
+          [
+            "2-1",
+            7.5
+          ]
         ],
-        "referee_impact": "裁判TBD，待补充执法风格",
-        "venue_impact": "Lumen Field，Seattle, Washington，中立场",
-        "tactical_analysis": "美国排名12 vs 比利时6，但让球盘USA -0.5说明市场看好美国(本土世界杯优势)。美国高位逼抢vs比利时控球型，预计比赛节奏快。赔率155/180非常接近，说明比赛结果高度不确定。",
-        "risk_note": "两队实力非常接近，平局概率26.0%最高。美国主场优势可能影响裁判判罚。KO加时赛概率高。",
-        "analysis": "排名12 vs 6。势均力敌，United States 40.3% vs Belgium 33.7%。平局概率26.0%。期望进球: United States 1.87 vs Belgium 1.56。泊松MC 200000次模拟。KO round参数(draw_prior=26.0%, xG×0.96)。",
         "xg": {
-          "home": 1.87,
-          "away": 1.56
+          "home": 1.28,
+          "away": 1.51
         },
         "num_runs": 200000,
-        "timestamp": "2026-07-03T08:31:23.756901+00:00"
+        "timestamp": "2026-07-04T09:26:38.439839+00:00",
+        "home_ml": 160,
+        "away_ml": 165
+      }
+    },
+    {
+      "id": "760509",
+      "name": "Argentina vs Cape Verde",
+      "date": "2026-07-07T16:00Z",
+      "time_bj": "7/8 00:00",
+      "home": {
+        "name": "Argentina",
+        "short": "ARG",
+        "logo": "",
+        "rank": 1
+      },
+      "away": {
+        "name": "Cape Verde",
+        "short": "CPV",
+        "logo": "",
+        "rank": 50
+      },
+      "venue": "Mercedes-Benz Stadium",
+      "city": "Atlanta, Georgia",
+      "odds": {
+        "spread": "ARG -1.5",
+        "overUnder": 2.5
+      },
+      "referee": "?",
+      "prediction": {
+        "home_win_pct": 67.5,
+        "draw_pct": 19.5,
+        "away_win_pct": 13.0,
+        "predicted_score": "2-0",
+        "confidence_stars": 4,
+        "confidence_pct": 67,
+        "key_factors": [
+          "排名差距49位，Argentina明显占优",
+          "Argentina进攻端预期更强(xG 2.11 vs 0.8)",
+          "淘汰赛阶段，防守纪律至关重要"
+        ],
+        "home_advantage": [
+          "FIFA排名1",
+          "世界级球队底蕴",
+          "大赛经验丰富"
+        ],
+        "away_advantage": [
+          "FIFA排名50"
+        ],
+        "goal_scorers": [],
+        "referee_impact": "裁判数据暂缺",
+        "venue_impact": "Mercedes-Benz Stadium, Atlanta, Georgia",
+        "tactical_analysis": "Argentina(排名1) vs Cape Verde(排名50)。排名差距49位，Argentina实力明显占优。预计Argentina将主导控球，Cape Verde以防守反击为主。期望进球: Argentina 2.11 vs Cape Verde 0.8。泊松MC 200000次模拟。",
+        "risk_note": "Argentina大热，但淘汰赛冷门频出",
+        "analysis": "排名1 vs 50。Argentina，Argentina 67.5% vs Cape Verde 13.0%。平局概率19.5%。期望进球: Argentina 2.11 vs Cape Verde 0.8。泊松MC 200000次模拟。KO round参数。",
+        "upset_analysis": {
+          "upset_prob": 32.5,
+          "score_upset_prob": 38.4,
+          "risk_level": "MEDIUM",
+          "scenarios": [
+            {
+              "type": "draw",
+              "prob": 19.5,
+              "bet": "平局 @ 19.5%"
+            },
+            {
+              "type": "upset",
+              "prob": 13.0,
+              "bet": "Cape Verde胜 @ 13.0%"
+            }
+          ],
+          "recommended_bet": "Cape Verde爆冷概率32.5%，平局19.5%"
+        },
+        "top_5_scores": [
+          [
+            "2-0",
+            12.2
+          ],
+          [
+            "1-0",
+            11.3
+          ],
+          [
+            "2-1",
+            9.8
+          ],
+          [
+            "1-1",
+            9.2
+          ],
+          [
+            "3-0",
+            8.6
+          ]
+        ],
+        "xg": {
+          "home": 2.11,
+          "away": 0.8
+        },
+        "num_runs": 200000,
+        "timestamp": "2026-07-04T09:26:38.531850+00:00",
+        "home_ml": -285,
+        "away_ml": 850
+      }
+    },
+    {
+      "id": "760508",
+      "name": "Switzerland vs Colombia",
+      "date": "2026-07-07T20:00Z",
+      "time_bj": "7/8 04:00",
+      "home": {
+        "name": "Switzerland",
+        "short": "SUI",
+        "logo": "",
+        "rank": 15
+      },
+      "away": {
+        "name": "Colombia",
+        "short": "COL",
+        "logo": "",
+        "rank": 9
+      },
+      "venue": "BC Place",
+      "city": "Vancouver",
+      "odds": {
+        "spread": "COL -0.5",
+        "overUnder": 2.5
+      },
+      "referee": "?",
+      "prediction": {
+        "home_win_pct": 32.9,
+        "draw_pct": 26.5,
+        "away_win_pct": 40.6,
+        "predicted_score": "1-1",
+        "confidence_stars": 3,
+        "confidence_pct": 40,
+        "key_factors": [
+          "排名接近(15 vs 9)，实力均衡",
+          "淘汰赛阶段，防守纪律至关重要",
+          "势均力敌，比赛结果高度不确定"
+        ],
+        "home_advantage": [
+          "FIFA排名15",
+          "大赛经验丰富"
+        ],
+        "away_advantage": [
+          "FIFA排名9",
+          "世界级球队底蕴",
+          "大赛经验丰富"
+        ],
+        "goal_scorers": [],
+        "referee_impact": "裁判数据暂缺",
+        "venue_impact": "BC Place, Vancouver",
+        "tactical_analysis": "Switzerland(排名15) vs Colombia(排名9)。两队排名接近，实力均衡。预计比赛胶着，中场争夺激烈。期望进球: Switzerland 1.2 vs Colombia 1.37。泊松MC 200000次模拟。",
+        "risk_note": "平局概率26.5%较高，KO加时赛可能；比赛结果高度不确定，任何结果都有可能",
+        "analysis": "排名15 vs 9。势均力敌，Switzerland 32.9% vs Colombia 40.6%。平局概率26.5%。期望进球: Switzerland 1.2 vs Colombia 1.37。泊松MC 200000次模拟。KO round参数。",
+        "upset_analysis": {
+          "upset_prob": 59.4,
+          "score_upset_prob": 67.3,
+          "risk_level": "HIGH",
+          "scenarios": [
+            {
+              "type": "draw",
+              "prob": 26.5,
+              "bet": "平局 @ 26.5%"
+            },
+            {
+              "type": "upset",
+              "prob": 32.9,
+              "bet": "Switzerland胜 @ 32.9%"
+            }
+          ],
+          "recommended_bet": "Switzerland爆冷概率59.4%，平局26.5%"
+        },
+        "top_5_scores": [
+          [
+            "1-1",
+            12.6
+          ],
+          [
+            "0-1",
+            10.4
+          ],
+          [
+            "1-0",
+            9.3
+          ],
+          [
+            "1-2",
+            8.6
+          ],
+          [
+            "2-1",
+            7.7
+          ]
+        ],
+        "xg": {
+          "home": 1.2,
+          "away": 1.37
+        },
+        "num_runs": 200000,
+        "timestamp": "2026-07-04T09:26:38.620822+00:00",
+        "home_ml": 235,
+        "away_ml": 125
       }
     }
   ],
-  "updated": "2026-07-03T08:31:23.756906+00:00",
-  "model": "mimo-v2.5-pro",
-  "runs": 200000
+  "updated": "2026-07-04T09:26:38.620843+00:00",
+  "model": "poisson-monte-carlo-v1",
+  "runs": 1
 }
